@@ -1,0 +1,66 @@
+name: Weekly scan & publish
+
+on:
+  schedule:
+    - cron: "50 4 * * 1"   # Mondays 06:50 Cape Town (04:50 UTC)
+  workflow_dispatch:
+    inputs:
+      run_scan:
+        description: "Run the weekly AI scan before publishing"
+        type: boolean
+        default: true
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: site
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r scripts/requirements.txt fonttools
+
+      - name: Weekly scan (Claude + web search)
+        if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.run_scan)
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SCAN_MODEL: ${{ vars.SCAN_MODEL }}
+        run: python scripts/weekly_scan.py
+
+      - name: Build site
+        env:
+          SITE_URL: ${{ vars.SITE_URL || 'https://futurejobradar.com' }}
+        run: python scripts/build_site.py
+
+      - name: Commit changes
+        run: |
+          git config user.name "future-job-radar-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add docs/jobs.json reports
+          if git diff --cached --quiet; then echo "No changes"; else git commit -m "Radar update $(date -u +%F)" && git push; fi
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
