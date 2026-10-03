@@ -38,6 +38,15 @@ jobs:
           SCAN_MODEL: ${{ vars.SCAN_MODEL }}
         run: python scripts/weekly_scan.py
 
+      - name: Weekly newsletter (Brevo)
+        if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.run_scan)
+        env:
+          BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
+          BREVO_LIST_ID: ${{ vars.BREVO_LIST_ID }}
+          NEWSLETTER_MODE: ${{ vars.NEWSLETTER_MODE }}
+          SENDER_EMAIL: ${{ vars.SENDER_EMAIL }}
+        run: python scripts/newsletter.py
+
       - name: Build site
         env:
           SITE_URL: ${{ vars.SITE_URL || 'https://futurejobradar.com' }}
