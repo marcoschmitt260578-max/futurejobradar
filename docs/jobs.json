@@ -3,7 +3,7 @@
   "name": "Future Job Radar",
   "version": 1,
   "lastScan": "2026-10-03",
-  "scanNumber": 3,
+  "scanNumber": 4,
   "horizonYears": [
    2,
    10
@@ -19,7 +19,8 @@
      "tricorder-medic",
      "aging-in-place-designer",
      "human-connection-specialist",
-     "exoskeleton-fitter"
+     "exoskeleton-fitter",
+     "care-robot-matchmaker"
     ]
    },
    {
@@ -30,7 +31,8 @@
      "healthspan-architect",
      "bci-rehab-trainer",
      "genome-counselor",
-     "deep-space-crew-counselor"
+     "deep-space-crew-counselor",
+     "neural-voice-designer"
     ]
    },
    {
@@ -41,7 +43,8 @@
      "teleop-avatar-pilot",
      "cabin-experience-designer",
      "mobile-room-entrepreneur",
-     "drone-airspace-controller"
+     "drone-airspace-controller",
+     "robotaxi-curb-marshal"
     ]
    },
    {
@@ -52,7 +55,8 @@
      "autonomous-ship-remote-captain",
      "robot-fleet-foreman",
      "debris-recovery-pilot",
-     "machine-economy-accountant"
+     "machine-economy-accountant",
+     "robotaxi-curb-marshal"
     ]
    },
    {
@@ -172,7 +176,8 @@
      "infrastructure-precog",
      "fusion-plant-operator",
      "microgravity-manufacturing-engineer",
-     "vpp-conductor"
+     "vpp-conductor",
+     "mine-to-compute-planner"
     ]
    },
    {
@@ -183,7 +188,8 @@
      "building-printer-operator",
      "lunar-construction-supervisor",
      "exoskeleton-fitter",
-     "highway-repurposing-planner"
+     "highway-repurposing-planner",
+     "mine-to-compute-planner"
     ]
    },
    {
@@ -194,7 +200,8 @@
      "agent-fleet-manager",
      "kobayashi-maru-designer",
      "robot-fleet-foreman",
-     "society-simulation-analyst"
+     "society-simulation-analyst",
+     "compute-commons-steward"
     ]
    },
    {
@@ -205,7 +212,8 @@
      "de-extinction-ranger",
      "organ-print-technician",
      "planetary-defence-analyst",
-     "asteroid-prospector"
+     "asteroid-prospector",
+     "neural-voice-designer"
     ]
    },
    {
@@ -215,7 +223,9 @@
      "human-connection-specialist",
      "deep-space-crew-counselor",
      "digital-legacy-curator",
-     "ai-welfare-officer"
+     "ai-welfare-officer",
+     "care-robot-matchmaker",
+     "neural-voice-designer"
     ]
    },
    {
@@ -226,7 +236,8 @@
      "vpp-conductor",
      "carbon-removal-verifier",
      "critical-mineral-recycler",
-     "heat-resilience-officer"
+     "heat-resilience-officer",
+     "compute-commons-steward"
     ]
    },
    {
@@ -237,7 +248,10 @@
      "highway-repurposing-planner",
      "aging-in-place-designer",
      "heat-resilience-officer",
-     "holodeck-architect"
+     "holodeck-architect",
+     "robotaxi-curb-marshal",
+     "mine-to-compute-planner",
+     "compute-commons-steward"
     ]
    },
    {
@@ -252,7 +266,7 @@
     ]
    }
   ],
-  "cover": "programmable-money-designer"
+  "cover": "robotaxi-curb-marshal"
  },
  "scans": [
   {
@@ -362,6 +376,21 @@
     "robotic-pollination-keeper",
     "farm-data-cooperative-manager",
     "bioreactor-rancher"
+   ],
+   "moved": []
+  },
+  {
+   "number": 4,
+   "date": "2026-10-03",
+   "headline": "Cybercabs take paid rides, McKinsey counts more jobs created than lost, and AI data centres go underground like a real-life Silo",
+   "summary": "This week Tesla began paid Cybercab rides in Austin, Nevada cleared thousands of robotaxis for Las Vegas, McKinsey's new US study put jobs created (about 41 million) above jobs facing lower demand (about 36 million) by 2035, and BlackRock and Cloudflare pushed agent payments forward. The focus universes are Silo (life inside a giant buried machine) and Murderbot (care, security and contracts in a hyper-capitalist future), which gave us five jobs spanning curbs, caverns, compute neighbours, care robots and brain-to-voice.",
+   "focus": "Silo (Apple TV+) and The Murderbot Diaries, with a side look at Becky Chambers (Monk and Robot)",
+   "newJobs": [
+    "robotaxi-curb-marshal",
+    "mine-to-compute-planner",
+    "compute-commons-steward",
+    "care-robot-matchmaker",
+    "neural-voice-designer"
    ],
    "moved": []
   }
@@ -4200,7 +4229,7 @@
     }
    ],
    "added": "2026-10-03",
-   "status": "new",
+   "status": "stable",
    "history": [
     {
      "date": "2026-10-03",
@@ -4254,7 +4283,7 @@
     }
    ],
    "added": "2026-10-03",
-   "status": "new",
+   "status": "stable",
    "history": [
     {
      "date": "2026-10-03",
@@ -4320,7 +4349,7 @@
     }
    ],
    "added": "2026-10-03",
-   "status": "new",
+   "status": "stable",
    "history": [
     {
      "date": "2026-10-03",
@@ -4386,7 +4415,7 @@
     }
    ],
    "added": "2026-10-03",
-   "status": "new",
+   "status": "stable",
    "history": [
     {
      "date": "2026-10-03",
@@ -4451,7 +4480,7 @@
     }
    ],
    "added": "2026-10-03",
-   "status": "new",
+   "status": "stable",
    "history": [
     {
      "date": "2026-10-03",
@@ -4511,7 +4540,7 @@
     }
    ],
    "added": "2026-10-03",
-   "status": "new",
+   "status": "stable",
    "history": [
     {
      "date": "2026-10-03",
@@ -4565,7 +4594,7 @@
     }
    ],
    "added": "2026-10-03",
-   "status": "new",
+   "status": "stable",
    "history": [
     {
      "date": "2026-10-03",
@@ -4631,7 +4660,7 @@
     }
    ],
    "added": "2026-10-03",
-   "status": "new",
+   "status": "stable",
    "history": [
     {
      "date": "2026-10-03",
@@ -4691,7 +4720,7 @@
     }
    ],
    "added": "2026-10-03",
-   "status": "new",
+   "status": "stable",
    "history": [
     {
      "date": "2026-10-03",
@@ -4751,7 +4780,7 @@
     }
    ],
    "added": "2026-10-03",
-   "status": "new",
+   "status": "stable",
    "history": [
     {
      "date": "2026-10-03",
@@ -4815,7 +4844,7 @@
     }
    ],
    "added": "2026-10-03",
-   "status": "new",
+   "status": "stable",
    "history": [
     {
      "date": "2026-10-03",
@@ -4868,7 +4897,7 @@
     }
    ],
    "added": "2026-10-03",
-   "status": "new",
+   "status": "stable",
    "history": [
     {
      "date": "2026-10-03",
@@ -4928,7 +4957,7 @@
     }
    ],
    "added": "2026-10-03",
-   "status": "new",
+   "status": "stable",
    "history": [
     {
      "date": "2026-10-03",
@@ -4981,7 +5010,7 @@
     }
    ],
    "added": "2026-10-03",
-   "status": "new",
+   "status": "stable",
    "history": [
     {
      "date": "2026-10-03",
@@ -5033,7 +5062,7 @@
     }
    ],
    "added": "2026-10-03",
-   "status": "new",
+   "status": "stable",
    "history": [
     {
      "date": "2026-10-03",
@@ -5092,7 +5121,7 @@
     }
    ],
    "added": "2026-10-03",
-   "status": "new",
+   "status": "stable",
    "history": [
     {
      "date": "2026-10-03",
@@ -5151,11 +5180,329 @@
     }
    ],
    "added": "2026-10-03",
-   "status": "new",
+   "status": "stable",
    "history": [
     {
      "date": "2026-10-03",
      "horizon": 7
+    }
+   ]
+  },
+  {
+   "id": "robotaxi-curb-marshal",
+   "title": "Robotaxi Curb Marshal",
+   "sector": "mobility",
+   "horizon": 4,
+   "drivers": {
+    "ai": 0.7,
+    "robotics": 0.2,
+    "autonomy": 0.9,
+    "bio": 0.0,
+    "space": 0.0,
+    "energy": 0.2,
+    "quantum": 0.0,
+    "chain": 0.1
+   },
+   "trigger": "When thousands of driverless cars all want the same stretch of kerb outside airports, stadiums and casinos, someone has to design and run how they stop, wait and leave.",
+   "what": "A Curb Marshal runs the last 50 metres of every robotaxi trip. They set up pickup zones, queue rules, idle limits and handover points between competing fleets, and step in on the day when a concert ends or a flight bank lands.",
+   "day": "On a convention-exit evening, she watches a live kerb map, opens an extra pickup bay for two rival fleets, and calls a stuck Cybercab's operator before it blocks the bus lane.",
+   "skills": [
+    "Real-time traffic choreography",
+    "Negotiating with fleet operators",
+    "Crowd and kerb safety"
+   ],
+   "signals": [
+    {
+     "type": "market",
+     "who": "TechCrunch · Nevada robotaxi permits (Aug 2026)",
+     "claim": "At the Nevada hearing, a lawyer for the Livery Operators Association raised concerns about oversaturation and about overcrowded roads, singling out the Golden Triangle near the airport and the Strip.",
+     "url": "https://techcrunch.com/2026/08/20/tesla-uber-and-waymo-all-get-the-ok-to-operate-thousands-of-robotaxis-in-nevada/"
+    },
+    {
+     "type": "market",
+     "who": "Las Vegas Review-Journal · Nevada Transportation Authority approval",
+     "claim": "Tesla, Waymo and Uber's Aviari were approved to run robotaxi fleets in Las Vegas, and each needs Clark County Department of Aviation authorization before serving Harry Reid airport; Waymo also gets a dedicated pickup and drop-off site for Allegiant Stadium events.",
+     "url": "https://www.reviewjournal.com/local/traffic/tesla-waymo-and-aviari-cleared-to-deploy-7000-las-vegas-robotaxis-3867451/"
+    },
+    {
+     "type": "analyst",
+     "who": "RideWise · robotaxi airport access guide (2026)",
+     "claim": "The guide reports that airports cap how long any vehicle can idle at the curb, and that at San Francisco airport robotaxi pickups happen at the Rental Car Center or a nearby hotel rather than at the terminal curb.",
+     "url": "https://getridewise.com/blog/robotaxi-airport-access-us-airports"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "The Fifth Element",
+     "year": 1997,
+     "kind": "film",
+     "echo": "Its vertical city of stacked taxi lanes only works because someone has to decide who goes where and when."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "new",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 4
+    }
+   ]
+  },
+  {
+   "id": "mine-to-compute-planner",
+   "title": "Mine-to-Compute Planner",
+   "sector": "built",
+   "horizon": 6,
+   "drivers": {
+    "ai": 0.6,
+    "robotics": 0.3,
+    "autonomy": 0.1,
+    "bio": 0.0,
+    "space": 0.0,
+    "energy": 0.6,
+    "quantum": 0.0,
+    "chain": 0.0
+   },
+   "trigger": "When the demand for AI computing outgrows the land, power and public patience above ground, old mines, quarries and caverns become candidate data halls.",
+   "what": "A Mine-to-Compute Planner surveys disused mines and quarries and decides which can safely hold racks, power and cooling. They combine geology, ventilation, grid access and heat reuse into one buildable plan.",
+   "day": "Today she walks a retired limestone quarry with a rock engineer and a drone, checks where fresh air and a power line could enter, and updates a twin of the site that predicts how hot the tunnels will run.",
+   "skills": [
+    "Geotechnical and ventilation basics",
+    "Power and cooling design",
+    "Site feasibility modelling"
+   ],
+   "signals": [
+    {
+     "type": "market",
+     "who": "Datacenter Dynamics · Trentino DataMine (Apr 2026)",
+     "claim": "A 50 million euro data center built 100 metres underground in an active Dolomites quarry has finished construction after two and a half years, with 15 km of tunnels excavated.",
+     "url": "https://www.datacenterdynamics.com/en/news/construction-completed-on-underground-data-center-in-the-dolomites-italy/"
+    },
+    {
+     "type": "technologist",
+     "who": "Dataspan · underground data centres explainer",
+     "claim": "Naturally stable underground temperatures may reduce cooling demand, though total cost depends on the site, retrofitting needs, power delivery and ventilation upgrades.",
+     "url": "https://dataspan.com/blog/the-pros-and-cons-of-underground-data-centers/"
+    },
+    {
+     "type": "analyst",
+     "who": "CBRE North America Data Center Trends H1 2026 · via Apollo Technical",
+     "claim": "Under-construction data centre capacity in primary North American markets rose 24.8% in the first half of 2026 to about 7,481 MW, with vacancy at a record low of 1.4%.",
+     "url": "https://www.apollotechnical.com/data-center-construction-statistics/"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Silo",
+     "year": 2023,
+     "kind": "series",
+     "echo": "A whole society lives in a buried, self-sustaining structure and an engineer keeps its air, power and machinery working."
+    },
+    {
+     "title": "Metro 2033",
+     "year": 2005,
+     "kind": "book",
+     "echo": "Whole communities live in repurposed underground tunnels, which makes the people who read the rock and the infrastructure essential."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "new",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 6
+    }
+   ]
+  },
+  {
+   "id": "compute-commons-steward",
+   "title": "Compute Commons Steward",
+   "sector": "built",
+   "horizon": 4,
+   "drivers": {
+    "ai": 0.6,
+    "robotics": 0.0,
+    "autonomy": 0.0,
+    "bio": 0.0,
+    "space": 0.0,
+    "energy": 0.7,
+    "quantum": 0.0,
+    "chain": 0.3
+   },
+   "trigger": "When local resistance starts blocking multi-billion-dollar data centres, builders need a person who turns a campus into a deal the neighbours actually want.",
+   "what": "A Compute Commons Steward designs and runs what a data campus gives back to its neighbours: waste heat for homes, water pledges, local jobs, and a share of the computing itself. They publish the numbers and answer the town's questions every month.",
+   "day": "She presents this quarter's heat, water and power figures to a town hall, then agrees with the campus operator to give the local school and clinic a block of free compute.",
+   "skills": [
+    "Community negotiation",
+    "Energy and water accounting",
+    "Benefit-sharing design"
+   ],
+   "signals": [
+    {
+     "type": "market",
+     "who": "Wikipedia · AI data center (summarising 2026 reporting)",
+     "claim": "By July 2026, local community resistance had blocked the construction of AI data centers worth around 130 billion dollars.",
+     "url": "https://en.wikipedia.org/wiki/AI_data_center"
+    },
+    {
+     "type": "entrepreneur",
+     "who": "NPR · Valar Atomics Utah proposal (Sep 30, 2026)",
+     "claim": "A startup wants to place over 450 reactors on more than 9,500 acres of Utah public land to power a huge data centre project, which has raised alarm among local activists.",
+     "url": "https://npr.org/2026/09/30/nx-s1-5983482/valar-atomic-nuclear-data-center-project-beehive-utah"
+    },
+    {
+     "type": "analyst",
+     "who": "Washington Post with Cleanview data (Sep 28, 2026)",
+     "claim": "Cleanview counts another 120 US data centres under construction and 460 more planned.",
+     "url": "https://www.washingtonpost.com/technology/interactive/2026/09/28/satellite-images-show-scale-americas-data-center-build-out/"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Silo",
+     "year": 2023,
+     "kind": "series",
+     "echo": "Residents live inside infrastructure they did not design, and the story is about who gets to know and shape its rules."
+    },
+    {
+     "title": "Snow Crash",
+     "year": 1992,
+     "kind": "book",
+     "echo": "Franchise-run mini-territories each have their own rules and services, much like a data campus that acts as its own small state."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "new",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 4
+    }
+   ]
+  },
+  {
+   "id": "care-robot-matchmaker",
+   "title": "Care Robot Matchmaker",
+   "sector": "care",
+   "horizon": 4,
+   "drivers": {
+    "ai": 0.5,
+    "robotics": 0.8,
+    "autonomy": 0.2,
+    "bio": 0.0,
+    "space": 0.0,
+    "energy": 0.0,
+    "quantum": 0.0,
+    "chain": 0.0
+   },
+   "trigger": "When care robots range from 250-dollar tabletop companions to 20,000-dollar humanoids and many end up unused, families need an independent person who finds the one that fits.",
+   "what": "A Care Robot Matchmaker spends two weeks with an older person and their family, trials two or three robots in the real home, and recommends the one that suits the person's routines and mood. They also say when none fits and help retire a robot that is gathering dust.",
+   "day": "He sets a companion robot and a laundry-folding arm in Mrs Okafor's flat, watches which one she talks to and which one she avoids, and writes up a fit report for her daughter and her care team.",
+   "skills": [
+    "Observing daily routines",
+    "Robot capability knowledge",
+    "Family and elder communication"
+   ],
+   "signals": [
+    {
+     "type": "market",
+     "who": "China Daily · Beijing E-Town eldercare hub (Apr 2026)",
+     "claim": "A Beijing eldercare hub has deployed 43 different robots and withdrawn about 10 of them for modifications based on user feedback.",
+     "url": "https://www.chinadailyasia.com/hk/article/632675"
+    },
+    {
+     "type": "scientist",
+     "who": "Faces of Digital Health · interview with anthropologist Tanja Ahlin",
+     "claim": "An ethnographer checking on social robots that Denmark introduced into care homes found them put away in cupboards and even toilets.",
+     "url": "https://fodh.substack.com/p/robots-healthcare-agecare"
+    },
+    {
+     "type": "analyst",
+     "who": "There's An Robot For That · eldercare robot guide (2026)",
+     "claim": "Humanoid robots for elderly care cost between 250 and 25,000 dollars in 2026, and a March 2026 JMIR Aging review covered 59 studies of 25 humanoid robots in care settings.",
+     "url": "https://theresarobotforthat.com/blog/humanoid-robots-elderly-care/"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "A Psalm for the Wild-Built",
+     "year": 2021,
+     "kind": "book",
+     "echo": "A robot travels from person to person asking what they actually need, which is the matchmaker's first question."
+    },
+    {
+     "title": "All Systems Red (The Murderbot Diaries)",
+     "year": 2017,
+     "kind": "book",
+     "echo": "A security unit is assigned to a group of clients and slowly learns what each one needs, which is a fit no contract specifies."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "new",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 4
+    }
+   ]
+  },
+  {
+   "id": "neural-voice-designer",
+   "title": "Neural Voice Designer",
+   "sector": "health",
+   "horizon": 6,
+   "drivers": {
+    "ai": 0.8,
+    "robotics": 0.2,
+    "autonomy": 0.0,
+    "bio": 0.8,
+    "space": 0.0,
+    "energy": 0.0,
+    "quantum": 0.0,
+    "chain": 0.0
+   },
+   "trigger": "When brain implants can turn intended speech into sound, the voice that comes out becomes a design choice with real emotional weight.",
+   "what": "A Neural Voice Designer builds the voice a person speaks with after losing their own. They gather old recordings, tune pitch, pace and warmth, and work with the patient and family so the voice sounds like them in every setting, from a whisper to a laugh.",
+   "day": "She sits with a patient's wife to sort old voicemails and birthday videos, then tests whether the rebuilt voice can sound tired, teasing and tender instead of flat.",
+   "skills": [
+    "Voice and speech science",
+    "Audio and AI voice tuning",
+    "Patient and family listening"
+   ],
+   "signals": [
+    {
+     "type": "technologist",
+     "who": "MobiHealthNews · Neuralink VOICE study (Sep 2026)",
+     "claim": "A participant in Neuralink's VOICE study speaks through software that decodes speech-area activity into words and says them aloud in a synthetic voice modelled on his pre-ALS voice; the device remains investigational and not FDA approved.",
+     "url": "https://www.mobihealthnews.com/news/neuralink-brain-implant-helps-man-als-speak-using-his-thoughts"
+    },
+    {
+     "type": "technologist",
+     "who": "Gadget Review · Neuralink VOICE video (Sep 2026)",
+     "claim": "A video circulated in mid-September 2026 showing a VOICE trial participant saying a short phrase through an AI-rebuilt voice made from recordings before he lost speech; the piece notes peer-reviewed data is still pending and reports a delay of several seconds.",
+     "url": "https://www.gadgetreview.com/neuralinks-brain-implant-turned-imagined-speech-into-audible-words"
+    },
+    {
+     "type": "entrepreneur",
+     "who": "Elon Musk · via Interesting Engineering",
+     "claim": "Musk said Neuralink would begin high-volume production of its brain-computer interface devices and move to a fully automated surgical procedure in 2026.",
+     "url": "https://interestingengineering.com/culture/elon-musk-neuralink-tesla-2026-plans"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Ghost in the Shell",
+     "year": 1995,
+     "kind": "film",
+     "echo": "A person's identity lives in a brain wired to a synthetic body, where voice and presence are part of who they are."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "new",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 6
     }
    ]
   }
