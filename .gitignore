@@ -7,3 +7,5 @@ docs/CNAME
 docs/.nojekyll
 scripts/fonts/
 __pycache__/
+docs/fonts/
+docs/privacy/
