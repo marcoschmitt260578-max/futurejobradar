@@ -26,6 +26,43 @@ SECTOR = {
 BG, PAPER, GOLD, MUTE = "#0d1226", "#f3eee3", "#f2c14e", "#a9afc6"
 BASE_YEAR = 2026
 e = html.escape
+CONFIG = json.loads((ROOT / "scripts" / "site_config.json").read_text())
+
+# Web fonts are self-hosted (no request to Google), files come from Fontsource (OFL licence).
+WEB_FONTS = [
+    ("Big Shoulders Display", "normal", 600, "big-shoulders-display@5/files/big-shoulders-display-latin-600-normal.woff2"),
+    ("Big Shoulders Display", "normal", 800, "big-shoulders-display@5/files/big-shoulders-display-latin-800-normal.woff2"),
+    ("Big Shoulders Display", "normal", 900, "big-shoulders-display@5/files/big-shoulders-display-latin-900-normal.woff2"),
+    ("Newsreader", "normal", 400, "newsreader@5/files/newsreader-latin-400-normal.woff2"),
+    ("Newsreader", "normal", 600, "newsreader@5/files/newsreader-latin-600-normal.woff2"),
+    ("Newsreader", "italic", 400, "newsreader@5/files/newsreader-latin-400-italic.woff2"),
+    ("JetBrains Mono", "normal", 400, "jetbrains-mono@5/files/jetbrains-mono-latin-400-normal.woff2"),
+    ("JetBrains Mono", "normal", 600, "jetbrains-mono@5/files/jetbrains-mono-latin-600-normal.woff2"),
+]
+
+
+def web_fonts_css(prefix):
+    """Download the woff2 files into docs/fonts/ and return @font-face rules. Empty string if offline."""
+    import urllib.request
+    out = DOCS / "fonts"
+    out.mkdir(exist_ok=True)
+    rules = []
+    for fam, style, weight, src in WEB_FONTS:
+        name = src.rsplit("/", 1)[-1]
+        if not (out / name).exists():
+            try:
+                (out / name).write_bytes(urllib.request.urlopen("https://cdn.jsdelivr.net/npm/@fontsource/" + src, timeout=60).read())
+            except Exception as ex:
+                print("WARNING: font download failed, falling back to Google Fonts:", ex)
+                return ""
+        rules.append(f"@font-face{{font-family:'{fam}';font-style:{style};font-weight:{weight};font-display:swap;src:url({prefix}fonts/{name}) format('woff2')}}")
+    return "<style>" + "".join(rules) + "</style>\n"
+
+
+def fill(text):
+    return (text.replace("%%NL_ACTION%%", e(CONFIG.get("newsletter_form_url", "")))
+                .replace("%%LINKEDIN%%", e(CONFIG.get("linkedin_url", "")))
+                .replace("%%EMAIL%%", e(CONFIG.get("contact_email", ""))))
 
 
 FONT_SOURCES = {
@@ -172,17 +209,39 @@ def main():
     desc = "Jobs that don't exist yet. A weekly radar of future jobs, built from real signals, science fiction and creative thinking."
     og_image(DOCS / "og" / "home.png", f"{len(jobs)} future jobs · updated weekly", "Jobs that don't exist yet.",
              "Part fact. Part fiction. All imagination.", "", GOLD)
-    body = (ROOT / "scripts" / "page_body.html").read_text()
+    body = fill((ROOT / "scripts" / "page_body.html").read_text())
     body = re.sub(r"<title>.*?</title>\s*", "", body, count=1)
     links = re.findall(r"<link [^>]+>\s*", body[:2000])
     for l in links:
         body = body.replace(l, "", 1)
+    fonts = web_fonts_css("")
+    font_head = fonts if fonts else "".join(l.strip() + "\n" for l in links)
     page = (head("Future Job Radar · Jobs that don't exist yet", desc, SITE + "/", SITE + "/og/home.png")
-            + "".join(l.strip() + "\n" for l in links) + "</head>\n<body>\n" + body + "\n</body>\n</html>\n")
+            + font_head + "</head>\n<body>\n" + body + "\n</body>\n</html>\n")
     (DOCS / "index.html").write_text(page)
 
+    # privacy & imprint
+    import datetime
+    addr = CONFIG.get("imprint_address", "").strip()
+    legal = fill((ROOT / "scripts" / "privacy.html").read_text())
+    legal = legal.replace("%%ADDRESS%%", "<br>".join(e(x.strip()) for x in addr.split(",")) + "<br>" if addr else "")
+    legal = legal.replace("%%UPDATED%%", datetime.date.today().strftime("%d %B %Y"))
+    (DOCS / "privacy").mkdir(exist_ok=True)
+    (DOCS / "privacy" / "index.html").write_text(
+        head("Privacy & imprint · Future Job Radar", "Privacy policy and imprint of the Future Job Radar.", SITE + "/privacy/", SITE + "/og/home.png")
+        + (web_fonts_css("../") or "")
+        + """<style>body{font-family:Newsreader,Georgia,serif;color:#f3eee3;font-size:18px;line-height:1.6}
+.legal{max-width:720px;margin:0 auto;padding:48px 16px 80px}.legal a{color:#f2c14e}
+.legal h1{font-family:'Big Shoulders Display',Impact,sans-serif;font-weight:900;text-transform:uppercase;font-size:clamp(44px,8vw,72px);line-height:.95;margin:12px 0 6px}
+.legal h2{font-family:'Big Shoulders Display',Impact,sans-serif;font-weight:800;text-transform:uppercase;font-size:28px;margin:36px 0 8px;color:#f2c14e}
+.kicker,.upd{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#a9afc6}
+.kicker a{color:#a9afc6;text-decoration:none}li{margin-bottom:8px}</style>
+</head>
+<body>
+""" + legal + "\n</body>\n</html>\n")
+
     # one share page per job
-    urls = [SITE + "/"]
+    urls = [SITE + "/", SITE + "/privacy/"]
     for j in jobs:
         name, color = SECTOR.get(j["sector"], (j["sector"], GOLD))
         og_image(DOCS / "og" / f"{j['id']}.png", name, j["title"], j["trigger"], year_of(j), color)
