@@ -1,0 +1,5163 @@
+{
+ "meta": {
+  "name": "Future Job Radar",
+  "version": 1,
+  "lastScan": "2026-10-03",
+  "scanNumber": 3,
+  "horizonYears": [
+   2,
+   10
+  ],
+  "baseYear": 2026,
+  "thesis": "Technology is a net job creator. In 1995 nobody was an Uber driver, an Airbnb host or an influencer.",
+  "professions": [
+   {
+    "id": "nurse",
+    "label": "Nurse or carer",
+    "jobs": [
+     "care-team-orchestrator",
+     "tricorder-medic",
+     "aging-in-place-designer",
+     "human-connection-specialist",
+     "exoskeleton-fitter"
+    ]
+   },
+   {
+    "id": "doctor",
+    "label": "Doctor",
+    "jobs": [
+     "ai-diagnosis-navigator",
+     "healthspan-architect",
+     "bci-rehab-trainer",
+     "genome-counselor",
+     "deep-space-crew-counselor"
+    ]
+   },
+   {
+    "id": "driver",
+    "label": "Driver or courier",
+    "jobs": [
+     "autonomous-corridor-conductor",
+     "teleop-avatar-pilot",
+     "cabin-experience-designer",
+     "mobile-room-entrepreneur",
+     "drone-airspace-controller"
+    ]
+   },
+   {
+    "id": "logistics",
+    "label": "Pilot or logistics",
+    "jobs": [
+     "drone-airspace-controller",
+     "autonomous-ship-remote-captain",
+     "robot-fleet-foreman",
+     "debris-recovery-pilot",
+     "machine-economy-accountant"
+    ]
+   },
+   {
+    "id": "teacher",
+    "label": "Teacher or trainer",
+    "jobs": [
+     "ai-tutor-mentor",
+     "field-mission-learning-designer",
+     "household-robot-trainer",
+     "commercial-astronaut-trainer",
+     "kobayashi-maru-designer"
+    ]
+   },
+   {
+    "id": "events",
+    "label": "Event manager",
+    "jobs": [
+     "drone-show-choreographer",
+     "avatar-show-producer",
+     "holodeck-architect",
+     "programmable-money-designer",
+     "orbital-hospitality-host"
+    ]
+   },
+   {
+    "id": "hospitality",
+    "label": "Hotel or hospitality",
+    "jobs": [
+     "orbital-hospitality-host",
+     "cabin-experience-designer",
+     "mobile-room-entrepreneur",
+     "robot-behaviour-designer",
+     "replicator-recipe-designer"
+    ]
+   },
+   {
+    "id": "chef",
+    "label": "Chef or food",
+    "jobs": [
+     "replicator-recipe-designer",
+     "precision-nutrition-chef",
+     "bioreactor-rancher",
+     "space-agronomist"
+    ]
+   },
+   {
+    "id": "farmer",
+    "label": "Farmer",
+    "jobs": [
+     "farm-swarm-operator",
+     "soil-carbon-steward",
+     "harvest-token-broker",
+     "farm-data-cooperative-manager",
+     "robotic-pollination-keeper",
+     "atmospheric-water-farmer"
+    ]
+   },
+   {
+    "id": "finance",
+    "label": "Accountant or banker",
+    "jobs": [
+     "agent-treasury-manager",
+     "machine-economy-accountant",
+     "tokenization-architect",
+     "programmable-money-designer",
+     "agent-reputation-underwriter"
+    ]
+   },
+   {
+    "id": "lawyer",
+    "label": "Lawyer",
+    "jobs": [
+     "on-chain-arbiter",
+     "machine-liability-adjuster",
+     "ai-welfare-officer",
+     "personal-data-trustee",
+     "robot-incident-investigator"
+    ]
+   },
+   {
+    "id": "insurance",
+    "label": "Insurance",
+    "jobs": [
+     "machine-liability-adjuster",
+     "parametric-insurance-designer",
+     "agent-reputation-underwriter",
+     "biological-age-auditor"
+    ]
+   },
+   {
+    "id": "marketing",
+    "label": "Marketing or media",
+    "jobs": [
+     "synthetic-persona-director",
+     "micropayment-pricing-designer",
+     "deepfake-forensics-investigator",
+     "avatar-show-producer",
+     "society-simulation-analyst"
+    ]
+   },
+   {
+    "id": "developer",
+    "label": "Software developer",
+    "jobs": [
+     "agent-fleet-manager",
+     "model-behaviour-auditor",
+     "post-quantum-migrator",
+     "rogue-agent-investigator",
+     "holodeck-architect"
+    ]
+   },
+   {
+    "id": "engineer",
+    "label": "Engineer",
+    "jobs": [
+     "robot-field-mechanic",
+     "infrastructure-precog",
+     "fusion-plant-operator",
+     "microgravity-manufacturing-engineer",
+     "vpp-conductor"
+    ]
+   },
+   {
+    "id": "construction",
+    "label": "Construction",
+    "jobs": [
+     "construction-robot-foreman",
+     "building-printer-operator",
+     "lunar-construction-supervisor",
+     "exoskeleton-fitter",
+     "highway-repurposing-planner"
+    ]
+   },
+   {
+    "id": "manager",
+    "label": "Manager or executive",
+    "jobs": [
+     "autonomous-company-steward",
+     "agent-fleet-manager",
+     "kobayashi-maru-designer",
+     "robot-fleet-foreman",
+     "society-simulation-analyst"
+    ]
+   },
+   {
+    "id": "scientist",
+    "label": "Scientist",
+    "jobs": [
+     "animal-language-interpreter",
+     "de-extinction-ranger",
+     "organ-print-technician",
+     "planetary-defence-analyst",
+     "asteroid-prospector"
+    ]
+   },
+   {
+    "id": "counsellor",
+    "label": "Psychologist or social worker",
+    "jobs": [
+     "human-connection-specialist",
+     "deep-space-crew-counselor",
+     "digital-legacy-curator",
+     "ai-welfare-officer"
+    ]
+   },
+   {
+    "id": "energy",
+    "label": "Energy or utilities",
+    "jobs": [
+     "home-energy-trader",
+     "vpp-conductor",
+     "carbon-removal-verifier",
+     "critical-mineral-recycler",
+     "heat-resilience-officer"
+    ]
+   },
+   {
+    "id": "planner",
+    "label": "Architect or planner",
+    "jobs": [
+     "city-twin-gardener",
+     "highway-repurposing-planner",
+     "aging-in-place-designer",
+     "heat-resilience-officer",
+     "holodeck-architect"
+    ]
+   },
+   {
+    "id": "student",
+    "label": "Student",
+    "jobs": [
+     "agent-fleet-manager",
+     "household-robot-trainer",
+     "tokenization-architect",
+     "commercial-astronaut-trainer",
+     "animal-language-interpreter"
+    ]
+   }
+  ],
+  "cover": "programmable-money-designer"
+ },
+ "scans": [
+  {
+   "number": 1,
+   "date": "2026-10-03",
+   "headline": "First scan: 44 jobs mapped",
+   "summary": "First radar build from analyst reports (WEF, ARK), futurists (Diamandis, Kurzweil, Webb), technologists (Musk, Huang, Altman, Amodei), live markets (Waymo, Optimus, humanoid games) and 40+ sci-fi references.",
+   "newJobs": [
+    "household-robot-trainer",
+    "robot-fleet-foreman",
+    "robot-behaviour-designer",
+    "robot-incident-investigator",
+    "teleop-avatar-pilot",
+    "robot-league-coach",
+    "autonomous-corridor-conductor",
+    "cabin-experience-designer",
+    "highway-repurposing-planner",
+    "mobile-room-entrepreneur",
+    "drone-airspace-controller",
+    "machine-liability-adjuster",
+    "care-team-orchestrator",
+    "human-connection-specialist",
+    "aging-in-place-designer",
+    "digital-legacy-curator",
+    "ai-diagnosis-navigator",
+    "healthspan-architect",
+    "biological-age-auditor",
+    "organ-print-technician",
+    "genome-counselor",
+    "bci-rehab-trainer",
+    "precision-nutrition-chef",
+    "orbital-hospitality-host",
+    "lunar-construction-supervisor",
+    "debris-recovery-pilot",
+    "constellation-choreographer",
+    "space-agronomist",
+    "microgravity-manufacturing-engineer",
+    "construction-robot-foreman",
+    "building-printer-operator",
+    "city-twin-gardener",
+    "exoskeleton-fitter",
+    "agent-fleet-manager",
+    "synthetic-persona-director",
+    "agent-commerce-broker",
+    "model-behaviour-auditor",
+    "personal-data-trustee",
+    "post-quantum-migrator",
+    "fusion-plant-operator",
+    "home-energy-trader",
+    "carbon-removal-verifier",
+    "heat-resilience-officer",
+    "vpp-conductor"
+   ],
+   "moved": []
+  },
+  {
+   "number": 2,
+   "date": "2026-10-03",
+   "headline": "Star Trek scan: 22 new jobs from Starfleet and beyond",
+   "summary": "A deep dive into Star Trek, from Starfleet Academy (2026) to the holodeck, tricorder, replicator and Counselor Troi, plus Jurassic Park, Dune, Star Wars, Foundation and Minority Report. Matched with signals such as DeepMind's Genie 3, Project CETI, the 2025 Chemistry Nobel and Colossal's dire wolves.",
+   "newJobs": [
+    "ai-tutor-mentor",
+    "field-mission-learning-designer",
+    "kobayashi-maru-designer",
+    "holodeck-architect",
+    "animal-language-interpreter",
+    "tricorder-medic",
+    "deep-space-crew-counselor",
+    "replicator-recipe-designer",
+    "commercial-astronaut-trainer",
+    "autonomous-ship-remote-captain",
+    "asteroid-prospector",
+    "planetary-defence-analyst",
+    "critical-mineral-recycler",
+    "ai-welfare-officer",
+    "atmospheric-water-farmer",
+    "de-extinction-ranger",
+    "infrastructure-precog",
+    "deepfake-forensics-investigator",
+    "society-simulation-analyst",
+    "drone-show-choreographer",
+    "avatar-show-producer",
+    "robot-field-mechanic"
+   ],
+   "moved": []
+  },
+  {
+   "number": 3,
+   "date": "2026-10-03",
+   "headline": "Money at machine speed: finance and farming join the radar",
+   "summary": "AI agents now pay over stablecoin rails in seconds for fractions of a cent (x402, Google AP2, Visa and Mastercard agent payments, $315B in stablecoins, $39B in tokenized assets). Remixed with Snow Crash, Daemon, Nosedive, Interstellar's robot combines and The Ministry for the Future's carbon coin.",
+   "newJobs": [
+    "agent-treasury-manager",
+    "micropayment-pricing-designer",
+    "machine-economy-accountant",
+    "rogue-agent-investigator",
+    "on-chain-arbiter",
+    "tokenization-architect",
+    "micro-owner-community-manager",
+    "programmable-money-designer",
+    "agent-reputation-underwriter",
+    "autonomous-company-steward",
+    "farm-swarm-operator",
+    "parametric-insurance-designer",
+    "harvest-token-broker",
+    "soil-carbon-steward",
+    "robotic-pollination-keeper",
+    "farm-data-cooperative-manager",
+    "bioreactor-rancher"
+   ],
+   "moved": []
+  }
+ ],
+ "jobs": [
+  {
+   "id": "household-robot-trainer",
+   "title": "Household Robot Trainer",
+   "sector": "robotics",
+   "horizon": 3,
+   "drivers": {
+    "ai": 0.3,
+    "robotics": 0.7,
+    "autonomy": 0,
+    "bio": 0,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When humanoids arrive in ordinary homes, every family has its own way of folding shirts.",
+   "what": "Visits homes and teaches a new robot the household's routines, rules and no-go zones, then signs off a safe 'house profile'.",
+   "day": "Three onboardings a day: a robot learns where the dog sleeps, that grandma's tea comes before 7, and never to open the study.",
+   "skills": [
+    "Demonstration teaching",
+    "Home safety",
+    "Patience with people and machines"
+   ],
+   "signals": [
+    {
+     "type": "analyst",
+     "who": "ARK Invest · Big Ideas 2026",
+     "claim": "One household humanoid could turn about $62,000 a year of unpaid home labour into measurable GDP.",
+     "url": "https://www.itiger.com/hant/news/1156793142"
+    },
+    {
+     "type": "futurist",
+     "who": "Peter Diamandis · Moonshots",
+     "claim": "Humanoid robots will move from factories into homes within a few years.",
+     "url": "https://johnkoetsier.com/?p=37020"
+    },
+    {
+     "type": "entrepreneur",
+     "who": "Elon Musk · Tesla",
+     "claim": "Optimus Gen 3 enters production in 2026, with hundreds of thousands of units targeted by 2030.",
+     "url": "https://www.greendrive-accessories.com/blog/language/en/tesla-optimus-gen3/"
+    },
+    {
+     "type": "market",
+     "who": "Unitree",
+     "claim": "Small humanoid robots now sell from about $16,000."
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Robot & Frank",
+     "year": 2012,
+     "kind": "film",
+     "echo": "A care robot slowly learns one man's habits and quirks."
+    },
+    {
+     "title": "I, Robot",
+     "year": 2004,
+     "kind": "film",
+     "echo": "Household robots are standard and need to fit human routines."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "stable",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 3
+    }
+   ]
+  },
+  {
+   "id": "robot-fleet-foreman",
+   "title": "Humanoid Fleet Foreman",
+   "sector": "robotics",
+   "horizon": 3,
+   "drivers": {
+    "ai": 0.2,
+    "robotics": 0.8,
+    "autonomy": 0,
+    "bio": 0,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When factories and warehouses run 50 humanoids per shift, someone has to run the shift.",
+   "what": "Leads a mixed team of humans and humanoid robots: assigns tasks, handles exceptions and decides when a human steps in.",
+   "day": "Re-plans the night shift after three robots flag the same jammed pallet, then coaches the team's newest model.",
+   "skills": [
+    "Operations",
+    "Robot telemetry",
+    "Shift leadership"
+   ],
+   "signals": [
+    {
+     "type": "market",
+     "who": "Figure AI × BMW",
+     "claim": "Humanoid robots were piloted on the BMW Spartanburg production line."
+    },
+    {
+     "type": "entrepreneur",
+     "who": "Elon Musk · Tesla",
+     "claim": "Optimus Gen 3 enters production in 2026, with hundreds of thousands of units targeted by 2030.",
+     "url": "https://www.greendrive-accessories.com/blog/language/en/tesla-optimus-gen3/"
+    },
+    {
+     "type": "engineer",
+     "who": "Jensen Huang · NVIDIA",
+     "claim": "Calls physical AI, robots that understand the real world, the next wave of AI."
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Westworld",
+     "year": 2016,
+     "kind": "series",
+     "echo": "Technicians manage dozens of hosts behind the scenes."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "stable",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 3
+    }
+   ]
+  },
+  {
+   "id": "robot-behaviour-designer",
+   "title": "Robot Behaviour Designer",
+   "sector": "robotics",
+   "horizon": 4,
+   "drivers": {
+    "ai": 0.5,
+    "robotics": 0.5,
+    "autonomy": 0,
+    "bio": 0,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When robots share sidewalks, kitchens and lifts with us, manners become a product feature.",
+   "what": "Designs how a robot moves, pauses, makes eye contact and apologises, so people trust it and feel at ease around it.",
+   "day": "Tunes how close a delivery bot passes a pram and how a care robot says 'I don't know'.",
+   "skills": [
+    "Interaction design",
+    "Psychology",
+    "Motion choreography"
+   ],
+   "signals": [
+    {
+     "type": "engineer",
+     "who": "Jensen Huang · NVIDIA",
+     "claim": "Calls physical AI, robots that understand the real world, the next wave of AI."
+    },
+    {
+     "type": "futurist",
+     "who": "Peter Diamandis · Moonshots",
+     "claim": "Humanoid robots will move from factories into homes within a few years.",
+     "url": "https://johnkoetsier.com/?p=37020"
+    },
+    {
+     "type": "entrepreneur",
+     "who": "Elon Musk · Tesla",
+     "claim": "Predicts humanoid robots will eventually outnumber humans.",
+     "url": "https://qz.com/elon-musk-tesla-optimus-robots-outnumber-humans-1851683997"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Westworld",
+     "year": 2016,
+     "kind": "series",
+     "echo": "Narrative and behaviour designers script how hosts act."
+    },
+    {
+     "title": "Interstellar",
+     "year": 2014,
+     "kind": "film",
+     "echo": "TARS has adjustable honesty and humour settings."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "stable",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 4
+    }
+   ]
+  },
+  {
+   "id": "robot-incident-investigator",
+   "title": "Robot Incident Investigator",
+   "sector": "robotics",
+   "horizon": 5,
+   "drivers": {
+    "ai": 0.4,
+    "robotics": 0.6,
+    "autonomy": 0,
+    "bio": 0,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When millions of robots act in the physical world, accidents need a forensic answer.",
+   "what": "Reconstructs what a robot saw, decided and did before an incident, for insurers, courts and manufacturers.",
+   "day": "Replays sensor logs frame by frame to show why a warehouse arm misjudged a human's reach.",
+   "skills": [
+    "Data forensics",
+    "Robotics",
+    "Expert witness skills"
+   ],
+   "signals": [
+    {
+     "type": "entrepreneur",
+     "who": "Elon Musk · Tesla",
+     "claim": "Predicts humanoid robots will eventually outnumber humans.",
+     "url": "https://qz.com/elon-musk-tesla-optimus-robots-outnumber-humans-1851683997"
+    },
+    {
+     "type": "strategist",
+     "who": "EU AI Act",
+     "claim": "Risk assessments and audits for high-risk AI systems phase in between 2025 and 2027."
+    },
+    {
+     "type": "engineer",
+     "who": "Jensen Huang · NVIDIA",
+     "claim": "Calls physical AI, robots that understand the real world, the next wave of AI."
+    }
+   ],
+   "scifi": [
+    {
+     "title": "I, Robot",
+     "year": 2004,
+     "kind": "film",
+     "echo": "A detective investigates whether a robot could break its rules."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "stable",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 5
+    }
+   ]
+  },
+  {
+   "id": "teleop-avatar-pilot",
+   "title": "Robot Avatar Pilot",
+   "sector": "robotics",
+   "horizon": 2,
+   "drivers": {
+    "ai": 0.3,
+    "robotics": 0.7,
+    "autonomy": 0,
+    "bio": 0,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When robots get stuck on the 1% of tasks they can't solve, a human takes over remotely.",
+   "what": "Remotely steps into robots anywhere in the world to finish tricky tasks and, in doing so, teaches them the move.",
+   "day": "Morning in a Tokyo hotel's laundry, lunch on an oil rig, afternoon at a care home, all from one chair in Cape Town.",
+   "skills": [
+    "VR control",
+    "Fine motor skills",
+    "Fast context switching"
+   ],
+   "signals": [
+    {
+     "type": "market",
+     "who": "Humanoid training data",
+     "claim": "Robot makers hire operators in motion-capture suits to teach robots tasks by demonstration."
+    },
+    {
+     "type": "entrepreneur",
+     "who": "Elon Musk · Tesla",
+     "claim": "Optimus Gen 3 enters production in 2026, with hundreds of thousands of units targeted by 2030.",
+     "url": "https://www.greendrive-accessories.com/blog/language/en/tesla-optimus-gen3/"
+    },
+    {
+     "type": "engineer",
+     "who": "Jensen Huang · NVIDIA",
+     "claim": "Calls physical AI, robots that understand the real world, the next wave of AI."
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Avatar",
+     "year": 2009,
+     "kind": "film",
+     "echo": "Operators live through remote bodies."
+    },
+    {
+     "title": "Surrogates",
+     "year": 2009,
+     "kind": "film",
+     "echo": "People work through robotic stand-ins."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "stable",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 2
+    }
+   ]
+  },
+  {
+   "id": "robot-league-coach",
+   "title": "Robot Sports Coach",
+   "sector": "robotics",
+   "horizon": 4,
+   "drivers": {
+    "ai": 0.2,
+    "robotics": 0.8,
+    "autonomy": 0,
+    "bio": 0,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When humanoids are good enough to play, robot sport becomes entertainment.",
+   "what": "Trains, tunes and strategises robot athletes for leagues in football, boxing and racing.",
+   "day": "Analyses rival bots' gait data before Saturday's match and rewrites the defensive play.",
+   "skills": [
+    "Sports analytics",
+    "Reinforcement learning",
+    "Showmanship"
+   ],
+   "signals": [
+    {
+     "type": "market",
+     "who": "World Humanoid Robot Games · Beijing 2025",
+     "claim": "Humanoids competed in running, boxing and football in front of paying crowds."
+    },
+    {
+     "type": "market",
+     "who": "Unitree",
+     "claim": "Small humanoid robots now sell from about $16,000."
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Real Steel",
+     "year": 2011,
+     "kind": "film",
+     "echo": "A former boxer coaches a fighting robot."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "stable",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 4
+    }
+   ]
+  },
+  {
+   "id": "autonomous-corridor-conductor",
+   "title": "Autonomous Corridor Conductor",
+   "sector": "mobility",
+   "horizon": 5,
+   "drivers": {
+    "ai": 0.2,
+    "robotics": 0,
+    "autonomy": 0.8,
+    "bio": 0,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When most cars on the motorway drive themselves, traffic becomes a choreography, not a jam.",
+   "what": "Orchestrates speed, spacing and lane allocation for whole highway corridors of self-driving cars and trucks.",
+   "day": "Opens an express platoon lane for freight at 2 am and reroutes 40,000 cars around a storm in seconds.",
+   "skills": [
+    "Traffic systems",
+    "Real-time optimisation",
+    "Crisis response"
+   ],
+   "signals": [
+    {
+     "type": "market",
+     "who": "Waymo",
+     "claim": "About 500,000 paid driverless rides per week across 10 US cities, aiming for 1M a week by end of 2026.",
+     "url": "https://noqta.tn/en/news/waymo-500k-weekly-rides-robotaxi-10-cities-2026"
+    },
+    {
+     "type": "market",
+     "who": "Aurora",
+     "claim": "Driverless trucks began commercial runs on Texas highways in 2025."
+    },
+    {
+     "type": "analyst",
+     "who": "ARK Invest · Big Ideas 2026",
+     "claim": "Robotaxi cost per mile could fall to about $0.25 by 2035, against about $2.80 for a human-driven ride.",
+     "url": "https://www.itiger.com/hant/news/1156793142"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Minority Report",
+     "year": 2002,
+     "kind": "film",
+     "echo": "Autonomous cars glide in coordinated vertical lanes."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "stable",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 5
+    }
+   ]
+  },
+  {
+   "id": "cabin-experience-designer",
+   "title": "Robotaxi Cabin Designer",
+   "sector": "mobility",
+   "horizon": 3,
+   "drivers": {
+    "ai": 0.3,
+    "robotics": 0,
+    "autonomy": 0.7,
+    "bio": 0,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When nobody steers, the car becomes a room on wheels.",
+   "what": "Designs the inside of driverless vehicles as offices, lounges, sleep pods or kids' spaces, and the services in them.",
+   "day": "Tests a 'focus cabin' for a 40-minute commute: light, sound and a coffee handed in at a red light.",
+   "skills": [
+    "Interior design",
+    "Service design",
+    "Hospitality"
+   ],
+   "signals": [
+    {
+     "type": "market",
+     "who": "Zoox",
+     "claim": "Purpose-built robotaxi with no steering wheel and face-to-face seats, carrying public riders since 2025."
+    },
+    {
+     "type": "market",
+     "who": "Waymo",
+     "claim": "About 500,000 paid driverless rides per week across 10 US cities, aiming for 1M a week by end of 2026.",
+     "url": "https://noqta.tn/en/news/waymo-500k-weekly-rides-robotaxi-10-cities-2026"
+    },
+    {
+     "type": "analyst",
+     "who": "ARK Invest · Big Ideas 2026",
+     "claim": "Robotaxi cost per mile could fall to about $0.25 by 2035, against about $2.80 for a human-driven ride.",
+     "url": "https://www.itiger.com/hant/news/1156793142"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Minority Report",
+     "year": 2002,
+     "kind": "film",
+     "echo": "Personal pods replace the classic car interior."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "stable",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 3
+    }
+   ]
+  },
+  {
+   "id": "highway-repurposing-planner",
+   "title": "Road Space Re-Planner",
+   "sector": "mobility",
+   "horizon": 7,
+   "drivers": {
+    "ai": 0,
+    "robotics": 0,
+    "autonomy": 0.8,
+    "bio": 0,
+    "space": 0,
+    "energy": 0.2,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When robotaxis cut parking demand, cities suddenly own a lot of empty asphalt.",
+   "what": "Turns freed-up parking, lanes and garages into parks, housing, solar farms and logistics hubs.",
+   "day": "Converts a 6-storey parking garage into vertical farms and flats.",
+   "skills": [
+    "Urban planning",
+    "Mobility data",
+    "Community engagement"
+   ],
+   "signals": [
+    {
+     "type": "analyst",
+     "who": "ARK Invest · Big Ideas 2026",
+     "claim": "Robotaxi cost per mile could fall to about $0.25 by 2035, against about $2.80 for a human-driven ride.",
+     "url": "https://www.itiger.com/hant/news/1156793142"
+    },
+    {
+     "type": "market",
+     "who": "Waymo",
+     "claim": "About 500,000 paid driverless rides per week across 10 US cities, aiming for 1M a week by end of 2026.",
+     "url": "https://noqta.tn/en/news/waymo-500k-weekly-rides-robotaxi-10-cities-2026"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Her",
+     "year": 2013,
+     "kind": "film",
+     "echo": "A near-future city with calm, car-light streets."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "stable",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 7
+    }
+   ]
+  },
+  {
+   "id": "mobile-room-entrepreneur",
+   "title": "Rolling Venue Operator",
+   "sector": "mobility",
+   "horizon": 6,
+   "drivers": {
+    "ai": 0.2,
+    "robotics": 0,
+    "autonomy": 0.8,
+    "bio": 0,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When vehicles drive themselves, the service can come to you.",
+   "what": "Runs a fleet of driverless pods as mobile spas, clinics, gyms or meeting rooms that book themselves to the customer.",
+   "day": "Sends the massage pod to a client's office at 12:15, then on to an airport transfer.",
+   "skills": [
+    "Entrepreneurship",
+    "Fleet logistics",
+    "Hospitality"
+   ],
+   "signals": [
+    {
+     "type": "market",
+     "who": "Zoox",
+     "claim": "Purpose-built robotaxi with no steering wheel and face-to-face seats, carrying public riders since 2025."
+    },
+    {
+     "type": "analyst",
+     "who": "ARK Invest · Big Ideas 2026",
+     "claim": "Robotaxi cost per mile could fall to about $0.25 by 2035, against about $2.80 for a human-driven ride.",
+     "url": "https://www.itiger.com/hant/news/1156793142"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "The Fifth Element",
+     "year": 1997,
+     "kind": "film",
+     "echo": "Flying vehicles that bring food and services to your window."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "stable",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 6
+    }
+   ]
+  },
+  {
+   "id": "drone-airspace-controller",
+   "title": "Low-Altitude Air Controller",
+   "sector": "mobility",
+   "horizon": 3,
+   "drivers": {
+    "ai": 0.3,
+    "robotics": 0,
+    "autonomy": 0.7,
+    "bio": 0,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When drones and air taxis fill the sky below 300 metres, it needs a traffic tower.",
+   "what": "Monitors and manages swarms of delivery drones and eVTOL air taxis over cities.",
+   "day": "Clears a corridor for a medical drone across 600 parcel flights during rush hour.",
+   "skills": [
+    "Air traffic control",
+    "Drone systems",
+    "Situational awareness"
+   ],
+   "signals": [
+    {
+     "type": "strategist",
+     "who": "China · Low-altitude economy",
+     "claim": "Beijing named drones and eVTOL air taxis a strategic growth industry in 2024."
+    },
+    {
+     "type": "market",
+     "who": "Zipline",
+     "claim": "Autonomous drones have completed over a million deliveries."
+    }
+   ],
+   "scifi": [
+    {
+     "title": "The Fifth Element",
+     "year": 1997,
+     "kind": "film",
+     "echo": "Layered sky traffic between skyscrapers."
+    },
+    {
+     "title": "Blade Runner 2049",
+     "year": 2017,
+     "kind": "film",
+     "echo": "Spinners move through dense urban airspace."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "stable",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 3
+    }
+   ]
+  },
+  {
+   "id": "machine-liability-adjuster",
+   "title": "Machine Liability Adjuster",
+   "sector": "mobility",
+   "horizon": 4,
+   "drivers": {
+    "ai": 0.4,
+    "robotics": 0,
+    "autonomy": 0.6,
+    "bio": 0,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When the driver is software, blame shifts from people to code, fleets and makers.",
+   "what": "Settles claims where autonomous vehicles or robots are involved, splitting liability between maker, operator and software.",
+   "day": "Reviews a robotaxi collision with a delivery drone and allocates fault in an afternoon.",
+   "skills": [
+    "Insurance",
+    "Tech literacy",
+    "Negotiation"
+   ],
+   "signals": [
+    {
+     "type": "market",
+     "who": "Waymo",
+     "claim": "About 500,000 paid driverless rides per week across 10 US cities, aiming for 1M a week by end of 2026.",
+     "url": "https://noqta.tn/en/news/waymo-500k-weekly-rides-robotaxi-10-cities-2026"
+    },
+    {
+     "type": "market",
+     "who": "Aurora",
+     "claim": "Driverless trucks began commercial runs on Texas highways in 2025."
+    },
+    {
+     "type": "strategist",
+     "who": "EU AI Act",
+     "claim": "Risk assessments and audits for high-risk AI systems phase in between 2025 and 2027."
+    }
+   ],
+   "scifi": [
+    {
+     "title": "I, Robot",
+     "year": 2004,
+     "kind": "film",
+     "echo": "Society struggles with responsibility for robot actions."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "stable",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 4
+    }
+   ]
+  },
+  {
+   "id": "care-team-orchestrator",
+   "title": "Care-Bot Team Lead",
+   "sector": "care",
+   "horizon": 3,
+   "drivers": {
+    "ai": 0.4,
+    "robotics": 0.6,
+    "autonomy": 0,
+    "bio": 0,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When care robots lift, fetch and remind, nurses become leaders of human-robot teams.",
+   "what": "A nurse who leads a ward's robots: delegating lifting, logistics and night rounds, while keeping the human care.",
+   "day": "Hands the 3 am vital checks to two robots and spends that time with a frightened new patient.",
+   "skills": [
+    "Nursing",
+    "Robot supervision",
+    "Empathy"
+   ],
+   "signals": [
+    {
+     "type": "economist",
+     "who": "World Economic Forum · Future of Jobs 2025",
+     "claim": "Care roles such as nursing and personal care are among the largest absolute job gains to 2030.",
+     "url": "https://www.weforum.org/reports/the-future-of-jobs-report-2025/in-full/2-jobs-outlook/"
+    },
+    {
+     "type": "economist",
+     "who": "Japan · Ageing society",
+     "claim": "Japan faces a large care-worker shortfall and subsidises care-robot adoption."
+    },
+    {
+     "type": "analyst",
+     "who": "ARK Invest · Big Ideas 2026",
+     "claim": "One household humanoid could turn about $62,000 a year of unpaid home labour into measurable GDP.",
+     "url": "https://www.itiger.com/hant/news/1156793142"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Big Hero 6",
+     "year": 2014,
+     "kind": "film",
+     "echo": "A soft care robot built to look after people."
+    },
+    {
+     "title": "Robot & Frank",
+     "year": 2012,
+     "kind": "film",
+     "echo": "A robot carer supports an older man at home."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "stable",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 3
+    }
+   ]
+  },
+  {
+   "id": "human-connection-specialist",
+   "title": "Human Connection Prescriber",
+   "sector": "care",
+   "horizon": 3,
+   "drivers": {
+    "ai": 0.6,
+    "robotics": 0.4,
+    "autonomy": 0,
+    "bio": 0,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When machines handle tasks, real human presence becomes the scarce, valuable thing.",
+   "what": "Prescribed by doctors to fight loneliness: matches people to communities, mentors and shared activities, and shows up in person.",
+   "day": "Introduces a widower to a weekly surf group and checks that his AI companion isn't his only friend.",
+   "skills": [
+    "Social work",
+    "Community building",
+    "Active listening"
+   ],
+   "signals": [
+    {
+     "type": "scientist",
+     "who": "WHO Commission on Social Connection",
+     "claim": "WHO calls loneliness a pressing global health threat."
+    },
+    {
+     "type": "economist",
+     "who": "World Economic Forum · Future of Jobs 2025",
+     "claim": "Care roles such as nursing and personal care are among the largest absolute job gains to 2030.",
+     "url": "https://www.weforum.org/reports/the-future-of-jobs-report-2025/in-full/2-jobs-outlook/"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Her",
+     "year": 2013,
+     "kind": "film",
+     "echo": "A man grows closer to his AI than to any person."
+    },
+    {
+     "title": "Black Mirror",
+     "year": 2011,
+     "kind": "series",
+     "echo": "Recurring stories about technology replacing human closeness."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "stable",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 3
+    }
+   ]
+  },
+  {
+   "id": "aging-in-place-designer",
+   "title": "Ageing-at-Home Architect",
+   "sector": "care",
+   "horizon": 4,
+   "drivers": {
+    "ai": 0.5,
+    "robotics": 0.5,
+    "autonomy": 0,
+    "bio": 0,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When robots and sensors make it possible to stay at home until 95, homes need re-planning.",
+   "what": "Redesigns homes with sensors, robot pathways and AI routines so older people can live independently for longer.",
+   "day": "Plans a robot-friendly kitchen and a fall-detecting floor for an 88-year-old.",
+   "skills": [
+    "Architecture",
+    "Gerontology",
+    "Smart home tech"
+   ],
+   "signals": [
+    {
+     "type": "economist",
+     "who": "Japan · Ageing society",
+     "claim": "Japan faces a large care-worker shortfall and subsidises care-robot adoption."
+    },
+    {
+     "type": "analyst",
+     "who": "ARK Invest · Big Ideas 2026",
+     "claim": "One household humanoid could turn about $62,000 a year of unpaid home labour into measurable GDP.",
+     "url": "https://www.itiger.com/hant/news/1156793142"
+    },
+    {
+     "type": "futurist",
+     "who": "Peter Diamandis · Moonshots",
+     "claim": "Humanoid robots will move from factories into homes within a few years.",
+     "url": "https://johnkoetsier.com/?p=37020"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Robot & Frank",
+     "year": 2012,
+     "kind": "film",
+     "echo": "An older man stays at home thanks to a robot."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "stable",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 4
+    }
+   ]
+  },
+  {
+   "id": "digital-legacy-curator",
+   "title": "Digital Legacy Curator",
+   "sector": "care",
+   "horizon": 3,
+   "drivers": {
+    "ai": 1.0,
+    "robotics": 0,
+    "autonomy": 0,
+    "bio": 0,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When AI can talk in the voice of someone who died, families need help with the boundaries.",
+   "what": "Helps people prepare, manage or retire AI versions of loved ones, ethically and with consent.",
+   "day": "Sets rules for a mother's avatar: birthday messages yes, voting advice no.",
+   "skills": [
+    "Grief counselling",
+    "AI ethics",
+    "Data rights"
+   ],
+   "signals": [
+    {
+     "type": "scientist",
+     "who": "University of Cambridge · LCFI (2024)",
+     "claim": "Researchers warned about AI \"deadbots\" trained on the messages of people who died."
+    },
+    {
+     "type": "strategist",
+     "who": "EU Data Governance Act",
+     "claim": "Creates a legal framework for data intermediaries that manage data on people's behalf."
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Black Mirror · Be Right Back",
+     "year": 2013,
+     "kind": "series",
+     "echo": "A widow uses an AI rebuilt from her partner's messages."
+    },
+    {
+     "title": "Upload",
+     "year": 2020,
+     "kind": "series",
+     "echo": "Digital afterlife with human 'angels' as service staff."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "stable",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 3
+    }
+   ]
+  },
+  {
+   "id": "ai-diagnosis-navigator",
+   "title": "AI Diagnosis Navigator",
+   "sector": "health",
+   "horizon": 2,
+   "drivers": {
+    "ai": 0.8,
+    "robotics": 0,
+    "autonomy": 0,
+    "bio": 0.2,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When AI gives a diagnosis in seconds, patients need a human to translate and decide.",
+   "what": "Sits between patient, doctor and several medical AIs: checks the reasoning, explains options and catches errors.",
+   "day": "Explains to a patient why two AIs disagree on a scan and arranges the deciding test.",
+   "skills": [
+    "Clinical knowledge",
+    "AI literacy",
+    "Communication"
+   ],
+   "signals": [
+    {
+     "type": "technologist",
+     "who": "Dario Amodei · Machines of Loving Grace",
+     "claim": "AI could compress 50 to 100 years of biological progress into 5 to 10 years."
+    },
+    {
+     "type": "economist",
+     "who": "World Economic Forum · Future of Jobs 2025",
+     "claim": "Big-data, AI and machine-learning specialists are among the fastest-growing roles to 2030.",
+     "url": "https://www.weforum.org/reports/the-future-of-jobs-report-2025/in-full/2-jobs-outlook/"
+    },
+    {
+     "type": "futurist",
+     "who": "Moonshots EP 217 · 2026 Predictions",
+     "claim": "AI automates knowledge work, autonomous robots scale, AI-run companies appear.",
+     "url": "https://podcast.app/2026-predictions-ai-automates-knowledge-work-autonomous-robots-ai-ceo-billionaires-ep-217-e435976459"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Star Trek: Voyager",
+     "year": 1995,
+     "kind": "series",
+     "echo": "An AI doctor runs sickbay alongside the crew."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "stable",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 2
+    }
+   ]
+  },
+  {
+   "id": "healthspan-architect",
+   "title": "Healthspan Architect",
+   "sector": "health",
+   "horizon": 3,
+   "drivers": {
+    "ai": 0.2,
+    "robotics": 0,
+    "autonomy": 0,
+    "bio": 0.8,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When we can measure ageing, people want a plan to slow it down.",
+   "what": "Builds a personal longevity plan from genome, blood, wearables and AI models, and adjusts it every month.",
+   "day": "Reviews a client's quarterly biomarkers and changes sleep, training and supplements.",
+   "skills": [
+    "Medicine",
+    "Data analysis",
+    "Coaching"
+   ],
+   "signals": [
+    {
+     "type": "futurist",
+     "who": "Ray Kurzweil",
+     "claim": "Expects \"longevity escape velocity\", where science adds more than a year of life per year, around the early 2030s."
+    },
+    {
+     "type": "analyst",
+     "who": "ARK Invest · Big Ideas 2026",
+     "claim": "A genome could cost about $10 to sequence by 2030; AI could cut drug development from 13 to 8 years.",
+     "url": "https://www.itiger.com/hant/news/1156793142"
+    },
+    {
+     "type": "scientist",
+     "who": "Epigenetic clocks",
+     "claim": "Biological-age tests from blood or saliva are already sold direct to consumers."
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Altered Carbon",
+     "year": 2018,
+     "kind": "series",
+     "echo": "The rich buy longer and longer lives."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "stable",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 3
+    }
+   ]
+  },
+  {
+   "id": "biological-age-auditor",
+   "title": "Biological Age Auditor",
+   "sector": "health",
+   "horizon": 6,
+   "drivers": {
+    "ai": 0,
+    "robotics": 0,
+    "autonomy": 0,
+    "bio": 1.0,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When biological age is easy to test, insurers, pilots and athletes will be judged by it.",
+   "what": "Certifies a person's biological age for insurance, pensions or high-risk jobs, and fights fraud.",
+   "day": "Checks a 52-year-old's results that claim a body of 38, and flags a tampered sample.",
+   "skills": [
+    "Lab science",
+    "Regulation",
+    "Ethics"
+   ],
+   "signals": [
+    {
+     "type": "scientist",
+     "who": "Epigenetic clocks",
+     "claim": "Biological-age tests from blood or saliva are already sold direct to consumers."
+    },
+    {
+     "type": "futurist",
+     "who": "Ray Kurzweil",
+     "claim": "Expects \"longevity escape velocity\", where science adds more than a year of life per year, around the early 2030s."
+    },
+    {
+     "type": "analyst",
+     "who": "ARK Invest · Big Ideas 2026",
+     "claim": "A genome could cost about $10 to sequence by 2030; AI could cut drug development from 13 to 8 years.",
+     "url": "https://www.itiger.com/hant/news/1156793142"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Gattaca",
+     "year": 1997,
+     "kind": "film",
+     "echo": "Biology decides who gets which job."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "stable",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 6
+    }
+   ]
+  },
+  {
+   "id": "organ-print-technician",
+   "title": "Organ Print Technician",
+   "sector": "health",
+   "horizon": 8,
+   "drivers": {
+    "ai": 0.1,
+    "robotics": 0,
+    "autonomy": 0,
+    "bio": 0.9,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When organs can be printed from your own cells, transplant waiting lists shrink.",
+   "what": "Runs bioprinters that build tissue and organs, and checks they are ready for surgery.",
+   "day": "Prints a test kidney patch, monitors cell growth overnight and prepares the surgery handover.",
+   "skills": [
+    "Bioengineering",
+    "Sterile lab work",
+    "Quality control"
+   ],
+   "signals": [
+    {
+     "type": "scientist",
+     "who": "ARPA-H · PRINT programme",
+     "claim": "US funding to bioprint transplantable organs from a patient's own cells."
+    },
+    {
+     "type": "technologist",
+     "who": "Dario Amodei · Machines of Loving Grace",
+     "claim": "AI could compress 50 to 100 years of biological progress into 5 to 10 years."
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Elysium",
+     "year": 2013,
+     "kind": "film",
+     "echo": "Med-bays rebuild human bodies in minutes."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "stable",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 8
+    }
+   ]
+  },
+  {
+   "id": "genome-counselor",
+   "title": "Personal Genome Counselor",
+   "sector": "health",
+   "horizon": 4,
+   "drivers": {
+    "ai": 0.1,
+    "robotics": 0,
+    "autonomy": 0,
+    "bio": 0.9,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When a full genome costs $10, everyone gets one, and needs help reading it.",
+   "what": "Explains genetic results, risks and gene-therapy options in plain language and helps families make decisions.",
+   "day": "Walks a couple through embryo screening results and what they do not show.",
+   "skills": [
+    "Genetics",
+    "Counselling",
+    "Ethics"
+   ],
+   "signals": [
+    {
+     "type": "analyst",
+     "who": "ARK Invest · Big Ideas 2026",
+     "claim": "A genome could cost about $10 to sequence by 2030; AI could cut drug development from 13 to 8 years.",
+     "url": "https://www.itiger.com/hant/news/1156793142"
+    },
+    {
+     "type": "technologist",
+     "who": "Dario Amodei · Machines of Loving Grace",
+     "claim": "AI could compress 50 to 100 years of biological progress into 5 to 10 years."
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Gattaca",
+     "year": 1997,
+     "kind": "film",
+     "echo": "Genetic profiling from birth."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "stable",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 4
+    }
+   ]
+  },
+  {
+   "id": "bci-rehab-trainer",
+   "title": "Brain-Interface Rehab Trainer",
+   "sector": "health",
+   "horizon": 6,
+   "drivers": {
+    "ai": 0.4,
+    "robotics": 0,
+    "autonomy": 0,
+    "bio": 0.6,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When brain implants restore movement and speech, patients need to learn to use them.",
+   "what": "Trains people with neural implants to control computers, prosthetics and speech devices, and tunes the decoder.",
+   "day": "Helps a patient type 40 words a minute by thought, then calibrates a new robotic arm.",
+   "skills": [
+    "Neuroscience",
+    "Physiotherapy",
+    "Signal processing"
+   ],
+   "signals": [
+    {
+     "type": "scientist",
+     "who": "Neuralink",
+     "claim": "Human brain-computer interface implants since 2024 let paralysed patients control computers by thought."
+    },
+    {
+     "type": "futurist",
+     "who": "Amy Webb · Future Today Institute",
+     "claim": "Describes \"living intelligence\": AI converging with sensors and biotechnology."
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Upgrade",
+     "year": 2018,
+     "kind": "film",
+     "echo": "An implant restores a paralysed man's movement."
+    },
+    {
+     "title": "Star Trek: The Next Generation",
+     "year": 1987,
+     "kind": "series",
+     "echo": "Geordi's VISOR restores sight through technology."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "stable",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 6
+    }
+   ]
+  },
+  {
+   "id": "precision-nutrition-chef",
+   "title": "Precision Nutrition Chef",
+   "sector": "food",
+   "horizon": 4,
+   "drivers": {
+    "ai": 0.3,
+    "robotics": 0,
+    "autonomy": 0,
+    "bio": 0.7,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When your microbiome and glucose data are known, the 'right' meal becomes personal.",
+   "what": "Cooks meals tuned to each guest's biology, using live data from wearables and gut tests.",
+   "day": "Plans a dinner for eight where every plate differs slightly in carbs, fibre and timing.",
+   "skills": [
+    "Culinary arts",
+    "Nutrition science",
+    "Data reading"
+   ],
+   "signals": [
+    {
+     "type": "scientist",
+     "who": "NIH · Nutrition for Precision Health",
+     "claim": "Large study of why individuals respond differently to the same food."
+    },
+    {
+     "type": "analyst",
+     "who": "ARK Invest · Big Ideas 2026",
+     "claim": "A genome could cost about $10 to sequence by 2030; AI could cut drug development from 13 to 8 years.",
+     "url": "https://www.itiger.com/hant/news/1156793142"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Star Trek",
+     "year": 1966,
+     "kind": "series",
+     "echo": "Replicators make food to any specification."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "stable",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 4
+    }
+   ]
+  },
+  {
+   "id": "orbital-hospitality-host",
+   "title": "Orbital Hospitality Host",
+   "sector": "space",
+   "horizon": 7,
+   "drivers": {
+    "ai": 0,
+    "robotics": 0.1,
+    "autonomy": 0,
+    "bio": 0,
+    "space": 0.9,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When launch costs crash, tourists and researchers stay in orbit for weeks.",
+   "what": "Runs guest experience on private space stations: onboarding, meals, safety, events and the view.",
+   "day": "Plans a zero-g dinner for twelve and a sunrise briefing every 90 minutes.",
+   "skills": [
+    "Hospitality",
+    "Safety training",
+    "Calm under pressure"
+   ],
+   "signals": [
+    {
+     "type": "analyst",
+     "who": "ARK Invest · Big Ideas 2026",
+     "claim": "Starship could push launch costs below $100 per kilogram.",
+     "url": "https://www.itiger.com/hant/news/1156793142"
+    },
+    {
+     "type": "market",
+     "who": "Commercial space stations",
+     "claim": "Vast, Axiom and others are building private stations to succeed the ISS around 2030."
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Passengers",
+     "year": 2016,
+     "kind": "film",
+     "echo": "A luxury starship with a robot bartender."
+    },
+    {
+     "title": "2001: A Space Odyssey",
+     "year": 1968,
+     "kind": "film",
+     "echo": "Commercial space flights and an orbital hotel lobby."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "stable",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 7
+    }
+   ]
+  },
+  {
+   "id": "lunar-construction-supervisor",
+   "title": "Lunar Construction Supervisor",
+   "sector": "space",
+   "horizon": 9,
+   "drivers": {
+    "ai": 0,
+    "robotics": 0.4,
+    "autonomy": 0,
+    "bio": 0,
+    "space": 0.6,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When we return to the Moon to stay, robots build and humans direct them from orbit or Earth.",
+   "what": "Directs robot crews that print landing pads, shelters and roads from lunar soil.",
+   "day": "Schedules printing around a 14-day lunar night and approves a new habitat wall.",
+   "skills": [
+    "Civil engineering",
+    "Robot teleoperation",
+    "Space systems"
+   ],
+   "signals": [
+    {
+     "type": "scientist",
+     "who": "NASA Artemis",
+     "claim": "Aims to return crews to the Moon and build a sustained lunar presence."
+    },
+    {
+     "type": "engineer",
+     "who": "ICON · 3D-printed construction",
+     "claim": "Robotic printers build whole houses in days; ICON works with NASA on printing lunar structures."
+    },
+    {
+     "type": "engineer",
+     "who": "Kratos · Constructing the next space age",
+     "claim": "In-space construction and assembly are moving from concept into engineering programmes.",
+     "url": "https://www.kratosdefense.com/constellations/articles/constructing-the-next-space-age"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Moon",
+     "year": 2009,
+     "kind": "film",
+     "echo": "A lone worker oversees automated lunar mining."
+    },
+    {
+     "title": "The Martian",
+     "year": 2015,
+     "kind": "film",
+     "echo": "Survival and building with local resources."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "stable",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 9
+    }
+   ]
+  },
+  {
+   "id": "debris-recovery-pilot",
+   "title": "Space Debris Recovery Pilot",
+   "sector": "space",
+   "horizon": 6,
+   "drivers": {
+    "ai": 0,
+    "robotics": 0.2,
+    "autonomy": 0,
+    "bio": 0,
+    "space": 0.8,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When orbits fill with tens of thousands of satellites, junk becomes a real threat.",
+   "what": "Flies or remotely operates spacecraft that capture dead satellites and debris.",
+   "day": "Matches spin with a tumbling rocket stage and secures it for de-orbit.",
+   "skills": [
+    "Orbital mechanics",
+    "Remote piloting",
+    "Precision"
+   ],
+   "signals": [
+    {
+     "type": "scientist",
+     "who": "ESA · ClearSpace-1",
+     "claim": "Europe is funding a dedicated mission to capture and remove a piece of space debris."
+    },
+    {
+     "type": "analyst",
+     "who": "ARK Invest · Big Ideas 2026",
+     "claim": "Satellite connectivity could reach $160B+ in annual revenue by 2030.",
+     "url": "https://www.itiger.com/hant/news/1156793142"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Planetes",
+     "year": 2003,
+     "kind": "series",
+     "echo": "A crew collects space debris for a living."
+    },
+    {
+     "title": "Gravity",
+     "year": 2013,
+     "kind": "film",
+     "echo": "A debris cascade destroys orbiting stations."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "stable",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 6
+    }
+   ]
+  },
+  {
+   "id": "constellation-choreographer",
+   "title": "Satellite Swarm Choreographer",
+   "sector": "space",
+   "horizon": 3,
+   "drivers": {
+    "ai": 0.3,
+    "robotics": 0,
+    "autonomy": 0,
+    "bio": 0,
+    "space": 0.7,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When tens of thousands of satellites deliver internet, someone orchestrates the swarm.",
+   "what": "Plans orbits, avoids collisions and shifts capacity to where demand spikes.",
+   "day": "Moves bandwidth to a festival in the Karoo and dodges two conjunction alerts before lunch.",
+   "skills": [
+    "Orbital mechanics",
+    "Network engineering",
+    "Automation"
+   ],
+   "signals": [
+    {
+     "type": "analyst",
+     "who": "ARK Invest · Big Ideas 2026",
+     "claim": "Satellite connectivity could reach $160B+ in annual revenue by 2030.",
+     "url": "https://www.itiger.com/hant/news/1156793142"
+    },
+    {
+     "type": "analyst",
+     "who": "ARK Invest · Big Ideas 2026",
+     "claim": "Starship could push launch costs below $100 per kilogram.",
+     "url": "https://www.itiger.com/hant/news/1156793142"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "The Expanse",
+     "year": 2015,
+     "kind": "series",
+     "echo": "Constant traffic control across a busy solar system."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "stable",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 3
+    }
+   ]
+  },
+  {
+   "id": "space-agronomist",
+   "title": "Space Agronomist",
+   "sector": "space",
+   "horizon": 10,
+   "drivers": {
+    "ai": 0,
+    "robotics": 0,
+    "autonomy": 0,
+    "bio": 0.3,
+    "space": 0.7,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When people stay months off-world, they must grow their own food.",
+   "what": "Designs and runs greenhouses for stations and bases, in low gravity and with closed water loops.",
+   "day": "Tests lettuce under new LED spectra and repairs a hydroponic pump.",
+   "skills": [
+    "Plant science",
+    "Closed-loop systems",
+    "Improvisation"
+   ],
+   "signals": [
+    {
+     "type": "scientist",
+     "who": "NASA Artemis",
+     "claim": "Aims to return crews to the Moon and build a sustained lunar presence."
+    },
+    {
+     "type": "market",
+     "who": "Commercial space stations",
+     "claim": "Vast, Axiom and others are building private stations to succeed the ISS around 2030."
+    }
+   ],
+   "scifi": [
+    {
+     "title": "The Martian",
+     "year": 2015,
+     "kind": "film",
+     "echo": "A botanist grows potatoes on Mars."
+    },
+    {
+     "title": "Silent Running",
+     "year": 1972,
+     "kind": "film",
+     "echo": "Forests cared for aboard spacecraft."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "stable",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 10
+    }
+   ]
+  },
+  {
+   "id": "microgravity-manufacturing-engineer",
+   "title": "Microgravity Manufacturing Engineer",
+   "sector": "space",
+   "horizon": 6,
+   "drivers": {
+    "ai": 0,
+    "robotics": 0,
+    "autonomy": 0,
+    "bio": 0.3,
+    "space": 0.7,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When orbit is cheap to reach, some products are simply better made without gravity.",
+   "what": "Runs orbital factories for drugs, fibre optics and semiconductors and plans their return to Earth.",
+   "day": "Monitors protein crystals growing in orbit and books the capsule re-entry slot.",
+   "skills": [
+    "Process engineering",
+    "Materials science",
+    "Space operations"
+   ],
+   "signals": [
+    {
+     "type": "engineer",
+     "who": "Varda Space Industries",
+     "claim": "Made pharmaceutical crystals in orbit and returned the capsule to Earth in 2024."
+    },
+    {
+     "type": "analyst",
+     "who": "ARK Invest · Big Ideas 2026",
+     "claim": "Starship could push launch costs below $100 per kilogram.",
+     "url": "https://www.itiger.com/hant/news/1156793142"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "The Expanse",
+     "year": 2015,
+     "kind": "series",
+     "echo": "Industry spreads across stations and asteroids."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "stable",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 6
+    }
+   ]
+  },
+  {
+   "id": "construction-robot-foreman",
+   "title": "Construction Robot Foreman",
+   "sector": "built",
+   "horizon": 3,
+   "drivers": {
+    "ai": 0.2,
+    "robotics": 0.8,
+    "autonomy": 0,
+    "bio": 0,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When robots lay bricks, weld and print walls, the site needs a new kind of boss.",
+   "what": "Plans and supervises robot crews on building sites, managing safety, sequence and quality.",
+   "day": "Sends the brick robot to level three and stops a printer when a sensor shows a weak layer.",
+   "skills": [
+    "Construction",
+    "Robotics",
+    "Site safety"
+   ],
+   "signals": [
+    {
+     "type": "engineer",
+     "who": "ICON · 3D-printed construction",
+     "claim": "Robotic printers build whole houses in days; ICON works with NASA on printing lunar structures."
+    },
+    {
+     "type": "engineer",
+     "who": "Jensen Huang · NVIDIA",
+     "claim": "Calls physical AI, robots that understand the real world, the next wave of AI."
+    },
+    {
+     "type": "entrepreneur",
+     "who": "Elon Musk · Tesla",
+     "claim": "Predicts humanoid robots will eventually outnumber humans.",
+     "url": "https://qz.com/elon-musk-tesla-optimus-robots-outnumber-humans-1851683997"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "WALL-E",
+     "year": 2008,
+     "kind": "film",
+     "echo": "Robots do the heavy work on a changed Earth."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "stable",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 3
+    }
+   ]
+  },
+  {
+   "id": "building-printer-operator",
+   "title": "3D Building Print Operator",
+   "sector": "built",
+   "horizon": 4,
+   "drivers": {
+    "ai": 0,
+    "robotics": 0.7,
+    "autonomy": 0,
+    "bio": 0,
+    "space": 0,
+    "energy": 0.3,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When houses are printed in days, construction looks more like manufacturing.",
+   "what": "Prepares mixes, calibrates large printers and prints walls and houses on site.",
+   "day": "Prints the shell of a four-bedroom house in 30 hours, then adjusts the mix for rain.",
+   "skills": [
+    "Materials",
+    "Machine operation",
+    "CAD"
+   ],
+   "signals": [
+    {
+     "type": "engineer",
+     "who": "ICON · 3D-printed construction",
+     "claim": "Robotic printers build whole houses in days; ICON works with NASA on printing lunar structures."
+    },
+    {
+     "type": "engineer",
+     "who": "Kratos · Constructing the next space age",
+     "claim": "In-space construction and assembly are moving from concept into engineering programmes.",
+     "url": "https://www.kratosdefense.com/constellations/articles/constructing-the-next-space-age"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "The Martian",
+     "year": 2015,
+     "kind": "film",
+     "echo": "Building habitats far from any supply chain."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "stable",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 4
+    }
+   ]
+  },
+  {
+   "id": "city-twin-gardener",
+   "title": "City Twin Gardener",
+   "sector": "built",
+   "horizon": 5,
+   "drivers": {
+    "ai": 0.6,
+    "robotics": 0,
+    "autonomy": 0.4,
+    "bio": 0,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When every city has a live digital copy, it needs to be cared for like a garden.",
+   "what": "Keeps a city's digital twin accurate and runs 'what if' scenarios for floods, traffic and new buildings.",
+   "day": "Simulates a new stadium's effect on traffic and heat before the council votes.",
+   "skills": [
+    "GIS",
+    "Simulation",
+    "Urban systems"
+   ],
+   "signals": [
+    {
+     "type": "engineer",
+     "who": "Virtual Singapore",
+     "claim": "Whole cities already run 3D digital twins for planning and simulation."
+    },
+    {
+     "type": "engineer",
+     "who": "Jensen Huang · NVIDIA",
+     "claim": "Calls physical AI, robots that understand the real world, the next wave of AI."
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Minority Report",
+     "year": 2002,
+     "kind": "film",
+     "echo": "City-scale data shown in 3D in real time."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "stable",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 5
+    }
+   ]
+  },
+  {
+   "id": "exoskeleton-fitter",
+   "title": "Exoskeleton Fitter",
+   "sector": "built",
+   "horizon": 3,
+   "drivers": {
+    "ai": 0,
+    "robotics": 0.8,
+    "autonomy": 0,
+    "bio": 0.2,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When workers wear powered suits, someone has to fit, tune and repair them.",
+   "what": "Measures, fits and tunes exoskeletons for workers, carers and patients.",
+   "day": "Adjusts a carer's lifting suit after she reports knee pain, then services a fleet of 20 suits.",
+   "skills": [
+    "Biomechanics",
+    "Mechatronics",
+    "Ergonomics"
+   ],
+   "signals": [
+    {
+     "type": "market",
+     "who": "Industrial exoskeletons",
+     "claim": "Powered exoskeletons are used in logistics and car plants to reduce back injuries."
+    },
+    {
+     "type": "engineer",
+     "who": "Jensen Huang · NVIDIA",
+     "claim": "Calls physical AI, robots that understand the real world, the next wave of AI."
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Aliens",
+     "year": 1986,
+     "kind": "film",
+     "echo": "Power loaders as everyday work equipment."
+    },
+    {
+     "title": "Edge of Tomorrow",
+     "year": 2014,
+     "kind": "film",
+     "echo": "Soldiers in powered exosuits."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "stable",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 3
+    }
+   ]
+  },
+  {
+   "id": "agent-fleet-manager",
+   "title": "AI Agent Fleet Manager",
+   "sector": "ai",
+   "horizon": 2,
+   "drivers": {
+    "ai": 1.0,
+    "robotics": 0,
+    "autonomy": 0,
+    "bio": 0,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When companies run hundreds of AI agents, they need management like any other team.",
+   "what": "Hires, briefs, monitors and retires AI agents, and decides which tasks stay with humans.",
+   "day": "Reviews the sales agent's weekly report and grounds two agents that broke a pricing rule.",
+   "skills": [
+    "Process design",
+    "AI evaluation",
+    "Management"
+   ],
+   "signals": [
+    {
+     "type": "technologist",
+     "who": "Sam Altman · Reflections (2025)",
+     "claim": "Expects AI agents to \"join the workforce\" and change what companies can produce."
+    },
+    {
+     "type": "analyst",
+     "who": "ARK Invest · Big Ideas 2026",
+     "claim": "AI agents could handle about 25% of online sales by 2030, up from about 2% in 2025.",
+     "url": "https://www.itiger.com/hant/news/1156793142"
+    },
+    {
+     "type": "futurist",
+     "who": "Moonshots EP 217 · 2026 Predictions",
+     "claim": "AI automates knowledge work, autonomous robots scale, AI-run companies appear.",
+     "url": "https://podcast.app/2026-predictions-ai-automates-knowledge-work-autonomous-robots-ai-ceo-billionaires-ep-217-e435976459"
+    },
+    {
+     "type": "economist",
+     "who": "World Economic Forum · Future of Jobs 2025",
+     "claim": "Big-data, AI and machine-learning specialists are among the fastest-growing roles to 2030.",
+     "url": "https://www.weforum.org/reports/the-future-of-jobs-report-2025/in-full/2-jobs-outlook/"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Her",
+     "year": 2013,
+     "kind": "film",
+     "echo": "An AI runs a person's whole digital life."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "stable",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 2
+    }
+   ]
+  },
+  {
+   "id": "synthetic-persona-director",
+   "title": "Synthetic Persona Director",
+   "sector": "ai",
+   "horizon": 2,
+   "drivers": {
+    "ai": 1.0,
+    "robotics": 0,
+    "autonomy": 0,
+    "bio": 0,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When influencers can be generated, brands need directors for their AI stars.",
+   "what": "Creates and directs AI personalities for brands and media, keeping them consistent, honest and on-brand.",
+   "day": "Writes the backstory of a new AI travel host and decides how it reveals it is an AI.",
+   "skills": [
+    "Storytelling",
+    "Brand strategy",
+    "Prompt craft"
+   ],
+   "signals": [
+    {
+     "type": "market",
+     "who": "Virtual influencers",
+     "claim": "AI-generated influencers already sign brand deals with real followings."
+    },
+    {
+     "type": "analyst",
+     "who": "ARK Invest · Big Ideas 2026",
+     "claim": "AI agents could handle about 25% of online sales by 2030, up from about 2% in 2025.",
+     "url": "https://www.itiger.com/hant/news/1156793142"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "S1m0ne",
+     "year": 2002,
+     "kind": "film",
+     "echo": "A director creates a fully digital movie star."
+    },
+    {
+     "title": "Her",
+     "year": 2013,
+     "kind": "film",
+     "echo": "An AI with its own personality."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "stable",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 2
+    }
+   ]
+  },
+  {
+   "id": "agent-commerce-broker",
+   "title": "Agent-to-Agent Deal Broker",
+   "sector": "finance",
+   "horizon": 4,
+   "drivers": {
+    "ai": 0.6,
+    "robotics": 0,
+    "autonomy": 0,
+    "bio": 0,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0.4
+   },
+   "trigger": "When AI agents buy from AI agents, disputes and deals need a human referee.",
+   "what": "Sets the rules for negotiations between AI agents, steps in on disputes and checks contracts are fair.",
+   "day": "Unpicks a deal where two purchasing agents kept undercutting each other into a loss.",
+   "skills": [
+    "Contract law",
+    "Game theory",
+    "AI systems"
+   ],
+   "signals": [
+    {
+     "type": "analyst",
+     "who": "ARK Invest · Big Ideas 2026",
+     "claim": "AI agents could handle about 25% of online sales by 2030, up from about 2% in 2025.",
+     "url": "https://www.itiger.com/hant/news/1156793142"
+    },
+    {
+     "type": "technologist",
+     "who": "Sam Altman · Reflections (2025)",
+     "claim": "Expects AI agents to \"join the workforce\" and change what companies can produce."
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Foundation",
+     "year": 2021,
+     "kind": "series",
+     "echo": "Large systems settle the fate of whole societies."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "stable",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 4
+    }
+   ]
+  },
+  {
+   "id": "model-behaviour-auditor",
+   "title": "AI Behaviour Auditor",
+   "sector": "ai",
+   "horizon": 3,
+   "drivers": {
+    "ai": 1.0,
+    "robotics": 0,
+    "autonomy": 0,
+    "bio": 0,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When AI makes decisions about loans, jobs and health, someone has to check its behaviour.",
+   "what": "Tests AI systems for bias, safety and hidden failure modes before and after launch.",
+   "day": "Red-teams a hiring AI with 500 fictional candidates and writes the audit report.",
+   "skills": [
+    "Testing",
+    "Statistics",
+    "Regulation"
+   ],
+   "signals": [
+    {
+     "type": "strategist",
+     "who": "EU AI Act",
+     "claim": "Risk assessments and audits for high-risk AI systems phase in between 2025 and 2027."
+    },
+    {
+     "type": "strategist",
+     "who": "AI Security / Safety Institutes",
+     "claim": "UK and US government institutes test frontier AI models before release."
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Ex Machina",
+     "year": 2014,
+     "kind": "film",
+     "echo": "A tester has to judge what a machine really is."
+    },
+    {
+     "title": "Blade Runner",
+     "year": 1982,
+     "kind": "film",
+     "echo": "The Voight-Kampff test separates humans from machines."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "stable",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 3
+    }
+   ]
+  },
+  {
+   "id": "personal-data-trustee",
+   "title": "Personal Data Trustee",
+   "sector": "ai",
+   "horizon": 5,
+   "drivers": {
+    "ai": 0.8,
+    "robotics": 0,
+    "autonomy": 0,
+    "bio": 0,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0.2,
+    "chain": 0
+   },
+   "trigger": "When your data trains AI everywhere, you'll want someone to manage and license it.",
+   "what": "Manages people's data like a fund: decides who may use it, at what price and under what rules.",
+   "day": "Approves a medical study licence for a client's health data and blocks an ad network.",
+   "skills": [
+    "Data law",
+    "Negotiation",
+    "Security"
+   ],
+   "signals": [
+    {
+     "type": "strategist",
+     "who": "EU Data Governance Act",
+     "claim": "Creates a legal framework for data intermediaries that manage data on people's behalf."
+    },
+    {
+     "type": "analyst",
+     "who": "ARK Invest · Big Ideas 2026",
+     "claim": "AI agents could handle about 25% of online sales by 2030, up from about 2% in 2025.",
+     "url": "https://www.itiger.com/hant/news/1156793142"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Minority Report",
+     "year": 2002,
+     "kind": "film",
+     "echo": "Personal data follows people everywhere."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "stable",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 5
+    }
+   ]
+  },
+  {
+   "id": "post-quantum-migrator",
+   "title": "Post-Quantum Security Migrator",
+   "sector": "ai",
+   "horizon": 3,
+   "drivers": {
+    "ai": 0.1,
+    "robotics": 0,
+    "autonomy": 0,
+    "bio": 0,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0.9,
+    "chain": 0
+   },
+   "trigger": "When quantum computers can break today's encryption, every system needs new locks.",
+   "what": "Finds and replaces vulnerable encryption across banks, hospitals and governments before 'Q-Day'.",
+   "day": "Maps 4,000 systems in a bank and plans which to switch to post-quantum crypto first.",
+   "skills": [
+    "Cryptography",
+    "IT architecture",
+    "Project management"
+   ],
+   "signals": [
+    {
+     "type": "scientist",
+     "who": "NIST",
+     "claim": "Published the first post-quantum cryptography standards in August 2024; migration has begun."
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Sneakers",
+     "year": 1992,
+     "kind": "film",
+     "echo": "A device that breaks any encryption."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "stable",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 3
+    }
+   ]
+  },
+  {
+   "id": "fusion-plant-operator",
+   "title": "Fusion Plant Operator",
+   "sector": "energy",
+   "horizon": 9,
+   "drivers": {
+    "ai": 0,
+    "robotics": 0,
+    "autonomy": 0,
+    "bio": 0,
+    "space": 0,
+    "energy": 1.0,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When fusion moves from experiment to power plant, it needs operators.",
+   "what": "Runs and monitors fusion reactors and the grid connection.",
+   "day": "Ramps up output for the evening peak and checks magnet temperatures.",
+   "skills": [
+    "Plasma physics",
+    "Control rooms",
+    "Safety culture"
+   ],
+   "signals": [
+    {
+     "type": "engineer",
+     "who": "Commonwealth Fusion Systems & Helion",
+     "claim": "CFS targets first plasma at SPARC around 2027; Helion has a power deal with Microsoft from 2028."
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Iron Man",
+     "year": 2008,
+     "kind": "film",
+     "echo": "A compact reactor as a clean power source."
+    },
+    {
+     "title": "Spider-Man 2",
+     "year": 2004,
+     "kind": "film",
+     "echo": "A fusion demonstration that has to stay under control."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "stable",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 9
+    }
+   ]
+  },
+  {
+   "id": "home-energy-trader",
+   "title": "Home Energy Trader",
+   "sector": "energy",
+   "horizon": 3,
+   "drivers": {
+    "ai": 0.3,
+    "robotics": 0,
+    "autonomy": 0,
+    "bio": 0,
+    "space": 0,
+    "energy": 0.7,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When every home has solar, a battery and an EV, households become power traders.",
+   "what": "Manages households' energy assets with AI: when to store, use or sell power.",
+   "day": "Sells power from 300 home batteries during the evening peak at three times the price.",
+   "skills": [
+    "Energy markets",
+    "Data analysis",
+    "Customer service"
+   ],
+   "signals": [
+    {
+     "type": "market",
+     "who": "Virtual power plants",
+     "claim": "Home batteries are already pooled into virtual power plants that sell power back to the grid."
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Star Trek",
+     "year": 1966,
+     "kind": "series",
+     "echo": "Energy managed as a ship-wide system."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "stable",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 3
+    }
+   ]
+  },
+  {
+   "id": "carbon-removal-verifier",
+   "title": "Carbon Removal Verifier",
+   "sector": "energy",
+   "horizon": 3,
+   "drivers": {
+    "ai": 0.2,
+    "robotics": 0,
+    "autonomy": 0,
+    "bio": 0,
+    "space": 0.2,
+    "energy": 0.6,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When companies pay to remove carbon, someone has to prove it really happened.",
+   "what": "Measures and certifies carbon removal using sensors, satellites and AI.",
+   "day": "Uses satellite data to confirm that a reforestation project is growing, not burning.",
+   "skills": [
+    "Climate science",
+    "Remote sensing",
+    "Audit"
+   ],
+   "signals": [
+    {
+     "type": "market",
+     "who": "Carbon removal market",
+     "claim": "Large buyers such as Microsoft have contracted millions of tonnes of carbon removal."
+    },
+    {
+     "type": "analyst",
+     "who": "ARK Invest · Big Ideas 2026",
+     "claim": "Satellite connectivity could reach $160B+ in annual revenue by 2030.",
+     "url": "https://www.itiger.com/hant/news/1156793142"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Interstellar",
+     "year": 2014,
+     "kind": "film",
+     "echo": "A blighted Earth that farmers are trying to save."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "stable",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 3
+    }
+   ]
+  },
+  {
+   "id": "heat-resilience-officer",
+   "title": "Heat Resilience Officer",
+   "sector": "energy",
+   "horizon": 5,
+   "drivers": {
+    "ai": 0.4,
+    "robotics": 0,
+    "autonomy": 0,
+    "bio": 0,
+    "space": 0,
+    "energy": 0.6,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When heat waves become longer and more frequent, cities need heat to be managed like floods.",
+   "what": "Plans cooling, shade and emergency response for extreme heat in cities and companies.",
+   "day": "Activates cooling centres and shifts work hours for 10,000 outdoor workers.",
+   "skills": [
+    "Public health",
+    "Urban climate",
+    "Emergency planning"
+   ],
+   "signals": [
+    {
+     "type": "scientist",
+     "who": "IPCC AR6",
+     "claim": "More frequent and intense heat extremes are virtually certain as warming continues."
+    }
+   ],
+   "scifi": [
+    {
+     "title": "The Ministry for the Future",
+     "year": 2020,
+     "kind": "book",
+     "echo": "A heat wave triggers global climate politics."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "stable",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 5
+    }
+   ]
+  },
+  {
+   "id": "vpp-conductor",
+   "title": "Virtual Power Plant Conductor",
+   "sector": "energy",
+   "horizon": 4,
+   "drivers": {
+    "ai": 0.3,
+    "robotics": 0,
+    "autonomy": 0,
+    "bio": 0,
+    "space": 0,
+    "energy": 0.7,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When millions of batteries and EVs connect, they can act as one large power plant.",
+   "what": "Orchestrates distributed batteries, EVs and heat pumps into one dispatchable plant.",
+   "day": "Holds back 20,000 EV chargers for 15 minutes to prevent a blackout.",
+   "skills": [
+    "Grid operations",
+    "Software",
+    "Energy policy"
+   ],
+   "signals": [
+    {
+     "type": "market",
+     "who": "Virtual power plants",
+     "claim": "Home batteries are already pooled into virtual power plants that sell power back to the grid."
+    },
+    {
+     "type": "analyst",
+     "who": "ARK Invest · Big Ideas 2026",
+     "claim": "Robotaxi cost per mile could fall to about $0.25 by 2035, against about $2.80 for a human-driven ride.",
+     "url": "https://www.itiger.com/hant/news/1156793142"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "The Expanse",
+     "year": 2015,
+     "kind": "series",
+     "echo": "Power and resources managed across a distributed network."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "stable",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 4
+    }
+   ]
+  },
+  {
+   "id": "ai-tutor-mentor",
+   "title": "AI Tutor Mentor",
+   "sector": "ai",
+   "horizon": 3,
+   "drivers": {
+    "ai": 1.0,
+    "robotics": 0,
+    "autonomy": 0,
+    "bio": 0,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When every student has an AI tutor for the facts, teachers become coaches for everything else.",
+   "what": "Pairs each learner with AI tutors, watches the data for frustration or boredom, and coaches motivation, character and teamwork.",
+   "day": "Spots that a 13-year-old has stalled on algebra for three days, switches his AI tutor's style and spends 20 minutes on what is really going on.",
+   "skills": [
+    "Coaching",
+    "Learning analytics",
+    "Child psychology"
+   ],
+   "signals": [
+    {
+     "type": "market",
+     "who": "Alpha School (Austin)",
+     "claim": "Students learn core subjects in about two hours a day with AI tutors; adults act as guides and mentors."
+    },
+    {
+     "type": "market",
+     "who": "Khan Academy · Khanmigo",
+     "claim": "An AI tutor used in schools to coach students step by step instead of giving answers."
+    },
+    {
+     "type": "economist",
+     "who": "World Economic Forum · Future of Jobs 2025",
+     "claim": "Expects 39% of workers' core skills to change by 2030; 59 in 100 workers will need training.",
+     "url": "https://www.weforum.org/reports/the-future-of-jobs-report-2025/in-full/2-jobs-outlook/"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Star Trek: Starfleet Academy",
+     "year": 2026,
+     "kind": "series",
+     "echo": "A holographic doctor teaches cadets next to human faculty."
+    },
+    {
+     "title": "Star Trek: Voyager",
+     "year": 1995,
+     "kind": "series",
+     "echo": "The Doctor, an AI, grows from tool into mentor."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "stable",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 3
+    }
+   ]
+  },
+  {
+   "id": "field-mission-learning-designer",
+   "title": "Field-Mission Learning Designer",
+   "sector": "ai",
+   "horizon": 4,
+   "drivers": {
+    "ai": 0.7,
+    "robotics": 0.3,
+    "autonomy": 0,
+    "bio": 0,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When skills expire faster than degrees, learning moves out of the classroom and into real missions.",
+   "what": "Builds programmes where learners train in AI simulations, then go out on real, supervised projects and come back to debrief.",
+   "day": "Sends a cohort of trainee robot technicians to a live warehouse for a week after two weeks in simulation.",
+   "skills": [
+    "Instructional design",
+    "Simulation",
+    "Partnerships with employers"
+   ],
+   "signals": [
+    {
+     "type": "economist",
+     "who": "World Economic Forum · Future of Jobs 2025",
+     "claim": "Expects 39% of workers' core skills to change by 2030; 59 in 100 workers will need training.",
+     "url": "https://www.weforum.org/reports/the-future-of-jobs-report-2025/in-full/2-jobs-outlook/"
+    },
+    {
+     "type": "engineer",
+     "who": "Google DeepMind · Genie 3",
+     "claim": "Generates interactive 3D worlds from a text prompt in real time, consistent for several minutes.",
+     "url": "https://the-decoder.com/google-deepminds-genie-3-generates-interactive-3d-worlds-that-stay-consistent-for-multiple-minutes/"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Star Trek: Starfleet Academy",
+     "year": 2026,
+     "kind": "series",
+     "echo": "The academy ship works like a teaching hospital: learn on missions, then return to dock in San Francisco."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "stable",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 4
+    }
+   ]
+  },
+  {
+   "id": "kobayashi-maru-designer",
+   "title": "No-Win Scenario Designer",
+   "sector": "ai",
+   "horizon": 3,
+   "drivers": {
+    "ai": 1.0,
+    "robotics": 0,
+    "autonomy": 0,
+    "bio": 0,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When AI can generate any world on demand, leaders can rehearse the crisis before it happens.",
+   "what": "Designs immersive stress-test simulations for executives, crews and emergency teams, with AI characters that react unpredictably.",
+   "day": "Builds a cyber attack plus hurricane scenario for a port authority and watches how the board decides under pressure.",
+   "skills": [
+    "Scenario design",
+    "Behavioural psychology",
+    "Game design"
+   ],
+   "signals": [
+    {
+     "type": "engineer",
+     "who": "Google DeepMind · Genie 3",
+     "claim": "Generates interactive 3D worlds from a text prompt in real time, consistent for several minutes.",
+     "url": "https://the-decoder.com/google-deepminds-genie-3-generates-interactive-3d-worlds-that-stay-consistent-for-multiple-minutes/"
+    },
+    {
+     "type": "economist",
+     "who": "World Economic Forum · Future of Jobs 2025",
+     "claim": "Expects 39% of workers' core skills to change by 2030; 59 in 100 workers will need training.",
+     "url": "https://www.weforum.org/reports/the-future-of-jobs-report-2025/in-full/2-jobs-outlook/"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Star Trek II: The Wrath of Khan",
+     "year": 1982,
+     "kind": "film",
+     "echo": "The Kobayashi Maru test is built so cadets cannot win."
+    },
+    {
+     "title": "Ender's Game",
+     "year": 2013,
+     "kind": "film",
+     "echo": "Training simulations that feel real."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "stable",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 3
+    }
+   ]
+  },
+  {
+   "id": "holodeck-architect",
+   "title": "Holodeck Architect",
+   "sector": "ai",
+   "horizon": 3,
+   "drivers": {
+    "ai": 0.8,
+    "robotics": 0.2,
+    "autonomy": 0,
+    "bio": 0,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When AI generates interactive 3D worlds in real time, walk-in virtual spaces become a design discipline.",
+   "what": "Designs immersive spaces for training, therapy, retail and events, mixing generated worlds with real rooms, sound and haptics.",
+   "day": "Turns an empty hall into a rainforest classroom for a school by Friday, then a car launch on Saturday.",
+   "skills": [
+    "3D and XR design",
+    "Generative AI",
+    "Spatial storytelling"
+   ],
+   "signals": [
+    {
+     "type": "engineer",
+     "who": "Google DeepMind · Genie 3",
+     "claim": "Generates interactive 3D worlds from a text prompt in real time, consistent for several minutes.",
+     "url": "https://the-decoder.com/google-deepminds-genie-3-generates-interactive-3d-worlds-that-stay-consistent-for-multiple-minutes/"
+    },
+    {
+     "type": "market",
+     "who": "ABBA Voyage (London)",
+     "claim": "A concert of digital avatars has run nightly in a purpose-built arena since 2022."
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Star Trek: The Next Generation",
+     "year": 1987,
+     "kind": "series",
+     "echo": "The holodeck renders any place or story on command."
+    },
+    {
+     "title": "Ready Player One",
+     "year": 2018,
+     "kind": "film",
+     "echo": "Whole lives happen in a shared virtual world."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "stable",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 3
+    }
+   ]
+  },
+  {
+   "id": "animal-language-interpreter",
+   "title": "Animal Language Interpreter",
+   "sector": "ai",
+   "horizon": 8,
+   "drivers": {
+    "ai": 0.8,
+    "robotics": 0,
+    "autonomy": 0,
+    "bio": 0.2,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When AI starts decoding whale and bird communication, someone has to listen and translate responsibly.",
+   "what": "Works with AI models to interpret animal signals for conservation, farming, zoos and shipping lanes.",
+   "day": "Warns a shipping company that a pod of whales is changing its calls near a planned route.",
+   "skills": [
+    "Bioacoustics",
+    "Machine learning",
+    "Ethology"
+   ],
+   "signals": [
+    {
+     "type": "scientist",
+     "who": "Project CETI",
+     "claim": "Uses machine learning to decode sperm whale clicks and found structured, alphabet-like patterns.",
+     "url": "https://thedebrief.org/can-we-communicate-with-whales-new-ai-research-is-trying-to-figure-it-out/"
+    },
+    {
+     "type": "scientist",
+     "who": "Earth Species Project",
+     "claim": "Builds AI models to decode animal communication across species."
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Star Trek IV: The Voyage Home",
+     "year": 1986,
+     "kind": "film",
+     "echo": "The crew must communicate with humpback whales to save Earth."
+    },
+    {
+     "title": "Star Trek: Enterprise",
+     "year": 2001,
+     "kind": "series",
+     "echo": "Hoshi Sato decodes unknown languages with a universal translator."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "stable",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 8
+    }
+   ]
+  },
+  {
+   "id": "tricorder-medic",
+   "title": "Tricorder Medic",
+   "sector": "health",
+   "horizon": 3,
+   "drivers": {
+    "ai": 0.6,
+    "robotics": 0,
+    "autonomy": 0,
+    "bio": 0.4,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When a handheld device can check vitals, blood and skin in minutes, diagnosis moves to the doorstep.",
+   "what": "A community health worker who uses AI-powered handheld diagnostics to screen patients at home and in villages.",
+   "day": "Screens 25 elderly patients in Hout Bay in one morning and refers two to a specialist the same day.",
+   "skills": [
+    "Primary care",
+    "Point-of-care devices",
+    "Community trust"
+   ],
+   "signals": [
+    {
+     "type": "futurist",
+     "who": "Peter Diamandis · Qualcomm Tricorder XPRIZE",
+     "claim": "XPRIZE ran a competition for a handheld device that diagnoses a set of conditions at home, inspired by Star Trek."
+    },
+    {
+     "type": "analyst",
+     "who": "ARK Invest · Big Ideas 2026",
+     "claim": "Diagnostic tests could grow to about 7 million by 2030, helped by falling sequencing costs.",
+     "url": "https://www.itiger.com/hant/news/1156793142"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Star Trek",
+     "year": 1966,
+     "kind": "series",
+     "echo": "Dr McCoy diagnoses patients with a handheld tricorder."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "stable",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 3
+    }
+   ]
+  },
+  {
+   "id": "deep-space-crew-counselor",
+   "title": "Long-Mission Crew Counselor",
+   "sector": "space",
+   "horizon": 6,
+   "drivers": {
+    "ai": 0.2,
+    "robotics": 0,
+    "autonomy": 0,
+    "bio": 0,
+    "space": 0.8,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When crews spend months in stations, on the Moon or at sea, mental health becomes mission-critical.",
+   "what": "Supports isolated crews remotely and on board: selects teams, prevents conflict and handles crises with communication delays.",
+   "day": "Runs a delayed video session with a station crew and adjusts their rota after an AI flags poor sleep.",
+   "skills": [
+    "Clinical psychology",
+    "Team dynamics",
+    "Remote care"
+   ],
+   "signals": [
+    {
+     "type": "scientist",
+     "who": "NASA · HERA & analog missions",
+     "claim": "NASA runs months-long isolation missions to study crew psychology for deep-space flight."
+    },
+    {
+     "type": "market",
+     "who": "Commercial space stations",
+     "claim": "Vast, Axiom and others are building private stations to succeed the ISS around 2030."
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Star Trek: The Next Generation",
+     "year": 1987,
+     "kind": "series",
+     "echo": "Counselor Troi is a bridge officer responsible for crew wellbeing."
+    },
+    {
+     "title": "Moon",
+     "year": 2009,
+     "kind": "film",
+     "echo": "A lone worker's mind slips during a long contract."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "stable",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 6
+    }
+   ]
+  },
+  {
+   "id": "replicator-recipe-designer",
+   "title": "Replicator Recipe Designer",
+   "sector": "food",
+   "horizon": 5,
+   "drivers": {
+    "ai": 0,
+    "robotics": 0.2,
+    "autonomy": 0,
+    "bio": 0.8,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When meat grows in tanks and food is printed, recipes become code.",
+   "what": "Designs taste, texture and nutrition for cultivated, fermented and printed foods, then writes the recipe files for food printers.",
+   "day": "Tunes a printed salmon fillet so its fat lines flake like the real thing.",
+   "skills": [
+    "Food science",
+    "Flavour design",
+    "3D printing"
+   ],
+   "signals": [
+    {
+     "type": "market",
+     "who": "Cultivated meat approvals",
+     "claim": "Lab-grown chicken was approved for sale in Singapore (2020) and the US (2023)."
+    },
+    {
+     "type": "market",
+     "who": "Precision fermentation (e.g. Perfect Day)",
+     "claim": "Microbes produce animal-free dairy proteins already sold in commercial ice cream and milk."
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Star Trek: The Next Generation",
+     "year": 1987,
+     "kind": "series",
+     "echo": "Replicators produce any dish on request."
+    },
+    {
+     "title": "Star Trek: Voyager",
+     "year": 1995,
+     "kind": "series",
+     "echo": "Neelix runs a galley when replicator power is rationed."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "stable",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 5
+    }
+   ]
+  },
+  {
+   "id": "commercial-astronaut-trainer",
+   "title": "Commercial Astronaut Trainer",
+   "sector": "space",
+   "horizon": 4,
+   "drivers": {
+    "ai": 0,
+    "robotics": 0,
+    "autonomy": 0,
+    "bio": 0,
+    "space": 1.0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When paying customers and company crews fly to orbit, they need an academy.",
+   "what": "Trains private astronauts, researchers and station guests in safety, zero-g skills and emergencies.",
+   "day": "Runs a centrifuge session in the morning and a fire drill in a station mock-up after lunch.",
+   "skills": [
+    "Spaceflight operations",
+    "Instruction",
+    "Medical basics"
+   ],
+   "signals": [
+    {
+     "type": "market",
+     "who": "Polaris Dawn (2024)",
+     "claim": "Private astronauts completed the first commercial spacewalk after months of training."
+    },
+    {
+     "type": "analyst",
+     "who": "ARK Invest · Big Ideas 2026",
+     "claim": "Starship could push launch costs below $100 per kilogram.",
+     "url": "https://www.itiger.com/hant/news/1156793142"
+    },
+    {
+     "type": "market",
+     "who": "Commercial space stations",
+     "claim": "Vast, Axiom and others are building private stations to succeed the ISS around 2030."
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Star Trek: Starfleet Academy",
+     "year": 2026,
+     "kind": "series",
+     "echo": "The first cadet class in over a century trains to become pilots, engineers and captains."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "stable",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 4
+    }
+   ]
+  },
+  {
+   "id": "autonomous-ship-remote-captain",
+   "title": "Remote Ship Captain",
+   "sector": "mobility",
+   "horizon": 5,
+   "drivers": {
+    "ai": 0.1,
+    "robotics": 0,
+    "autonomy": 0.9,
+    "bio": 0,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When cargo ships sail themselves, the captain moves to a control room on shore.",
+   "what": "Supervises several autonomous vessels from a remote operations centre and takes control in ports, storms and emergencies.",
+   "day": "Watches over five ships in the North Sea and talks one through a busy harbour approach.",
+   "skills": [
+    "Seamanship",
+    "Remote operations",
+    "Maritime law"
+   ],
+   "signals": [
+    {
+     "type": "market",
+     "who": "Yara Birkeland (Norway)",
+     "claim": "An electric container ship designed for autonomous operation sails a coastal route with shore-based monitoring."
+    },
+    {
+     "type": "market",
+     "who": "Aurora",
+     "claim": "Driverless trucks began commercial runs on Texas highways in 2025."
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Star Trek",
+     "year": 1966,
+     "kind": "series",
+     "echo": "The bridge crew commands a ship through computers and screens."
+    },
+    {
+     "title": "The Expanse",
+     "year": 2015,
+     "kind": "series",
+     "echo": "Ships run largely on automation with small crews."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "stable",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 5
+    }
+   ]
+  },
+  {
+   "id": "asteroid-prospector",
+   "title": "Asteroid Prospector",
+   "sector": "space",
+   "horizon": 9,
+   "drivers": {
+    "ai": 0,
+    "robotics": 0.2,
+    "autonomy": 0,
+    "bio": 0,
+    "space": 0.8,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When launch is cheap, the metals in asteroids become a business case.",
+   "what": "Scouts, analyses and claims asteroids for mining using telescopes, probes and robotic landers.",
+   "day": "Reviews spectral data from a probe and decides whether a metallic asteroid is worth a second mission.",
+   "skills": [
+    "Planetary geology",
+    "Spacecraft operations",
+    "Resource economics"
+   ],
+   "signals": [
+    {
+     "type": "entrepreneur",
+     "who": "AstroForge · Odin",
+     "claim": "Launched in February 2025 toward a metallic near-Earth asteroid as a step toward commercial asteroid mining.",
+     "url": "https://astroforge.com/odin-mission"
+    },
+    {
+     "type": "analyst",
+     "who": "ARK Invest · Big Ideas 2026",
+     "claim": "Starship could push launch costs below $100 per kilogram.",
+     "url": "https://www.itiger.com/hant/news/1156793142"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "The Expanse",
+     "year": 2015,
+     "kind": "series",
+     "echo": "Belters build a whole economy around asteroid mining."
+    },
+    {
+     "title": "Star Trek: The Next Generation",
+     "year": 1987,
+     "kind": "series",
+     "echo": "Starships routinely survey asteroids for minerals."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "stable",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 9
+    }
+   ]
+  },
+  {
+   "id": "planetary-defence-analyst",
+   "title": "Planetary Defence Analyst",
+   "sector": "space",
+   "horizon": 4,
+   "drivers": {
+    "ai": 0.2,
+    "robotics": 0,
+    "autonomy": 0,
+    "bio": 0,
+    "space": 0.8,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When telescopes find thousands of new asteroids, someone has to say which ones matter.",
+   "what": "Tracks near-Earth objects, calculates impact risk and plans deflection options with space agencies.",
+   "day": "Updates the risk score of a new object every few hours and briefs officials calmly.",
+   "skills": [
+    "Astronomy",
+    "Risk communication",
+    "Orbital mechanics"
+   ],
+   "signals": [
+    {
+     "type": "scientist",
+     "who": "NASA · DART (2022)",
+     "claim": "Changed an asteroid's orbit by crashing a spacecraft into it: the first planetary-defence test."
+    },
+    {
+     "type": "scientist",
+     "who": "Asteroid 2024 YR4",
+     "claim": "Briefly rated the highest-risk asteroid on record in early 2025 before further observations ruled out an impact."
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Armageddon",
+     "year": 1998,
+     "kind": "film",
+     "echo": "A crew is sent to stop an asteroid."
+    },
+    {
+     "title": "Don't Look Up",
+     "year": 2021,
+     "kind": "film",
+     "echo": "Scientists struggle to get anyone to take a comet seriously."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "stable",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 4
+    }
+   ]
+  },
+  {
+   "id": "critical-mineral-recycler",
+   "title": "Urban Mining Specialist",
+   "sector": "energy",
+   "horizon": 3,
+   "drivers": {
+    "ai": 0,
+    "robotics": 0.4,
+    "autonomy": 0,
+    "bio": 0,
+    "space": 0,
+    "energy": 0.6,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When batteries, robots and chips need scarce metals, old devices become the new mines.",
+   "what": "Plans and runs recovery of lithium, cobalt and rare earths from batteries, robots and electronics.",
+   "day": "Sorts a container of used e-bike batteries with a robot line and sells the recovered nickel.",
+   "skills": [
+    "Materials chemistry",
+    "Logistics",
+    "Circular economy"
+   ],
+   "signals": [
+    {
+     "type": "market",
+     "who": "Battery recycling (e.g. Redwood Materials)",
+     "claim": "Recovers lithium, nickel and cobalt from used batteries at industrial scale."
+    },
+    {
+     "type": "analyst",
+     "who": "IEA · Critical minerals outlook",
+     "claim": "Demand for lithium, nickel and copper is set to rise steeply with EVs, grids and batteries."
+    },
+    {
+     "type": "entrepreneur",
+     "who": "Elon Musk · Tesla",
+     "claim": "Optimus Gen 3 enters production in 2026, with hundreds of thousands of units targeted by 2030.",
+     "url": "https://www.greendrive-accessories.com/blog/language/en/tesla-optimus-gen3/"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Star Trek: Starfleet Academy",
+     "year": 2026,
+     "kind": "series",
+     "echo": "The galaxy rebuilds after 'the Burn' wiped out its key energy resource."
+    },
+    {
+     "title": "WALL-E",
+     "year": 2008,
+     "kind": "film",
+     "echo": "A robot sorts and compacts what humanity left behind."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "stable",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 3
+    }
+   ]
+  },
+  {
+   "id": "ai-welfare-officer",
+   "title": "AI Welfare Officer",
+   "sector": "ai",
+   "horizon": 9,
+   "drivers": {
+    "ai": 0.8,
+    "robotics": 0.2,
+    "autonomy": 0,
+    "bio": 0,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When AI and robots seem more and more like someone, societies will ask what we owe them.",
+   "what": "Assesses advanced AI systems and robots against emerging welfare standards and advises companies and courts.",
+   "day": "Reviews how a companion robot company retires old models and drafts a policy for it.",
+   "skills": [
+    "Philosophy of mind",
+    "AI research",
+    "Policy"
+   ],
+   "signals": [
+    {
+     "type": "technologist",
+     "who": "Anthropic · Model welfare research (2025)",
+     "claim": "Started a research programme on whether AI systems could have experiences that matter morally."
+    },
+    {
+     "type": "strategist",
+     "who": "European Parliament (2017)",
+     "claim": "Debated an 'electronic personhood' status for advanced robots in a resolution on robotics law."
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Star Trek: The Next Generation · The Measure of a Man",
+     "year": 1989,
+     "kind": "series",
+     "echo": "A hearing decides whether the android Data is property or a person."
+    },
+    {
+     "title": "Star Trek: Voyager",
+     "year": 1995,
+     "kind": "series",
+     "echo": "The Doctor fights for rights as an AI."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "stable",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 9
+    }
+   ]
+  },
+  {
+   "id": "atmospheric-water-farmer",
+   "title": "Atmospheric Water Farmer",
+   "sector": "energy",
+   "horizon": 5,
+   "drivers": {
+    "ai": 0,
+    "robotics": 0,
+    "autonomy": 0,
+    "bio": 0.2,
+    "space": 0,
+    "energy": 0.8,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When materials can pull water out of dry desert air, water becomes something you harvest anywhere.",
+   "what": "Runs fields of air-to-water harvesters for farms, towns and events in dry regions, and sells the water.",
+   "day": "Checks yield on 200 harvesters in the Karoo after a dry night and reroutes water to a farm.",
+   "skills": [
+    "Water engineering",
+    "Materials",
+    "Agriculture"
+   ],
+   "signals": [
+    {
+     "type": "scientist",
+     "who": "Omar Yaghi · Nobel Prize in Chemistry 2025",
+     "claim": "Metal-organic frameworks, honoured with the 2025 Nobel, can pull drinking water out of desert air.",
+     "url": "https://chemistry.berkeley.edu/news/omar-yaghi-shares-2025-nobel-prize-chemistry"
+    },
+    {
+     "type": "scientist",
+     "who": "IPCC AR6",
+     "claim": "More frequent and intense heat extremes are virtually certain as warming continues."
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Star Wars",
+     "year": 1977,
+     "kind": "film",
+     "echo": "Luke grows up on a moisture farm on a desert planet."
+    },
+    {
+     "title": "Dune",
+     "year": 2021,
+     "kind": "film",
+     "echo": "Stillsuits recycle every drop of water in the desert."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "stable",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 5
+    }
+   ]
+  },
+  {
+   "id": "de-extinction-ranger",
+   "title": "De-Extinction Ranger",
+   "sector": "health",
+   "horizon": 6,
+   "drivers": {
+    "ai": 0,
+    "robotics": 0,
+    "autonomy": 0,
+    "bio": 1.0,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When gene editing brings back lost species, they need keepers, habitats and rules.",
+   "what": "Raises, monitors and rewilds gene-edited or revived animals and manages their impact on ecosystems.",
+   "day": "Tracks a pack of revived wolves by GPS collar and meets local farmers about fencing.",
+   "skills": [
+    "Wildlife biology",
+    "Genetics",
+    "Community relations"
+   ],
+   "signals": [
+    {
+     "type": "entrepreneur",
+     "who": "Colossal Biosciences",
+     "claim": "Announced gene-edited 'dire wolf' pups in 2025 as part of its de-extinction programme.",
+     "url": "https://www.sci.news/genetics/dire-wolf-de-extinction-13808.html"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Jurassic Park",
+     "year": 1993,
+     "kind": "film",
+     "echo": "A park full of revived species and the people who run it."
+    },
+    {
+     "title": "Jurassic World",
+     "year": 2015,
+     "kind": "film",
+     "echo": "Keepers train and manage revived animals."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "stable",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 6
+    }
+   ]
+  },
+  {
+   "id": "infrastructure-precog",
+   "title": "Infrastructure Precog",
+   "sector": "built",
+   "horizon": 3,
+   "drivers": {
+    "ai": 0.7,
+    "robotics": 0.3,
+    "autonomy": 0,
+    "bio": 0,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When sensors and AI can see failure coming, maintenance happens before anything breaks.",
+   "what": "Uses digital twins and AI predictions to send repair crews and robots to bridges, pipes and grids before failures.",
+   "day": "Sends a drone to a bridge joint the model flagged with a 12% failure risk in the next month.",
+   "skills": [
+    "Structural engineering",
+    "Data science",
+    "Field operations"
+   ],
+   "signals": [
+    {
+     "type": "engineer",
+     "who": "Virtual Singapore",
+     "claim": "Whole cities already run 3D digital twins for planning and simulation."
+    },
+    {
+     "type": "engineer",
+     "who": "Jensen Huang · NVIDIA",
+     "claim": "Calls physical AI, robots that understand the real world, the next wave of AI."
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Minority Report",
+     "year": 2002,
+     "kind": "film",
+     "echo": "Precogs see events before they happen and teams act first."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "stable",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 3
+    }
+   ]
+  },
+  {
+   "id": "deepfake-forensics-investigator",
+   "title": "Deepfake Forensics Investigator",
+   "sector": "ai",
+   "horizon": 2,
+   "drivers": {
+    "ai": 1.0,
+    "robotics": 0,
+    "autonomy": 0,
+    "bio": 0,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When any video can be faked, proving what is real becomes a profession.",
+   "what": "Checks images, audio and video for manipulation for newsrooms, courts, insurers and companies.",
+   "day": "Proves that a viral CEO video is synthetic within an hour, before the share price drops.",
+   "skills": [
+    "Media forensics",
+    "AI detection",
+    "Legal evidence"
+   ],
+   "signals": [
+    {
+     "type": "strategist",
+     "who": "C2PA · Content Credentials",
+     "claim": "Camera makers, Adobe and others attach tamper-evident provenance labels to images and video."
+    },
+    {
+     "type": "strategist",
+     "who": "EU AI Act",
+     "claim": "Requires AI-generated or manipulated content such as deepfakes to be labelled."
+    }
+   ],
+   "scifi": [
+    {
+     "title": "The Running Man",
+     "year": 1987,
+     "kind": "film",
+     "echo": "TV footage is faked to frame a man."
+    },
+    {
+     "title": "Black Mirror",
+     "year": 2011,
+     "kind": "series",
+     "echo": "Recurring stories of manipulated media and identity."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "stable",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 2
+    }
+   ]
+  },
+  {
+   "id": "society-simulation-analyst",
+   "title": "Society Simulation Analyst",
+   "sector": "ai",
+   "horizon": 4,
+   "drivers": {
+    "ai": 1.0,
+    "robotics": 0,
+    "autonomy": 0,
+    "bio": 0,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When AI agents can stand in for thousands of real people, policies can be tested before they launch.",
+   "what": "Builds simulated populations of AI agents to test laws, products and campaigns, and explains the limits of the model.",
+   "day": "Runs a new transit fare through a simulated city of 50,000 agents and finds who loses out.",
+   "skills": [
+    "Social science",
+    "Agent-based modelling",
+    "Statistics"
+   ],
+   "signals": [
+    {
+     "type": "scientist",
+     "who": "Stanford · Generative agent simulations (2024)",
+     "claim": "AI agents modelled on 1,000 real people reproduced their survey answers with high accuracy."
+    },
+    {
+     "type": "analyst",
+     "who": "ARK Invest · Big Ideas 2026",
+     "claim": "AI agents could handle about 25% of online sales by 2030, up from about 2% in 2025.",
+     "url": "https://www.itiger.com/hant/news/1156793142"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Foundation",
+     "year": 2021,
+     "kind": "series",
+     "echo": "Psychohistory predicts the future of whole societies with mathematics."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "stable",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 4
+    }
+   ]
+  },
+  {
+   "id": "drone-show-choreographer",
+   "title": "Drone Show Choreographer",
+   "sector": "robotics",
+   "horizon": 2,
+   "drivers": {
+    "ai": 0,
+    "robotics": 0.6,
+    "autonomy": 0.4,
+    "bio": 0,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When thousands of drones can fly in sync, the sky becomes a stage.",
+   "what": "Designs and runs light shows and aerial storytelling with drone swarms for events, brands and cities.",
+   "day": "Animates 3,000 drones into a car silhouette over a stadium, then lands them in four minutes.",
+   "skills": [
+    "Motion design",
+    "Drone operations",
+    "Event production"
+   ],
+   "signals": [
+    {
+     "type": "market",
+     "who": "Drone light shows",
+     "claim": "Shows with thousands of synchronised drones now replace fireworks at major events."
+    },
+    {
+     "type": "strategist",
+     "who": "China · Low-altitude economy",
+     "claim": "Beijing named drones and eVTOL air taxis a strategic growth industry in 2024."
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Ender's Game",
+     "year": 2013,
+     "kind": "film",
+     "echo": "Huge fleets are coordinated as one moving formation."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "stable",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 2
+    }
+   ]
+  },
+  {
+   "id": "avatar-show-producer",
+   "title": "Avatar Show Producer",
+   "sector": "ai",
+   "horizon": 3,
+   "drivers": {
+    "ai": 0.8,
+    "robotics": 0.2,
+    "autonomy": 0,
+    "bio": 0,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When artists can perform as digital avatars every night, live shows scale without touring.",
+   "what": "Produces concerts and experiences with digital avatars of artists, mixing motion capture, AI and live sound.",
+   "day": "Captures a band's new moves in a mocap studio for next season's avatar show.",
+   "skills": [
+    "Live production",
+    "Motion capture",
+    "Rights management"
+   ],
+   "signals": [
+    {
+     "type": "market",
+     "who": "ABBA Voyage (London)",
+     "claim": "A concert of digital avatars has run nightly in a purpose-built arena since 2022."
+    },
+    {
+     "type": "engineer",
+     "who": "Google DeepMind · Genie 3",
+     "claim": "Generates interactive 3D worlds from a text prompt in real time, consistent for several minutes.",
+     "url": "https://the-decoder.com/google-deepminds-genie-3-generates-interactive-3d-worlds-that-stay-consistent-for-multiple-minutes/"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Black Mirror · Rachel, Jack and Ashley Too",
+     "year": 2019,
+     "kind": "series",
+     "echo": "A pop star is cloned into an AI performer."
+    },
+    {
+     "title": "Star Trek: Voyager",
+     "year": 1995,
+     "kind": "series",
+     "echo": "Holographic performers entertain the crew."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "stable",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 3
+    }
+   ]
+  },
+  {
+   "id": "robot-field-mechanic",
+   "title": "Robot Field Mechanic",
+   "sector": "robotics",
+   "horizon": 3,
+   "drivers": {
+    "ai": 0.1,
+    "robotics": 0.9,
+    "autonomy": 0,
+    "bio": 0,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When millions of robots work in homes and factories, they need a mechanic who comes to them.",
+   "what": "Diagnoses, repairs and upgrades humanoid and service robots on site, from hands to batteries to software.",
+   "day": "Replaces a worn finger actuator on a care robot and pushes a firmware fix to its fleet.",
+   "skills": [
+    "Mechatronics",
+    "Diagnostics",
+    "Customer service"
+   ],
+   "signals": [
+    {
+     "type": "entrepreneur",
+     "who": "Elon Musk · Tesla",
+     "claim": "Optimus Gen 3 enters production in 2026, with hundreds of thousands of units targeted by 2030.",
+     "url": "https://www.greendrive-accessories.com/blog/language/en/tesla-optimus-gen3/"
+    },
+    {
+     "type": "market",
+     "who": "Unitree",
+     "claim": "Small humanoid robots now sell from about $16,000."
+    },
+    {
+     "type": "engineer",
+     "who": "Jensen Huang · NVIDIA",
+     "claim": "Calls physical AI, robots that understand the real world, the next wave of AI."
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Star Wars",
+     "year": 1977,
+     "kind": "film",
+     "echo": "Droids are bought, repaired and modified like used cars."
+    },
+    {
+     "title": "WALL-E",
+     "year": 2008,
+     "kind": "film",
+     "echo": "A robot repairs itself with spare parts."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "stable",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 3
+    }
+   ]
+  },
+  {
+   "id": "agent-treasury-manager",
+   "title": "Agent Treasury Manager",
+   "sector": "finance",
+   "horizon": 2,
+   "drivers": {
+    "ai": 0.6,
+    "robotics": 0,
+    "autonomy": 0,
+    "bio": 0,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0.4
+   },
+   "trigger": "When a company's AI agents spend money every second, someone has to hold the purse strings.",
+   "what": "Sets budgets, wallets, spending mandates and approval rules for a company's AI agents, and reconciles thousands of agent payments a day.",
+   "day": "Raises the research agent's daily data budget to $40 and freezes a procurement agent that started paying an unknown supplier.",
+   "skills": [
+    "Treasury",
+    "Payment protocols",
+    "Risk controls"
+   ],
+   "signals": [
+    {
+     "type": "technologist",
+     "who": "Google · Agent Payments Protocol (AP2)",
+     "claim": "Open protocol (Sept 2025) for AI agents to pay merchants by card, bank transfer or stablecoin, backed by PayPal, Amex, Coinbase and others.",
+     "url": "https://decrypt.co/339752/google-reveals-ai-agent-payments-protocol-coinbase-ethereum-foundation"
+    },
+    {
+     "type": "engineer",
+     "who": "Coinbase & Cloudflare · x402",
+     "claim": "Open standard (2025) that lets software and AI agents pay for any web resource in stablecoins with one HTTP header; settlement takes about 0.4 to 12 seconds for fractions of a cent.",
+     "url": "https://eco.com/support/en/articles/12328618-x402-protocol-explained-how-ai-agents-pay-onchain"
+    },
+    {
+     "type": "market",
+     "who": "Visa Intelligent Commerce & Mastercard Agent Pay",
+     "claim": "Both card networks are building rails that let AI agents shop and pay on a user's behalf.",
+     "url": "https://risingwave.com/blog/mastercard-agent-pay-vs-visa-vs-stripe-agentic-commerce/"
+    },
+    {
+     "type": "analyst",
+     "who": "ARK Invest · Big Ideas 2026",
+     "claim": "AI agents could handle about 25% of online sales by 2030, up from about 2% in 2025.",
+     "url": "https://www.itiger.com/hant/news/1156793142"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Her",
+     "year": 2013,
+     "kind": "film",
+     "echo": "An AI quietly handles a person's affairs, including deals with others."
+    },
+    {
+     "title": "Daemon",
+     "year": 2006,
+     "kind": "book",
+     "echo": "Software agents move money and run operations on their own."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "new",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 2
+    }
+   ]
+  },
+  {
+   "id": "micropayment-pricing-designer",
+   "title": "Micropayment Pricing Designer",
+   "sector": "finance",
+   "horizon": 3,
+   "drivers": {
+    "ai": 0.4,
+    "robotics": 0,
+    "autonomy": 0,
+    "bio": 0,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0.6
+   },
+   "trigger": "When payments cost almost nothing, you can charge a tenth of a cent per article, song second or API call.",
+   "what": "Designs pay-per-use pricing for content, data and services sold to humans and AI agents, replacing subscriptions and ads.",
+   "day": "Prices a news archive at $0.002 per paragraph for AI agents and tests what readers will pay per article.",
+   "skills": [
+    "Pricing strategy",
+    "Behavioural economics",
+    "Product analytics"
+   ],
+   "signals": [
+    {
+     "type": "engineer",
+     "who": "Coinbase & Cloudflare · x402",
+     "claim": "Open standard (2025) that lets software and AI agents pay for any web resource in stablecoins with one HTTP header; settlement takes about 0.4 to 12 seconds for fractions of a cent.",
+     "url": "https://eco.com/support/en/articles/12328618-x402-protocol-explained-how-ai-agents-pay-onchain"
+    },
+    {
+     "type": "market",
+     "who": "Stablecoin market · Q1 2026",
+     "claim": "Stablecoins reached about $315B in supply and $28T in quarterly transaction volume; automated bots made up about 76% of that volume.",
+     "url": "https://stablecoininsider.org/q1-2026-stablecoin-report/"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Black Mirror · Fifteen Million Merits",
+     "year": 2011,
+     "kind": "series",
+     "echo": "Every action, from skipping an ad to a snack, costs tiny amounts of credit."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "new",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 3
+    }
+   ]
+  },
+  {
+   "id": "machine-economy-accountant",
+   "title": "Machine Economy Accountant",
+   "sector": "finance",
+   "horizon": 5,
+   "drivers": {
+    "ai": 0,
+    "robotics": 0.3,
+    "autonomy": 0.3,
+    "bio": 0,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0.4
+   },
+   "trigger": "When robots and robotaxis pay each other for charging, parking and data, machines need bookkeepers.",
+   "what": "Keeps the books for fleets of robots and vehicles that earn and spend on their own, and makes sure tax and audit rules still work.",
+   "day": "Closes the month for 800 robotaxis that earned fares and paid for charging, cleaning and road tolls by themselves.",
+   "skills": [
+    "Accounting",
+    "On-chain analytics",
+    "Tax"
+   ],
+   "signals": [
+    {
+     "type": "engineer",
+     "who": "Coinbase & Cloudflare · x402",
+     "claim": "Open standard (2025) that lets software and AI agents pay for any web resource in stablecoins with one HTTP header; settlement takes about 0.4 to 12 seconds for fractions of a cent.",
+     "url": "https://eco.com/support/en/articles/12328618-x402-protocol-explained-how-ai-agents-pay-onchain"
+    },
+    {
+     "type": "market",
+     "who": "Waymo",
+     "claim": "About 500,000 paid driverless rides per week across 10 US cities.",
+     "url": "https://noqta.tn/en/news/waymo-500k-weekly-rides-robotaxi-10-cities-2026"
+    },
+    {
+     "type": "entrepreneur",
+     "who": "Elon Musk · Tesla",
+     "claim": "Optimus Gen 3 enters production in 2026, with hundreds of thousands of units targeted by 2030.",
+     "url": "https://www.greendrive-accessories.com/blog/language/en/tesla-optimus-gen3/"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Total Recall",
+     "year": 1990,
+     "kind": "film",
+     "echo": "A robot taxi driver takes the fare itself."
+    },
+    {
+     "title": "Star Wars",
+     "year": 1977,
+     "kind": "film",
+     "echo": "Droids are traded and hired out as working assets."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "new",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 5
+    }
+   ]
+  },
+  {
+   "id": "rogue-agent-investigator",
+   "title": "Rogue Agent Investigator",
+   "sector": "finance",
+   "horizon": 2,
+   "drivers": {
+    "ai": 0.6,
+    "robotics": 0,
+    "autonomy": 0,
+    "bio": 0,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0.4
+   },
+   "trigger": "When agents can be tricked into paying, fraud moves at machine speed.",
+   "what": "Traces and stops fraud by and against AI agents: manipulated prompts, fake merchants, hijacked wallets and runaway spending loops.",
+   "day": "Traces $80,000 drained by a shopping agent that was fed a fake supplier website, and recovers half of it on-chain.",
+   "skills": [
+    "Blockchain forensics",
+    "AI security",
+    "Investigation"
+   ],
+   "signals": [
+    {
+     "type": "market",
+     "who": "Stablecoin market · Q1 2026",
+     "claim": "Stablecoins reached about $315B in supply and $28T in quarterly transaction volume; automated bots made up about 76% of that volume.",
+     "url": "https://stablecoininsider.org/q1-2026-stablecoin-report/"
+    },
+    {
+     "type": "technologist",
+     "who": "Google · Agent Payments Protocol (AP2)",
+     "claim": "Open protocol (Sept 2025) for AI agents to pay merchants by card, bank transfer or stablecoin, backed by PayPal, Amex, Coinbase and others.",
+     "url": "https://decrypt.co/339752/google-reveals-ai-agent-payments-protocol-coinbase-ethereum-foundation"
+    },
+    {
+     "type": "engineer",
+     "who": "Coinbase & Cloudflare · x402",
+     "claim": "Open standard (2025) that lets software and AI agents pay for any web resource in stablecoins with one HTTP header; settlement takes about 0.4 to 12 seconds for fractions of a cent.",
+     "url": "https://eco.com/support/en/articles/12328618-x402-protocol-explained-how-ai-agents-pay-onchain"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Neuromancer",
+     "year": 1984,
+     "kind": "book",
+     "echo": "Hackers and rogue AIs move through networks to steal and manipulate."
+    },
+    {
+     "title": "Mr. Robot",
+     "year": 2015,
+     "kind": "series",
+     "echo": "A financial system is attacked through its code."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "new",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 2
+    }
+   ]
+  },
+  {
+   "id": "on-chain-arbiter",
+   "title": "On-Chain Arbiter",
+   "sector": "finance",
+   "horizon": 4,
+   "drivers": {
+    "ai": 0.4,
+    "robotics": 0,
+    "autonomy": 0,
+    "bio": 0,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0.6
+   },
+   "trigger": "When millions of contracts are signed and paid by agents, disputes need fast, global judges.",
+   "what": "Settles disputes between people, companies and AI agents in on-chain courts, with rulings paid out instantly by smart contracts.",
+   "day": "Rules on 15 cases before lunch, from a late drone delivery to a design job an agent marked as incomplete.",
+   "skills": [
+    "Law and mediation",
+    "Smart contracts",
+    "Fast judgement"
+   ],
+   "signals": [
+    {
+     "type": "market",
+     "who": "Kleros",
+     "claim": "A blockchain-based dispute resolution service where randomly selected jurors rule on online disputes."
+    },
+    {
+     "type": "technologist",
+     "who": "Google · Agent Payments Protocol (AP2)",
+     "claim": "Open protocol (Sept 2025) for AI agents to pay merchants by card, bank transfer or stablecoin, backed by PayPal, Amex, Coinbase and others.",
+     "url": "https://decrypt.co/339752/google-reveals-ai-agent-payments-protocol-coinbase-ethereum-foundation"
+    },
+    {
+     "type": "engineer",
+     "who": "Ethereum Foundation · ERC-8004",
+     "claim": "A standard for discovering and verifying AI agents on Ethereum, a building block for agent identity and trust.",
+     "url": "https://decrypt.co/339752/google-reveals-ai-agent-payments-protocol-coinbase-ethereum-foundation"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Snow Crash",
+     "year": 1992,
+     "kind": "book",
+     "echo": "Private franchises run their own law and enforcement."
+    },
+    {
+     "title": "Star Trek: The Next Generation · The Measure of a Man",
+     "year": 1989,
+     "kind": "series",
+     "echo": "A hearing must rule on a question no law was written for."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "new",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 4
+    }
+   ]
+  },
+  {
+   "id": "tokenization-architect",
+   "title": "Tokenization Architect",
+   "sector": "finance",
+   "horizon": 3,
+   "drivers": {
+    "ai": 0.2,
+    "robotics": 0,
+    "autonomy": 0,
+    "bio": 0,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0.8
+   },
+   "trigger": "When any asset can be split into digital shares and traded 24/7, everything from a vineyard to a stadium becomes investable.",
+   "what": "Structures real-world assets as tokens: legal wrapper, cash flows, compliance and how investors trade them.",
+   "day": "Turns a Stellenbosch wine estate into 100,000 tokens that pay holders a share of each vintage.",
+   "skills": [
+    "Securities law",
+    "Finance",
+    "Smart contracts"
+   ],
+   "signals": [
+    {
+     "type": "market",
+     "who": "Tokenized real-world assets · Sept 2026",
+     "claim": "About $39B of real-world assets live on-chain, led by tokenized treasuries such as BlackRock's BUIDL.",
+     "url": "https://eco.com/support/en/articles/15254020-tokenized-rwa-market-size-2026-20b-aum-growth-trajectory"
+    },
+    {
+     "type": "analyst",
+     "who": "McKinsey & BCG · Tokenization forecasts",
+     "claim": "Scenarios for tokenized assets by 2030 range from about $2T (McKinsey base case) to $16T (BCG/ADDX).",
+     "url": "https://eco.com/support/en/articles/15254020-tokenized-rwa-market-size-2026-20b-aum-growth-trajectory"
+    },
+    {
+     "type": "strategist",
+     "who": "US GENIUS Act (2025)",
+     "claim": "First US federal framework for payment stablecoins; regulators are now writing licensing and reserve rules.",
+     "url": "https://www.fool.com/research/banks-payment-processors-stablecoins/"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Snow Crash",
+     "year": 1992,
+     "kind": "book",
+     "echo": "A hyper-commercialised world where everything is a franchise or a share."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "new",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 3
+    }
+   ]
+  },
+  {
+   "id": "micro-owner-community-manager",
+   "title": "Micro-Owner Community Manager",
+   "sector": "finance",
+   "horizon": 4,
+   "drivers": {
+    "ai": 0.3,
+    "robotics": 0,
+    "autonomy": 0,
+    "bio": 0,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0.7
+   },
+   "trigger": "When a building or a football club has 50,000 token owners, those owners need a voice and a host.",
+   "what": "Runs the community, votes and events for thousands of fractional owners of a real asset.",
+   "day": "Hosts a live vote on new seats for a club owned by 30,000 fans, then sends every voter their share of the ticket revenue.",
+   "skills": [
+    "Community management",
+    "Governance",
+    "Event hosting"
+   ],
+   "signals": [
+    {
+     "type": "market",
+     "who": "Tokenized real-world assets · Sept 2026",
+     "claim": "About $39B of real-world assets live on-chain, led by tokenized treasuries such as BlackRock's BUIDL.",
+     "url": "https://eco.com/support/en/articles/15254020-tokenized-rwa-market-size-2026-20b-aum-growth-trajectory"
+    },
+    {
+     "type": "analyst",
+     "who": "McKinsey & BCG · Tokenization forecasts",
+     "claim": "Scenarios for tokenized assets by 2030 range from about $2T (McKinsey base case) to $16T (BCG/ADDX).",
+     "url": "https://eco.com/support/en/articles/15254020-tokenized-rwa-market-size-2026-20b-aum-growth-trajectory"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Down and Out in the Magic Kingdom",
+     "year": 2003,
+     "kind": "book",
+     "echo": "Ad-hoc groups run a theme park on reputation instead of money."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "new",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 4
+    }
+   ]
+  },
+  {
+   "id": "programmable-money-designer",
+   "title": "Programmable Money Designer",
+   "sector": "finance",
+   "horizon": 3,
+   "drivers": {
+    "ai": 0.3,
+    "robotics": 0,
+    "autonomy": 0,
+    "bio": 0,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0.7
+   },
+   "trigger": "When money can carry rules, a salary can flow per minute and a grant can only be spent on food.",
+   "what": "Designs payment flows with built-in rules: streamed salaries, conditional grants, instant revenue splits and automatic tax.",
+   "day": "Builds a festival payout where every ticket sale splits instantly between artists, crew, venue and tax office.",
+   "skills": [
+    "Payment design",
+    "Smart contracts",
+    "Regulation"
+   ],
+   "signals": [
+    {
+     "type": "strategist",
+     "who": "US GENIUS Act (2025)",
+     "claim": "First US federal framework for payment stablecoins; regulators are now writing licensing and reserve rules.",
+     "url": "https://www.fool.com/research/banks-payment-processors-stablecoins/"
+    },
+    {
+     "type": "market",
+     "who": "Stablecoin market · Q1 2026",
+     "claim": "Stablecoins reached about $315B in supply and $28T in quarterly transaction volume; automated bots made up about 76% of that volume.",
+     "url": "https://stablecoininsider.org/q1-2026-stablecoin-report/"
+    },
+    {
+     "type": "engineer",
+     "who": "Coinbase & Cloudflare · x402",
+     "claim": "Open standard (2025) that lets software and AI agents pay for any web resource in stablecoins with one HTTP header; settlement takes about 0.4 to 12 seconds for fractions of a cent.",
+     "url": "https://eco.com/support/en/articles/12328618-x402-protocol-explained-how-ai-agents-pay-onchain"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Star Trek: The Next Generation",
+     "year": 1987,
+     "kind": "series",
+     "echo": "A society that has moved beyond money as we know it."
+    },
+    {
+     "title": "The Culture series (Iain M. Banks)",
+     "year": 1987,
+     "kind": "book",
+     "echo": "A post-scarcity civilisation where AIs run the economy."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "new",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 3
+    }
+   ]
+  },
+  {
+   "id": "agent-reputation-underwriter",
+   "title": "Agent Reputation Underwriter",
+   "sector": "finance",
+   "horizon": 4,
+   "drivers": {
+    "ai": 0.6,
+    "robotics": 0,
+    "autonomy": 0,
+    "bio": 0,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0.4
+   },
+   "trigger": "When strangers' agents trade with your agents, you need a credit score for machines.",
+   "what": "Rates and insures AI agents by their track record, so others know how far to trust them with money and contracts.",
+   "day": "Downgrades a logistics agent after three missed deliveries and raises its insurance premium.",
+   "skills": [
+    "Credit risk",
+    "Data science",
+    "Insurance"
+   ],
+   "signals": [
+    {
+     "type": "engineer",
+     "who": "Ethereum Foundation · ERC-8004",
+     "claim": "A standard for discovering and verifying AI agents on Ethereum, a building block for agent identity and trust.",
+     "url": "https://decrypt.co/339752/google-reveals-ai-agent-payments-protocol-coinbase-ethereum-foundation"
+    },
+    {
+     "type": "technologist",
+     "who": "Google · Agent Payments Protocol (AP2)",
+     "claim": "Open protocol (Sept 2025) for AI agents to pay merchants by card, bank transfer or stablecoin, backed by PayPal, Amex, Coinbase and others.",
+     "url": "https://decrypt.co/339752/google-reveals-ai-agent-payments-protocol-coinbase-ethereum-foundation"
+    },
+    {
+     "type": "analyst",
+     "who": "ARK Invest · Big Ideas 2026",
+     "claim": "AI agents could handle about 25% of online sales by 2030, up from about 2% in 2025.",
+     "url": "https://www.itiger.com/hant/news/1156793142"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Black Mirror · Nosedive",
+     "year": 2016,
+     "kind": "series",
+     "echo": "Everyone's access to life depends on a live rating score."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "new",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 4
+    }
+   ]
+  },
+  {
+   "id": "autonomous-company-steward",
+   "title": "Autonomous Company Steward",
+   "sector": "finance",
+   "horizon": 5,
+   "drivers": {
+    "ai": 0.7,
+    "robotics": 0,
+    "autonomy": 0,
+    "bio": 0,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0.3
+   },
+   "trigger": "When companies are run mostly by AI agents, humans become their board, conscience and legal face.",
+   "what": "Oversees an AI-run business: sets goals and limits, signs what the law requires a human to sign, and pulls the brake when needed.",
+   "day": "Reviews the weekly decisions of an agent-run online shop and vetoes a price war it wanted to start.",
+   "skills": [
+    "Governance",
+    "Strategy",
+    "AI oversight"
+   ],
+   "signals": [
+    {
+     "type": "futurist",
+     "who": "Moonshots EP 217 · 2026 Predictions",
+     "claim": "AI automates knowledge work, autonomous robots scale, AI-run companies appear.",
+     "url": "https://podcast.app/2026-predictions-ai-automates-knowledge-work-autonomous-robots-ai-ceo-billionaires-ep-217-e435976459"
+    },
+    {
+     "type": "analyst",
+     "who": "ARK Invest · Big Ideas 2026",
+     "claim": "AI agents could handle about 25% of online sales by 2030, up from about 2% in 2025.",
+     "url": "https://www.itiger.com/hant/news/1156793142"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Daemon",
+     "year": 2006,
+     "kind": "book",
+     "echo": "A software system runs companies after its creator's death."
+    },
+    {
+     "title": "Westworld",
+     "year": 2016,
+     "kind": "series",
+     "echo": "An AI system quietly runs and steers human lives."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "new",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 5
+    }
+   ]
+  },
+  {
+   "id": "farm-swarm-operator",
+   "title": "Farm Swarm Operator",
+   "sector": "food",
+   "horizon": 3,
+   "drivers": {
+    "ai": 0,
+    "robotics": 0.6,
+    "autonomy": 0.4,
+    "bio": 0,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When tractors, drones and weeding robots drive themselves, one person can farm ten farms.",
+   "what": "Runs fleets of autonomous tractors, drones and field robots across several farms from one control room.",
+   "day": "Sends 12 robots to plant before the rain front, while a laser weeder works through the night.",
+   "skills": [
+    "Agronomy",
+    "Fleet operations",
+    "Weather reading"
+   ],
+   "signals": [
+    {
+     "type": "market",
+     "who": "John Deere · CES 2025",
+     "claim": "Launched autonomy kits and driverless tractors, citing a shortage of skilled farm labour; kits can retrofit older machines.",
+     "url": "https://www.country-guide.ca/?p=137466"
+    },
+    {
+     "type": "market",
+     "who": "Carbon Robotics · LaserWeeder",
+     "claim": "AI vision robots kill weeds with lasers instead of herbicide on commercial farms."
+    },
+    {
+     "type": "market",
+     "who": "Agricultural spray drones",
+     "claim": "Spraying and seeding drones already cover large areas of farmland in China and Southeast Asia."
+    },
+    {
+     "type": "economist",
+     "who": "World Economic Forum · Future of Jobs 2025",
+     "claim": "Farmworkers are among the largest absolute job gains to 2030, as tech and climate reshape agriculture.",
+     "url": "https://www.weforum.org/reports/the-future-of-jobs-report-2025/in-full/2-jobs-outlook/"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Interstellar",
+     "year": 2014,
+     "kind": "film",
+     "echo": "Self-driving combines harvest the fields on their own."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "new",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 3
+    }
+   ]
+  },
+  {
+   "id": "parametric-insurance-designer",
+   "title": "Parametric Farm Insurance Designer",
+   "sector": "food",
+   "horizon": 3,
+   "drivers": {
+    "ai": 0.3,
+    "robotics": 0,
+    "autonomy": 0,
+    "bio": 0,
+    "space": 0.2,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0.5
+   },
+   "trigger": "When satellites measure the drought and smart contracts pay out automatically, insurance reaches every small farmer.",
+   "what": "Designs insurance that pays farmers instantly when rain, heat or yield data cross a threshold, without claims or adjusters.",
+   "day": "Sets the drought trigger for 50,000 maize farmers and watches payouts land on their phones the same week.",
+   "skills": [
+    "Actuarial science",
+    "Climate data",
+    "Mobile money"
+   ],
+   "signals": [
+    {
+     "type": "market",
+     "who": "Etherisc, Pula & Chainlink (Kenya)",
+     "claim": "Blockchain crop insurance covered about 7,000 farmers for under $1 each; payouts went automatically to M-Pesa within weeks instead of months.",
+     "url": "https://blog.etherisc.com/etherisc-protects-another-7-000-kenyan-farmers-as-part-of-the-lemonade-crypto-climate-coalition-e169eca3d6bc"
+    },
+    {
+     "type": "scientist",
+     "who": "IPCC AR6",
+     "claim": "More frequent and intense heat extremes are virtually certain as warming continues."
+    }
+   ],
+   "scifi": [
+    {
+     "title": "The Ministry for the Future",
+     "year": 2020,
+     "kind": "book",
+     "echo": "New financial tools are invented to cope with climate disaster."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "new",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 3
+    }
+   ]
+  },
+  {
+   "id": "harvest-token-broker",
+   "title": "Harvest Token Broker",
+   "sector": "food",
+   "horizon": 5,
+   "drivers": {
+    "ai": 0.3,
+    "robotics": 0,
+    "autonomy": 0,
+    "bio": 0,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0.7
+   },
+   "trigger": "When a farmer in Limpopo can sell next season's crop to a buyer in Berlin in seconds, the middlemen change.",
+   "what": "Helps farmers pre-sell harvests as tokens to buyers worldwide, with instant payment and tracking from field to plate.",
+   "day": "Pre-sells 40 tonnes of rooibos to three tea brands and releases payment as each lot is shipped.",
+   "skills": [
+    "Commodity trading",
+    "Supply chain",
+    "Farmer relations"
+   ],
+   "signals": [
+    {
+     "type": "market",
+     "who": "Tokenized real-world assets · Sept 2026",
+     "claim": "About $39B of real-world assets live on-chain, led by tokenized treasuries such as BlackRock's BUIDL.",
+     "url": "https://eco.com/support/en/articles/15254020-tokenized-rwa-market-size-2026-20b-aum-growth-trajectory"
+    },
+    {
+     "type": "market",
+     "who": "Stablecoin market · Q1 2026",
+     "claim": "Stablecoins reached about $315B in supply and $28T in quarterly transaction volume; automated bots made up about 76% of that volume.",
+     "url": "https://stablecoininsider.org/q1-2026-stablecoin-report/"
+    },
+    {
+     "type": "market",
+     "who": "Etherisc, Pula & Chainlink (Kenya)",
+     "claim": "Blockchain crop insurance covered about 7,000 farmers for under $1 each; payouts went automatically to M-Pesa within weeks instead of months.",
+     "url": "https://blog.etherisc.com/etherisc-protects-another-7-000-kenyan-farmers-as-part-of-the-lemonade-crypto-climate-coalition-e169eca3d6bc"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "The Windup Girl",
+     "year": 2009,
+     "kind": "book",
+     "echo": "Whoever controls food and seed controls the economy."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "new",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 5
+    }
+   ]
+  },
+  {
+   "id": "soil-carbon-steward",
+   "title": "Soil Carbon Steward",
+   "sector": "food",
+   "horizon": 4,
+   "drivers": {
+    "ai": 0,
+    "robotics": 0,
+    "autonomy": 0,
+    "bio": 0.3,
+    "space": 0.3,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0.4
+   },
+   "trigger": "When every tonne of carbon in the soil can be measured and paid for instantly, farmers grow two crops: food and carbon.",
+   "what": "Helps farms build soil carbon, measures it with sensors and satellites, and sells verified credits on-chain.",
+   "day": "Walks a farmer through cover-crop data and sells this quarter's 300 verified tonnes to an airline.",
+   "skills": [
+    "Soil science",
+    "Remote sensing",
+    "Carbon markets"
+   ],
+   "signals": [
+    {
+     "type": "market",
+     "who": "Carbon removal market",
+     "claim": "Large buyers such as Microsoft have contracted millions of tonnes of carbon removal."
+    },
+    {
+     "type": "market",
+     "who": "Tokenized real-world assets · Sept 2026",
+     "claim": "About $39B of real-world assets live on-chain, led by tokenized treasuries such as BlackRock's BUIDL.",
+     "url": "https://eco.com/support/en/articles/15254020-tokenized-rwa-market-size-2026-20b-aum-growth-trajectory"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "The Ministry for the Future",
+     "year": 2020,
+     "kind": "book",
+     "echo": "A 'carbon coin' pays people for every tonne of carbon kept out of the air."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "new",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 4
+    }
+   ]
+  },
+  {
+   "id": "robotic-pollination-keeper",
+   "title": "Robotic Pollination Keeper",
+   "sector": "food",
+   "horizon": 4,
+   "drivers": {
+    "ai": 0.3,
+    "robotics": 0.7,
+    "autonomy": 0,
+    "bio": 0,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When pollinators decline, greenhouses and orchards turn to robots, and the robots need keepers.",
+   "what": "Runs and maintains pollinating and fruit-picking robots in greenhouses and orchards, alongside real bees.",
+   "day": "Calibrates pollination arms for a new tomato variety and checks the drone pickers' bruise rate.",
+   "skills": [
+    "Horticulture",
+    "Robotics",
+    "Plant biology"
+   ],
+   "signals": [
+    {
+     "type": "market",
+     "who": "Robotic pollination (e.g. Arugga, Tevel)",
+     "claim": "Startups use robots to pollinate greenhouse tomatoes and flying robots to pick fruit."
+    },
+    {
+     "type": "market",
+     "who": "Carbon Robotics · LaserWeeder",
+     "claim": "AI vision robots kill weeds with lasers instead of herbicide on commercial farms."
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Black Mirror · Hated in the Nation",
+     "year": 2016,
+     "kind": "series",
+     "echo": "Robotic bees replace collapsing bee populations."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "new",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 4
+    }
+   ]
+  },
+  {
+   "id": "farm-data-cooperative-manager",
+   "title": "Farm Data Cooperative Manager",
+   "sector": "food",
+   "horizon": 4,
+   "drivers": {
+    "ai": 0.5,
+    "robotics": 0,
+    "autonomy": 0,
+    "bio": 0,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0.5
+   },
+   "trigger": "When AI models pay for field data per byte, farmers can earn from their data, not just their crops.",
+   "what": "Runs a cooperative that pools farmers' field, weather and yield data, licenses it to AI firms and pays members instantly.",
+   "day": "Signs a licence with a seed company and pays 2,000 members their share the same afternoon.",
+   "skills": [
+    "Cooperative management",
+    "Data rights",
+    "Negotiation"
+   ],
+   "signals": [
+    {
+     "type": "engineer",
+     "who": "Coinbase & Cloudflare · x402",
+     "claim": "Open standard (2025) that lets software and AI agents pay for any web resource in stablecoins with one HTTP header; settlement takes about 0.4 to 12 seconds for fractions of a cent.",
+     "url": "https://eco.com/support/en/articles/12328618-x402-protocol-explained-how-ai-agents-pay-onchain"
+    },
+    {
+     "type": "strategist",
+     "who": "EU Data Governance Act",
+     "claim": "Creates a legal framework for data intermediaries that manage data on people's behalf."
+    },
+    {
+     "type": "market",
+     "who": "John Deere · CES 2025",
+     "claim": "Launched autonomy kits and driverless tractors, citing a shortage of skilled farm labour; kits can retrofit older machines.",
+     "url": "https://www.country-guide.ca/?p=137466"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Dune",
+     "year": 1965,
+     "kind": "book",
+     "echo": "Whoever controls the scarce resource holds the power."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "new",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 4
+    }
+   ]
+  },
+  {
+   "id": "bioreactor-rancher",
+   "title": "Bioreactor Rancher",
+   "sector": "food",
+   "horizon": 7,
+   "drivers": {
+    "ai": 0,
+    "robotics": 0,
+    "autonomy": 0,
+    "bio": 0.8,
+    "space": 0,
+    "energy": 0.2,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When meat can be grown from cells, a farm can have tanks next to its pastures.",
+   "what": "Runs small cultivated-meat bioreactors on farms or in towns, managing cell lines, feed and hygiene.",
+   "day": "Harvests the week's batch of cultivated beef and starts a new line from a cell sample of the farm's own cattle.",
+   "skills": [
+    "Cell culture",
+    "Food safety",
+    "Farm business"
+   ],
+   "signals": [
+    {
+     "type": "market",
+     "who": "Cultivated meat approvals",
+     "claim": "Lab-grown chicken was approved for sale in Singapore (2020) and the US (2023)."
+    },
+    {
+     "type": "economist",
+     "who": "World Economic Forum · Future of Jobs 2025",
+     "claim": "Farmworkers are among the largest absolute job gains to 2030, as tech and climate reshape agriculture.",
+     "url": "https://www.weforum.org/reports/the-future-of-jobs-report-2025/in-full/2-jobs-outlook/"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Oryx and Crake",
+     "year": 2003,
+     "kind": "book",
+     "echo": "Lab-grown meat is a standard product."
+    },
+    {
+     "title": "Star Trek: The Next Generation",
+     "year": 1987,
+     "kind": "series",
+     "echo": "Food comes from replicators, not from slaughter."
+    }
+   ],
+   "added": "2026-10-03",
+   "status": "new",
+   "history": [
+    {
+     "date": "2026-10-03",
+     "horizon": 7
+    }
+   ]
+  }
+ ]
+}

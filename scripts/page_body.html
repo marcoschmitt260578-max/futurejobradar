@@ -1,0 +1,560 @@
+<title>Future Job Radar · Magazine</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800;900&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: a monthly sci-fi magazine. Cover story first, then "your job" picker, the radar as the signature spread, then the index of features. Single deep-midnight look by design. */
+:root{
+  --bg:#0d1226; --bg2:#121937; --card:#151d3d; --paper:#f3eee3; --mute:#a9afc6; --dim:#6f7899;
+  --rule:rgba(243,238,227,.14); --rule2:rgba(243,238,227,.28); --gold:#f2c14e; --gold2:rgba(242,193,78,.14);
+  --f-head:"Big Shoulders Display","Arial Narrow",Impact,sans-serif;
+  --f-body:"Newsreader",Georgia,"Times New Roman",serif;
+  --f-mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html,body{background:var(--bg);color:var(--paper)}
+body{font-family:var(--f-body);font-size:18px;line-height:1.55}
+a{color:var(--gold)}
+button{font:inherit;color:inherit;cursor:pointer;background:none;border:0}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.wrap{max-width:1240px;margin:0 auto;padding-inline:clamp(16px,4vw,48px)}
+.kicker{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+.mono{font-family:var(--f-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--mute)}
+h1,h2,h3,h4{overflow-wrap:anywhere}
+h1,h2,h3{font-family:var(--f-head);font-weight:900;text-transform:uppercase;letter-spacing:.005em;line-height:.9;margin:0;text-wrap:balance}
+.dot{display:inline-block;width:9px;height:9px;border-radius:50%;background:currentColor;flex:none}
+
+/* masthead */
+.mast{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:rgba(13,18,38,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--rule)}
+.mast .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:12px}
+.logo{font-family:var(--f-head);font-weight:900;font-size:22px;letter-spacing:.04em;text-transform:uppercase;white-space:nowrap}
+.logo span{color:var(--gold)}
+.mast nav{display:flex;gap:18px;flex-wrap:wrap}
+.mast nav a{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);text-decoration:none}
+.mast nav a:hover{color:var(--paper)}
+.issue{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;color:var(--dim);text-transform:uppercase;white-space:nowrap}
+@media (max-width:760px){.mast nav{display:none}}
+@media (max-width:520px){.logo{font-size:18px}.issue{font-size:9.5px;letter-spacing:.08em}.mast .wrap{gap:8px}}
+
+/* cover */
+.cover{padding-block:clamp(28px,6vw,64px) 40px;border-bottom:1px solid var(--rule);position:relative;overflow:hidden}
+.cover::before{content:"";position:absolute;right:-12vw;top:-10vw;width:62vw;height:62vw;max-width:820px;max-height:820px;border-radius:50%;
+  background:repeating-radial-gradient(circle,transparent 0 46px,rgba(242,193,78,.09) 46px 47px),radial-gradient(circle,rgba(110,140,255,.18),transparent 65%);pointer-events:none}
+.cover .wrap{position:relative;display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:clamp(24px,4vw,56px);align-items:end}
+@media (max-width:900px){.cover .wrap{grid-template-columns:minmax(0,1fr)}}
+.cover h1{font-size:clamp(56px,11vw,150px);line-height:.84}
+.cover h1 em{font-style:normal;color:var(--gold)}
+.standfirst{font-size:clamp(19px,2vw,23px);color:var(--paper);max-width:34ch;margin:22px 0 0}
+.standfirst b{font-weight:600;color:var(--gold)}
+.coverstats{display:flex;flex-wrap:wrap;gap:22px;margin-top:26px}
+.coverstats div{border-top:2px solid var(--gold);padding-top:8px;min-width:90px}
+.coverstats b{display:block;font-family:var(--f-head);font-size:38px;font-weight:800;line-height:1;font-variant-numeric:tabular-nums}
+.coverstats span{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
+.story{background:var(--paper);color:#151a2e;padding:24px 24px 22px;position:relative;text-align:left;width:100%;display:block;box-shadow:0 30px 60px -30px rgba(0,0,0,.6)}
+.story .kicker{color:#7a5a00}
+.story .yr{position:absolute;top:18px;right:20px;font-family:var(--f-head);font-weight:900;font-size:56px;line-height:.8;color:#151a2e;opacity:.12}
+.story h2{font-size:clamp(38px,5vw,58px);margin:12px 0 10px;color:#151a2e}
+.story p{margin:0;font-size:18px;color:#2a3150}
+.story .q{font-style:italic;border-left:3px solid #c9971b;padding-left:12px;margin:12px 0 14px}
+.story .go{display:inline-flex;gap:8px;align-items:center;font-family:var(--f-mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#151a2e;border-bottom:2px solid #151a2e;padding-bottom:2px;margin-top:6px}
+.story:hover .go{color:#7a5a00;border-color:#7a5a00}
+
+/* sections */
+section.band{padding-block:clamp(40px,6vw,72px);border-bottom:1px solid var(--rule)}
+.shead{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px 40px;align-items:end;margin-bottom:28px}
+@media (max-width:760px){.shead{grid-template-columns:minmax(0,1fr)}}
+.shead h2{font-size:clamp(40px,6.5vw,84px)}
+.shead p{margin:0;color:var(--mute);max-width:46ch}
+
+/* picker */
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.04em;padding:9px 14px;border:1px solid var(--rule2);border-radius:999px;color:var(--paper);transition:all .15s}
+.chip:hover{border-color:var(--gold)}
+.chip[aria-pressed="true"]{background:var(--gold);color:#151a2e;border-color:var(--gold)}
+.pathways{margin-top:26px;display:grid;gap:10px}
+.ptitle{font-family:var(--f-head);font-size:clamp(26px,3.4vw,40px);font-weight:800;text-transform:uppercase;line-height:1;margin:0 0 6px}
+.ptitle span{color:var(--gold)}
+.path{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:6px 18px;align-items:center;text-align:left;width:100%;padding:16px 4px;border-top:1px solid var(--rule)}
+.path:hover .pt{color:var(--gold)}
+.path .arrow{font-family:var(--f-mono);color:var(--dim);font-size:13px;white-space:nowrap}
+.path .pt{font-family:var(--f-head);font-weight:800;font-size:clamp(24px,3vw,34px);text-transform:uppercase;line-height:1;transition:color .15s}
+.path .ps{grid-column:2;color:var(--mute);font-size:16px}
+.path .py{font-family:var(--f-head);font-weight:800;font-size:28px;color:var(--gold);font-variant-numeric:tabular-nums;grid-row:1/span 2;grid-column:3}
+@media (max-width:560px){.path{grid-template-columns:minmax(0,1fr) auto}.path .arrow{grid-column:1/-1}.path .ps{grid-column:1}.path .py{grid-row:auto;grid-column:2;grid-row:2/span 2}}
+.sharebar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:14px}
+.btn{font-family:var(--f-mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;padding:11px 16px;border:1px solid var(--gold);color:var(--gold)}
+.btn:hover{background:var(--gold);color:#151a2e}
+.btn.solid{background:var(--gold);color:#151a2e}
+.toast{font-family:var(--f-mono);font-size:12px;color:var(--gold)}
+textarea.fb{width:100%;min-height:110px;margin-top:10px;background:var(--bg2);color:var(--paper);border:1px solid var(--rule2);font:13px var(--f-mono);padding:10px}
+
+/* radar spread */
+.spread{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:clamp(20px,4vw,48px);align-items:start}
+@media (max-width:900px){.spread{grid-template-columns:minmax(0,1fr)}}
+.scopebox{position:relative;width:100%;aspect-ratio:1/1}
+#radar{position:absolute;inset:0;width:100%;height:100%;display:block;cursor:crosshair}
+.tip{position:absolute;pointer-events:none;transform:translate(-50%,calc(-100% - 14px));background:var(--paper);color:#151a2e;padding:6px 10px;font-family:var(--f-mono);font-size:12px;white-space:nowrap;opacity:0;transition:opacity .12s}
+.legend{display:flex;flex-wrap:wrap;gap:8px 16px;margin-top:10px}
+.legend span{display:flex;gap:6px;align-items:center;font-family:var(--f-mono);font-size:11px;color:var(--mute);letter-spacing:.06em}
+.tune h3{font-size:30px;margin-bottom:6px}
+.tune p{color:var(--mute);margin:0 0 16px;font-size:16px}
+.presets{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px}
+.pbtn{font-family:var(--f-mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;padding:7px 11px;border:1px solid var(--rule2);color:var(--mute)}
+.pbtn:hover{color:var(--paper);border-color:var(--paper)}
+.pbtn.on{background:var(--paper);color:#151a2e;border-color:var(--paper)}
+.sliders{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 22px}
+@media (max-width:420px){.sliders{grid-template-columns:minmax(0,1fr)}}
+.sl label{display:flex;justify-content:space-between;font-family:var(--f-mono);font-size:11.5px;letter-spacing:.06em;text-transform:uppercase}
+.sl label span{color:var(--dim)}
+input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:22px;background:transparent;margin:0}
+input[type=range]::-webkit-slider-runnable-track{height:3px;background:linear-gradient(90deg,var(--c) var(--p,50%),rgba(243,238,227,.16) var(--p,50%))}
+input[type=range]::-moz-range-track{height:3px;background:rgba(243,238,227,.16)}
+input[type=range]::-moz-range-progress{height:3px;background:var(--c)}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:15px;height:15px;margin-top:-6px;border-radius:50%;background:var(--bg);border:2px solid var(--c)}
+input[type=range]::-moz-range-thumb{width:12px;height:12px;border-radius:50%;background:var(--bg);border:2px solid var(--c)}
+.radarstats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:20px}
+.radarstats div{border-top:1px solid var(--rule2);padding-top:6px}
+.radarstats b{display:block;font-family:var(--f-head);font-weight:800;font-size:34px;line-height:1;font-variant-numeric:tabular-nums}
+.radarstats span{font-family:var(--f-mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--mute)}
+
+/* index of features */
+.filters{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:20px}
+.filters .chip{font-size:11.5px;padding:7px 12px;display:flex;gap:7px;align-items:center}
+.rail{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:1px;background:var(--rule);border:1px solid var(--rule)}
+@media (max-width:640px){.rail{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;background:none;border:0;padding-bottom:10px;margin-inline:-16px;padding-inline:16px}.rail .card{flex:0 0 82%;scroll-snap-align:start;border:1px solid var(--rule)}}
+.card{background:var(--bg);text-align:left;padding:20px 20px 18px;display:flex;flex-direction:column;gap:10px;min-width:0;transition:background .15s}
+.card:hover{background:var(--bg2)}
+.card .top{display:flex;align-items:center;gap:8px;font-family:var(--f-mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
+.card .top .y{margin-left:auto;font-family:var(--f-head);font-size:24px;font-weight:800;color:var(--paper);letter-spacing:0}
+.card h4{font-family:var(--f-head);font-weight:800;font-size:28px;line-height:.95;text-transform:uppercase;margin:0}
+.card p{margin:0;font-size:16px;color:var(--mute);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.card .tag{font-family:var(--f-mono);font-size:10px;letter-spacing:.14em;color:var(--gold)}
+.swipehint{display:none;font-family:var(--f-mono);font-size:11px;color:var(--dim);letter-spacing:.1em;text-transform:uppercase;margin-top:6px}
+@media (max-width:640px){.swipehint{display:block}}
+
+/* dispatches */
+.disp{display:grid;gap:0}
+.disp article{display:grid;grid-template-columns:150px minmax(0,1fr);gap:20px;padding:20px 0;border-top:1px solid var(--rule)}
+@media (max-width:560px){.disp article{grid-template-columns:minmax(0,1fr);gap:6px}}
+.disp .n{font-family:var(--f-head);font-weight:900;font-size:44px;line-height:.9}
+.disp .n small{display:block;font-family:var(--f-mono);font-size:11px;font-weight:400;color:var(--mute);letter-spacing:.1em;text-transform:uppercase;margin-top:6px}
+.disp h3{font-size:30px;margin-bottom:8px}
+.disp p{margin:0;color:var(--mute);font-size:17px;max-width:68ch}
+
+.method{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:28px}
+.method h4{font-family:var(--f-head);font-size:26px;font-weight:800;text-transform:uppercase;margin:0 0 6px}
+.method h4 span{color:var(--gold)}
+.method p{margin:0;color:var(--mute);font-size:16px}
+footer{padding-block:28px 48px;font-family:var(--f-mono);font-size:11.5px;color:var(--dim);letter-spacing:.06em}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
+
+/* feature overlay */
+.feature{position:fixed;inset:0;z-index:50;background:var(--paper);color:#151a2e;overflow-y:auto;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+.fbar{position:sticky;top:0;z-index:2;background:var(--paper);border-bottom:1px solid rgba(21,26,46,.15)}
+.fbar .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-block:12px}
+.fbar .logo{color:#151a2e;font-size:18px}
+.fbar .logo span{color:#a77a06}
+.fbar nav{display:flex;gap:6px}
+.fbtn{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;padding:8px 12px;border:1px solid rgba(21,26,46,.3);color:#151a2e}
+.fbtn:hover{background:#151a2e;color:var(--paper)}
+.fhero{padding-block:clamp(28px,5vw,56px) 24px;border-bottom:2px solid #151a2e}
+.fhero .kicker{color:#7a5a00;display:flex;gap:8px;align-items:center}
+.fhero h1{font-size:clamp(56px,10vw,132px);color:#151a2e;margin:12px 0 18px}
+.fhero .dek{font-size:clamp(21px,2.4vw,28px);font-style:italic;max-width:30ch;margin:0;color:#2a3150}
+.fmeta{display:flex;flex-wrap:wrap;gap:12px 36px;margin-top:22px;font-family:var(--f-mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#4a5170}
+.fmeta b{display:block;font-family:var(--f-head);font-size:40px;letter-spacing:0;color:#151a2e;line-height:1;margin-top:4px}
+.fbody{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:clamp(24px,5vw,64px);padding-block:32px 60px}
+@media (max-width:900px){.fbody{grid-template-columns:minmax(0,1fr)}}
+.fbody article{max-width:66ch}
+.fbody h3{font-size:30px;color:#151a2e;margin:30px 0 10px}
+.fbody h3:first-child{margin-top:0}
+.fbody p{margin:0 0 14px;font-size:20px;line-height:1.6;color:#20263f}
+.dropcap::first-letter{font-family:var(--f-head);font-weight:900;float:left;font-size:4.4em;line-height:.8;padding:6px 10px 0 0;color:#a77a06}
+.pull{font-family:var(--f-head);font-weight:800;text-transform:uppercase;font-size:clamp(30px,3.6vw,44px);line-height:.98;margin:28px 0;padding:18px 0;border-top:2px solid #151a2e;border-bottom:2px solid #151a2e;color:#151a2e}
+.notes{list-style:none;counter-reset:n;padding:0;margin:0}
+.notes li{counter-increment:n;display:grid;grid-template-columns:28px minmax(0,1fr);gap:8px;padding:10px 0;border-top:1px solid rgba(21,26,46,.15);font-size:16px;line-height:1.45;color:#2a3150}
+.notes li::before{content:counter(n);font-family:var(--f-mono);font-size:12px;color:#7a5a00;padding-top:3px}
+.notes b{color:#151a2e}
+.notes a{color:#7a5a00;font-family:var(--f-mono);font-size:12px}
+aside.side{display:flex;flex-direction:column;gap:20px}
+.box{border:2px solid #151a2e;padding:18px}
+.box h4{font-family:var(--f-mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;margin:0 0 10px;color:#7a5a00}
+.box .sf{padding:8px 0;border-top:1px solid rgba(21,26,46,.15);font-size:16px;line-height:1.4}
+.box .sf:first-of-type{border-top:0;padding-top:0}
+.box .sf b{display:block;font-family:var(--f-head);font-size:22px;font-weight:800;text-transform:uppercase;line-height:1}
+.box .skill{display:inline-block;margin:0 6px 6px 0;padding:4px 9px;border:1px solid rgba(21,26,46,.35);font-family:var(--f-mono);font-size:11.5px}
+.meter{height:8px;background:rgba(21,26,46,.12);margin-top:8px}
+.meter i{display:block;height:100%;background:#151a2e}
+.fshare .btn{border-color:#151a2e;color:#151a2e}
+.fshare .btn:hover{background:#151a2e;color:var(--paper)}
+.fshare .btn.solid{background:#151a2e;color:var(--paper)}
+.fshare .toast{color:#7a5a00}
+.fshare textarea.fb{background:#fff;color:#151a2e;border-color:rgba(21,26,46,.3)}
+.recipe{padding-block:clamp(28px,4vw,44px);border-bottom:1px solid var(--rule);background:var(--bg2)}
+.recipe .wrap{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,2fr);gap:clamp(20px,4vw,56px);align-items:center}
+@media (max-width:900px){.recipe .wrap{grid-template-columns:minmax(0,1fr)}}
+.recipe h2{font-size:clamp(30px,3.4vw,46px)}
+.recipe h2 em{font-style:normal;color:var(--gold)}
+.formula{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr) auto minmax(0,1fr) auto minmax(0,1fr);gap:10px;align-items:stretch}
+@media (max-width:760px){.formula{grid-template-columns:minmax(0,1fr)}.formula .op{text-align:center;padding:0}}
+.term{border:1px solid var(--rule2);padding:14px;min-width:0}
+.term b{display:block;font-family:var(--f-head);font-weight:800;font-size:24px;text-transform:uppercase;line-height:1;margin-bottom:6px}
+.term span{font-size:15px;color:var(--mute);line-height:1.4;display:block}
+.term.res{border-color:var(--gold);background:var(--gold2)}
+.term.res b{color:var(--gold)}
+.op{font-family:var(--f-head);font-size:30px;font-weight:800;color:var(--gold);align-self:center}
+.recipe .note{grid-column:1/-1;margin:0;font-size:17px;color:var(--mute);max-width:80ch}
+.recipe .note b{color:var(--paper);font-weight:600}
+.manifesto{background:var(--paper);color:#151a2e;border-bottom:0}
+.manifesto .wrap{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:clamp(24px,5vw,72px);align-items:start}
+@media (max-width:900px){.manifesto .wrap{grid-template-columns:minmax(0,1fr)}}
+.manifesto .kicker{color:#7a5a00}
+.manifesto h2{font-size:clamp(44px,6.2vw,92px);color:#151a2e;margin-top:10px}
+.manifesto h2 em{font-style:normal;color:#a77a06}
+.manifesto p{font-size:20px;line-height:1.6;color:#20263f;margin:0 0 16px;max-width:60ch}
+.manifesto .then{font-family:var(--f-mono);font-size:13px;letter-spacing:.04em;color:#4a5170;line-height:1.9;margin:6px 0 20px;padding:14px 0;border-top:1px solid rgba(21,26,46,.2);border-bottom:1px solid rgba(21,26,46,.2)}
+.manifesto .then b{color:#151a2e}
+.disclaimer{border:2px solid #151a2e;padding:18px 20px;margin-top:8px}
+.disclaimer .kicker{display:block;margin-bottom:8px}
+.disclaimer p{font-family:var(--f-head);font-weight:800;text-transform:uppercase;font-size:clamp(24px,2.6vw,32px);line-height:1;margin:0;color:#151a2e}
+.sign{display:flex;flex-direction:column;gap:6px;margin-top:22px}
+.sign b{font-family:var(--f-head);font-size:30px;font-weight:900;text-transform:uppercase;line-height:1}
+.sign span{font-size:17px;color:#4a5170;max-width:46ch}
+.sign a{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;color:#151a2e;text-decoration:none;border-bottom:2px solid #a77a06;align-self:flex-start;padding-bottom:2px;margin-top:6px}
+.sign a:hover{color:#7a5a00}
+.byline{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);margin-top:18px}
+.byline a{color:var(--paper);text-decoration:none;border-bottom:1px solid var(--gold)}
+.loading{font-family:var(--f-mono);font-size:12px;color:var(--mute);letter-spacing:.1em}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+
+<header class="mast">
+  <div class="wrap">
+    <div class="logo">Future Job <span>Radar</span></div>
+    <nav aria-label="Sections"><a href="#yours">Your job</a><a href="#radar-sec">The radar</a><a href="#index">All jobs</a><a href="#dispatches">Dispatches</a><a href="#why">Why</a></nav>
+    <div class="issue" id="issue">Issue —</div>
+  </div>
+</header>
+
+<section class="cover">
+  <div class="wrap">
+    <div>
+      <div class="kicker">The jobs of 2028–2036</div>
+      <h1>Jobs that <em>don't exist</em> yet.</h1>
+      <p class="standfirst">In 1995 nobody was an <b>Uber driver</b>, an <b>Airbnb host</b> or an <b>influencer</b>. We read the scientists, analysts and futurists, then ask science fiction what comes next.</p>
+      <div class="coverstats">
+        <div><b id="cJobs">—</b><span>Future jobs</span></div>
+        <div><b id="cSoon">—</b><span>Arrive by 2030</span></div>
+        <div><b id="cFic">—</b><span>Sci-fi sources</span></div>
+      </div>
+      <p class="byline">Made with optimism by <a href="#why">Marco Schmitt</a> · Not career advice</p>
+    </div>
+    <button class="story" id="coverStory" aria-label="Open the cover story">
+      <span class="kicker">Cover story · Job of the week</span>
+      <span class="yr" id="csYr"></span>
+      <h2 id="csTitle">Loading…</h2>
+      <p class="q" id="csQ"></p>
+      <p id="csWhat"></p>
+      <span class="go">Read the story →</span>
+    </button>
+  </div>
+</section>
+
+<section class="recipe" aria-labelledby="recipeH">
+  <div class="wrap">
+    <h2 id="recipeH">Part fact.<br>Part fiction.<br><em>All imagination.</em></h2>
+    <div class="formula">
+      <div class="term"><b>Facts</b><span>What scientists, analysts, founders and markets say is happening now.</span></div>
+      <span class="op" aria-hidden="true">+</span>
+      <div class="term"><b>Fiction</b><span>Films, series and books that already lived in that future.</span></div>
+      <span class="op" aria-hidden="true">+</span>
+      <div class="term"><b>Creative thinking</b><span>The second-order question: if this becomes normal, who is needed?</span></div>
+      <span class="op" aria-hidden="true">=</span>
+      <div class="term res"><b>A job that could exist</b><span>Not a prediction. A possibility worth thinking about.</span></div>
+    </div>
+    <p class="note">These jobs don't come out of a spreadsheet. They are <b>informed imagination</b>: real signals, remixed with science fiction and a bit of creative thinking. Every job shows its sources, so you can see where the facts end and the imagination begins.</p>
+  </div>
+</section>
+
+<section class="band" id="yours">
+  <div class="wrap">
+    <div class="shead">
+      <h2>What do you do today?</h2>
+      <p>Pick your current job. We show you the future jobs that grow out of the skills you already have.</p>
+    </div>
+    <div class="chips" id="profChips" role="group" aria-label="Your current job"></div>
+    <div class="pathways" id="paths" aria-live="polite"></div>
+  </div>
+</section>
+
+<section class="band" id="radar-sec">
+  <div class="wrap">
+    <div class="shead">
+      <h2>The radar</h2>
+      <p>Every dot is a job. The closer to the centre, the sooner it arrives. Speed up a technology and watch the jobs move. Tap a dot to read its story.</p>
+    </div>
+    <div class="spread">
+      <div>
+        <div class="scopebox" id="scopebox">
+          <canvas id="radar" role="img" aria-label="Radar of future jobs by sector and arrival year. The job index below lists the same jobs."></canvas>
+          <div class="tip" id="tip"></div>
+        </div>
+        <div class="legend" id="legend"></div>
+      </div>
+      <div class="tune">
+        <h3>Tune the future</h3>
+        <p>How fast will each technology move? Your guess changes when the jobs arrive.</p>
+        <div class="presets" role="group" aria-label="Scenarios">
+          <button class="pbtn on" data-preset="base">Baseline</button>
+          <button class="pbtn" data-preset="skeptic">Skeptic</button>
+          <button class="pbtn" data-preset="moonshot">Moonshot</button>
+          <button class="pbtn" data-preset="agents">Agent economy</button>
+          <button class="pbtn" data-preset="warp">Random future</button>
+        </div>
+        <div class="sliders" id="sliders"></div>
+        <div class="radarstats">
+          <div><b id="rsNear">—</b><span>By 2030</span></div>
+          <div><b id="rsMid">—</b><span>2031–2036</span></div>
+          <div><b id="rsBey">—</b><span>Beyond</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="index">
+  <div class="wrap">
+    <div class="shead">
+      <h2>All future jobs</h2>
+      <p>Each one is built from real signals and a piece of science fiction. Sorted by arrival.</p>
+    </div>
+    <div class="filters" id="filters" role="group" aria-label="Filter by sector"></div>
+    <div class="rail" id="rail"></div>
+    <div class="swipehint">Swipe for more →</div>
+  </div>
+</section>
+
+<section class="band" id="dispatches">
+  <div class="wrap">
+    <div class="shead">
+      <h2>Dispatches</h2>
+      <p>Every Monday the radar scans the week's news, research and fiction, adds new jobs and moves old ones closer or further away.</p>
+    </div>
+    <div class="disp" id="disp"></div>
+  </div>
+</section>
+
+<section class="band manifesto" id="why">
+  <div class="wrap">
+    <div>
+      <div class="kicker">Why this exists</div>
+      <h2>Not a forecast. <em>An invitation.</em></h2>
+    </div>
+    <div>
+      <p>Every week someone says the machines are coming for our jobs. Some tasks will go, that's true. But every big shift in history also created work nobody could imagine before it happened.</p>
+      <p class="then"><b>Printing press</b> → editors, publishers, booksellers<br><b>Electricity</b> → electricians, engineers, radio hosts<br><b>Internet</b> → web designers, app developers, Uber drivers, Airbnb hosts, influencers<br><b>AI, robots, space, biotech</b> → ?</p>
+      <p>This radar is my attempt to fill in that question mark. I read what scientists, analysts and futurists say, mix it with the best science fiction, and ask one simple thing: what new jobs could this create?</p>
+      <p>Some of these jobs will happen. Some won't. Some will look completely different. That's fine. The point is not to be right. The point is to look at the future with curiosity instead of fear, because every change, however big, also opens doors.</p>
+      <div class="disclaimer"><span class="kicker">Disclaimer</span><p>Not career advice. Not a crystal ball. Just a guy from the internet who reads too much sci-fi and believes in people.</p></div>
+      <div class="sign">
+        <b>Marco Schmitt</b>
+        <span>I produce live events around the world for brands like Porsche, BMW and FIFA. Building experiences for the future made me curious about the jobs it will need. Researched with AI, curated by a human.</span>
+        <a href="https://www.eventm.com" target="_blank" rel="noopener">eventm.com ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="method">
+      <div><h4><span>01</span> Signal</h4><p>Facts and forecasts: robot prices, robotaxi rides, analyst reports, scientists and founders.</p></div>
+      <div><h4><span>02</span> Fiction</h4><p>Science fiction already rehearsed these futures. We look at who works in them and what they do all day.</p></div>
+      <div><h4><span>03</span> Remix</h4><p>The second-order question: if every car drives itself, what happens on the motorway? Whoever solves it has the new job.</p></div>
+      <div><h4><span>04</span> Score</h4><p>Arrival year from the evidence, confidence from how many independent sources point the same way.</p></div>
+    </div>
+  </div>
+</section>
+
+<footer><div class="wrap"><span>Future Job Radar · Made with optimism by Marco Schmitt · <a href="https://www.eventm.com" target="_blank" rel="noopener" style="color:var(--mute)">eventm.com</a> · Not career advice, just a guy from the internet.</span><span id="foot">—</span></div></footer>
+
+<div class="feature" id="feature" role="dialog" aria-modal="true" aria-labelledby="fTitle" hidden></div>
+
+<script>
+(()=>{
+const SECTORS=[
+  {id:"ai",name:"AI & Agents",c:"#8f9bff"},{id:"finance",name:"Finance",c:"#e6ecff"},{id:"robotics",name:"Robotics",c:"#5ee6ff"},
+  {id:"mobility",name:"Mobility",c:"#4dffb8"},{id:"built",name:"Built World",c:"#ffd166"},{id:"energy",name:"Energy & Climate",c:"#ff8a4d"},
+  {id:"food",name:"Food & Farming",c:"#b5e853"},{id:"space",name:"Space",c:"#c08bff"},{id:"health",name:"Health & Bio",c:"#ff6b7f"},{id:"care",name:"Care",c:"#ff9de2"}];
+const SEC=Object.fromEntries(SECTORS.map((s,i)=>[s.id,{...s,i}]));
+const DRIVERS=[{id:"ai",name:"AI",c:"#8f9bff"},{id:"robotics",name:"Robotics",c:"#5ee6ff"},{id:"autonomy",name:"Autonomy",c:"#4dffb8"},{id:"bio",name:"Biotech",c:"#ff6b7f"},
+  {id:"space",name:"Space",c:"#c08bff"},{id:"energy",name:"Energy",c:"#ff8a4d"},{id:"quantum",name:"Quantum",c:"#ffd166"},{id:"chain",name:"Blockchain",c:"#e6ecff"}];
+const all=v=>Object.fromEntries(DRIVERS.map(d=>[d.id,v]));
+const PRESETS={base:()=>all(.5),skeptic:()=>all(.22),moonshot:()=>all(.9),agents:()=>({...all(.5),ai:.95,chain:.95,robotics:.6}),
+  warp:()=>Object.fromEntries(DRIVERS.map(d=>[d.id,Math.round(Math.random()*100)/100]))};
+const BASE=2026,MAXR=11.5,reduce=matchMedia("(prefers-reduced-motion: reduce)").matches;
+const S={jobs:[],meta:{},scans:[],speed:all(.5),filter:null,prof:null,open:null};
+const $=q=>document.querySelector(q);
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const byId=id=>S.jobs.find(j=>j.id===id);
+const SITE=(document.querySelector('meta[name="site-url"]')||{}).content||"";
+const jobUrl=id=>SITE?`\n\n${SITE}/jobs/${id}/`:"";
+
+function eff(j){let a=0,w=0;for(const k in j.drivers){const x=j.drivers[k]||0;a+=x*(2*(S.speed[k]??.5)-1);w+=x}a=w?a/w:0;return Math.max(.6,j.horizon*(1-.5*a))}
+const yearOf=j=>{const e=eff(j);return e>10?"2036+":String(Math.round(BASE+e))};
+function conf(j){const n=j.signals.length,t=new Set(j.signals.map(s=>s.type)).size,f=(j.scifi||[]).length;return Math.min(96,Math.round(22+n*13+t*6+f*3))}
+const isNew=j=>{const s=S.scans[S.scans.length-1];return !!(s&&s.newJobs&&s.newJobs.includes(j.id))};
+
+/* ---------- cover ---------- */
+function renderCover(){
+  const m=S.meta,j=byId(m.cover)||S.jobs.find(isNew)||S.jobs[0];
+  $("#issue").textContent=`Issue ${String(m.scanNumber).padStart(2,"0")} · ${new Date(m.lastScan+"T00:00:00").toLocaleDateString("en-GB",{month:"short",year:"numeric"})}`;
+  $("#csTitle").textContent=j.title;$("#csQ").textContent=j.trigger;$("#csWhat").textContent=j.what;$("#csYr").textContent=yearOf(j);
+  $("#coverStory").onclick=()=>openFeature(j.id);
+  const fic=new Set();S.jobs.forEach(x=>x.scifi.forEach(f=>fic.add(f.title)));
+  $("#cJobs").textContent=S.jobs.length;$("#cFic").textContent=fic.size;
+  $("#cSoon").textContent=S.jobs.filter(x=>BASE+eff(x)<=2030.5).length;
+  $("#foot").textContent=`${S.jobs.length} jobs · ${S.jobs.reduce((a,x)=>a+x.signals.length,0)} signals · ${fic.size} sci-fi works`;
+}
+
+/* ---------- profession picker ---------- */
+function renderProf(){
+  const P=S.meta.professions||[];
+  $("#profChips").innerHTML=P.map(p=>`<button class="chip" data-p="${p.id}" aria-pressed="${S.prof===p.id}">${esc(p.label)}</button>`).join("");
+  const p=P.find(x=>x.id===S.prof);
+  if(!p){$("#paths").innerHTML="";return}
+  const list=p.jobs.map(byId).filter(Boolean).sort((a,b)=>eff(a)-eff(b));
+  $("#paths").innerHTML=`<p class="ptitle">Today: <span>${esc(p.label)}</span>. Tomorrow:</p>`+
+    list.map(j=>`<button class="path" data-id="${j.id}"><span class="arrow">${esc(p.label)} →</span><span class="pt">${esc(j.title)}</span><span class="ps">${esc(j.trigger)}</span><span class="py">${yearOf(j)}</span></button>`).join("")+
+    `<div class="sharebar"><button class="btn solid" id="profShare">Copy my LinkedIn post</button><span class="toast" id="profToast"></span></div><div id="profFb"></div>`;
+  $("#profShare").onclick=()=>{const j=list[0];
+    const txt=`I work as a ${p.label.toLowerCase()} today.\n\nAccording to the Future Job Radar, by ${yearOf(j)} I could be a ${j.title}.\n\n${j.trigger}\n\nOther futures for my job: ${list.slice(1).map(x=>x.title).join(", ")}.\n\nTechnology keeps creating jobs nobody has imagined yet. What will yours be?${SITE?"\n\nFind yours: "+SITE:""}\n#FutureOfWork #FutureJobRadar`;
+    copy(txt,"#profToast","#profFb")};
+}
+$("#profChips").addEventListener("click",e=>{const b=e.target.closest(".chip");if(!b)return;S.prof=S.prof===b.dataset.p?null:b.dataset.p;renderProf()});
+$("#paths").addEventListener("click",e=>{const b=e.target.closest(".path");if(b)openFeature(b.dataset.id)});
+
+/* ---------- radar ---------- */
+const cv=$("#radar"),ctx=cv.getContext("2d"),box=$("#scopebox"),tip=$("#tip");
+let W=0,R=0,cx=0,cy=0,sweep=-Math.PI/2,blips=[];
+function size(){const d=Math.min(2,devicePixelRatio||1);W=box.clientWidth;cv.width=W*d;cv.height=W*d;cx=cy=W/2;R=W/2-Math.max(26,W*.065);ctx.setTransform(d,0,0,d,0,0)}
+const hash=s=>{let h=2166136261;for(const c of s)h=Math.imul(h^c.charCodeAt(0),16777619);return(h>>>0)/4294967295};
+function layout(){const g={};S.jobs.forEach(j=>(g[j.sector]??=[]).push(j));const span=2*Math.PI/SECTORS.length;
+  for(const k in g){const s=SEC[k];if(!s)continue;g[k].sort((a,b)=>hash(a.id)-hash(b.id)).forEach((j,i,arr)=>{j._a=-Math.PI/2+s.i*span+span*(.1+.8*(i+.5)/arr.length);if(j._r==null)j._r=MAXR+1})}}
+const rOf=y=>{y=Math.min(y,MAXR);let f;if(y<=2)f=.2*(y/2);else if(y<=10)f=.2+.72*Math.pow((y-2)/8,.75);else f=.92+.08*(y-10)/(MAXR-10);return R*Math.max(.03,f)};
+const hexA=(h,a)=>{const n=parseInt(h.slice(1),16);return`rgba(${n>>16},${n>>8&255},${n&255},${a})`};
+function draw(ts){
+  requestAnimationFrame(draw);if(!W)return;const t=ts/1000;ctx.clearRect(0,0,W,W);
+  const span=2*Math.PI/SECTORS.length;
+  ctx.fillStyle="rgba(30,42,90,.35)";ctx.beginPath();ctx.arc(cx,cy,R,0,7);ctx.fill();
+  SECTORS.forEach((s,i)=>{const a0=-Math.PI/2+i*span;const on=!S.filter||S.filter===s.id;
+    ctx.strokeStyle="rgba(243,238,227,.10)";ctx.beginPath();ctx.moveTo(cx,cy);ctx.lineTo(cx+Math.cos(a0)*R,cy+Math.sin(a0)*R);ctx.stroke();
+    const am=a0+span/2,lr=R+Math.max(14,W*.032);ctx.save();ctx.translate(cx+Math.cos(am)*lr,cy+Math.sin(am)*lr);let rot=am+Math.PI/2;if(Math.sin(am)>.01)rot+=Math.PI;ctx.rotate(rot);
+    ctx.fillStyle=on?s.c:hexA(s.c,.3);ctx.font=`600 ${Math.max(8.5,W*.0155)}px "JetBrains Mono",monospace`;ctx.textAlign="center";ctx.textBaseline="middle";ctx.fillText(s.name.toUpperCase(),0,0);ctx.restore()});
+  ctx.font=`${Math.max(9,W*.016)}px "JetBrains Mono",monospace`;ctx.textAlign="left";ctx.textBaseline="bottom";
+  [2,4,6,8,10].forEach(y=>{const r=rOf(y);ctx.beginPath();ctx.arc(cx,cy,r,0,7);ctx.strokeStyle=y===10?"rgba(242,193,78,.55)":"rgba(243,238,227,.14)";ctx.setLineDash(y===10?[]:[2,5]);ctx.stroke();ctx.setLineDash([]);
+    ctx.fillStyle="rgba(242,193,78,.85)";ctx.fillText(String(BASE+y),cx+4,cy-r-2)});
+  ctx.fillStyle="#f2c14e";ctx.textAlign="center";ctx.textBaseline="middle";ctx.font=`600 ${Math.max(9,W*.017)}px "JetBrains Mono",monospace`;ctx.fillText("NOW",cx,cy);
+  if(!reduce)sweep+=.01;
+  if(ctx.createConicGradient){const g=ctx.createConicGradient(sweep-.8,cx,cy);g.addColorStop(0,"rgba(242,193,78,0)");g.addColorStop(.127,"rgba(242,193,78,.13)");g.addColorStop(.128,"rgba(242,193,78,0)");g.addColorStop(1,"rgba(242,193,78,0)");ctx.fillStyle=g;ctx.beginPath();ctx.moveTo(cx,cy);ctx.arc(cx,cy,R,0,7);ctx.fill()}
+  ctx.strokeStyle="rgba(242,193,78,.6)";ctx.beginPath();ctx.moveTo(cx,cy);ctx.lineTo(cx+Math.cos(sweep)*R,cy+Math.sin(sweep)*R);ctx.stroke();
+  blips=[];
+  for(const j of S.jobs){j._r+=(eff(j)-j._r)*(reduce?1:.08);const r=rOf(j._r),x=cx+Math.cos(j._a)*r,y=cy+Math.sin(j._a)*r,s=SEC[j.sector];if(!s)continue;
+    const on=!S.filter||S.filter===j.sector,d=((sweep-j._a)%(2*Math.PI)+2*Math.PI)%(2*Math.PI),ping=reduce?0:Math.max(0,1-d/1.5);
+    const rad=Math.max(3,W*.0062)*(.7+conf(j)/100*.8);ctx.globalAlpha=on?(j._r>10.05?.35:1):.12;
+    const gl=ctx.createRadialGradient(x,y,0,x,y,rad*(3+ping*2.5));gl.addColorStop(0,hexA(s.c,.5+ping*.4));gl.addColorStop(1,hexA(s.c,0));ctx.fillStyle=gl;ctx.beginPath();ctx.arc(x,y,rad*(3+ping*2.5),0,7);ctx.fill();
+    ctx.fillStyle=s.c;ctx.beginPath();ctx.arc(x,y,rad,0,7);ctx.fill();
+    if(isNew(j)&&on&&!reduce){const p=(((t*.6+j._a)%1)+1)%1;ctx.strokeStyle=hexA("#f2c14e",.75*(1-p));ctx.beginPath();ctx.arc(x,y,rad+3+p*rad*3,0,7);ctx.stroke()}
+    ctx.globalAlpha=1;if(on)blips.push({j,x,y,r:Math.max(rad*2.4,12)})}
+}
+function hit(ev){const b=cv.getBoundingClientRect(),x=ev.clientX-b.left,y=ev.clientY-b.top;let best=null,bd=1e9;for(const p of blips){const d=Math.hypot(p.x-x,p.y-y);if(d<p.r&&d<bd){bd=d;best=p}}return best}
+cv.addEventListener("pointermove",e=>{const b=hit(e);cv.style.cursor=b?"pointer":"crosshair";if(b){tip.textContent=`${b.j.title} · ${yearOf(b.j)}`;tip.style.left=b.x+"px";tip.style.top=b.y+"px";tip.style.opacity=1}else tip.style.opacity=0});
+cv.addEventListener("pointerleave",()=>tip.style.opacity=0);
+cv.addEventListener("click",e=>{const b=hit(e);if(b)openFeature(b.j.id)});
+
+function buildSliders(){
+  $("#sliders").innerHTML=DRIVERS.map(d=>`<div class="sl"><label for="s-${d.id}">${d.name}<span id="v-${d.id}">Base</span></label><input type="range" id="s-${d.id}" min="0" max="100" value="50" style="--c:${d.c}"></div>`).join("");
+  DRIVERS.forEach(d=>$("#s-"+d.id).addEventListener("input",e=>{S.speed[d.id]=e.target.value/100;pre(null);sync(false);update()}));
+  document.querySelectorAll(".pbtn").forEach(b=>b.addEventListener("click",()=>{S.speed=PRESETS[b.dataset.preset]();pre(b.dataset.preset);sync(true);update()}));
+  $("#legend").innerHTML=SECTORS.map(s=>`<span><i class="dot" style="color:${s.c}"></i>${s.name}</span>`).join("");
+}
+const pre=p=>document.querySelectorAll(".pbtn").forEach(b=>b.classList.toggle("on",b.dataset.preset===p&&p!=="warp"));
+function sync(setV){DRIVERS.forEach(d=>{const v=S.speed[d.id],el=$("#s-"+d.id);if(setV)el.value=Math.round(v*100);el.style.setProperty("--p",v*100+"%");$("#v-"+d.id).textContent=v<.15?"Stalled":v<.4?"Slow":v<.6?"Base":v<.85?"Fast":"Warp"})}
+function update(){const E=S.jobs.map(eff);$("#rsNear").textContent=E.filter(e=>BASE+e<=2030.5).length;$("#rsMid").textContent=E.filter(e=>BASE+e>2030.5&&e<=10).length;$("#rsBey").textContent=E.filter(e=>e>10).length;renderRail();renderProf();$("#cSoon").textContent=E.filter(e=>BASE+e<=2030.5).length}
+
+/* ---------- index ---------- */
+function renderFilters(){
+  const c={};S.jobs.forEach(j=>c[j.sector]=(c[j.sector]||0)+1);
+  $("#filters").innerHTML=`<button class="chip" data-f="" aria-pressed="${!S.filter}">All · ${S.jobs.length}</button>`+SECTORS.filter(s=>c[s.id]).map(s=>`<button class="chip" data-f="${s.id}" aria-pressed="${S.filter===s.id}"><i class="dot" style="color:${s.c}"></i>${s.name} · ${c[s.id]}</button>`).join("");
+}
+$("#filters").addEventListener("click",e=>{const b=e.target.closest(".chip");if(!b)return;S.filter=b.dataset.f||null;renderFilters();renderRail()});
+function renderRail(){
+  const list=S.jobs.filter(j=>!S.filter||j.sector===S.filter).sort((a,b)=>eff(a)-eff(b));
+  $("#rail").innerHTML=list.map(j=>{const s=SEC[j.sector]||{c:"#fff",name:j.sector};return`<button class="card" data-id="${j.id}">
+    <span class="top"><i class="dot" style="color:${s.c}"></i>${esc(s.name)}<span class="y">${yearOf(j)}</span></span>
+    <h4>${esc(j.title)}</h4><p>${esc(j.trigger)}</p>${isNew(j)?'<span class="tag">NEW THIS WEEK</span>':""}</button>`}).join("");
+}
+$("#rail").addEventListener("click",e=>{const c=e.target.closest(".card");if(c)openFeature(c.dataset.id)});
+
+/* ---------- dispatches ---------- */
+function renderDisp(){
+  $("#disp").innerHTML=S.scans.slice().reverse().map(s=>`<article><div class="n">#${String(s.number).padStart(2,"0")}<small>${new Date(s.date+"T00:00:00").toLocaleDateString("en-GB",{day:"2-digit",month:"short",year:"numeric"})}</small></div>
+    <div><h3>${esc(s.headline)}</h3><p>${esc(s.summary)}</p><p class="mono" style="margin-top:8px">+${(s.newJobs||[]).length} new jobs${(s.moved||[]).length?" · "+s.moved.length+" moved":""}</p></div></article>`).join("");
+}
+
+/* ---------- feature ---------- */
+let lastFocus=null;
+function openFeature(id){
+  const j=byId(id);if(!j)return;S.open=id;lastFocus=document.activeElement;
+  const s=SEC[j.sector]||{name:j.sector,c:"#151a2e"},yr=yearOf(j),c=conf(j);
+  const order=S.jobs.slice().sort((a,b)=>eff(a)-eff(b)),i=order.findIndex(x=>x.id===id);
+  const prev=order[(i-1+order.length)%order.length],next=order[(i+1)%order.length];
+  const f=$("#feature");
+  f.innerHTML=`<div class="fbar"><div class="wrap"><div class="logo">Future Job <span>Radar</span></div><nav><button class="fbtn" id="fPrev" aria-label="Previous job">←</button><button class="fbtn" id="fNext" aria-label="Next job">→</button><button class="fbtn" id="fClose">Close</button></nav></div></div>
+  <div class="wrap">
+    <header class="fhero"><div class="kicker"><i class="dot" style="color:${s.c}"></i>${esc(s.name)}${isNew(j)?" · New this week":""}</div>
+      <h1 id="fTitle">${esc(j.title)}</h1><p class="dek">${esc(j.trigger)}</p>
+      <div class="fmeta"><div>Arrives<b>${yr}</b></div><div>Signals<b>${j.signals.length}</b></div><div>Confidence<b>${c}%</b></div></div></header>
+    <div class="fbody">
+      <article>
+        <h3>The job</h3><p class="dropcap">${esc(j.what)}</p>
+        <div class="pull">${esc(j.trigger)}</div>
+        <h3>A day in ${yr==="2036+"?"2037":yr}</h3><p>${esc(j.day)}</p>
+        <h3>The facts behind it</h3>
+        <ol class="notes">${j.signals.map(g=>`<li><span><b>${esc(g.who)}.</b> ${esc(g.claim)} ${g.url?`<a href="${esc(g.url)}" target="_blank" rel="noopener">Source ↗</a>`:""}</span></li>`).join("")}</ol>
+      </article>
+      <aside class="side">
+        <div class="box"><h4>The fiction behind it</h4>${j.scifi.map(x=>`<div class="sf"><b>${esc(x.title)}</b>${x.year} · ${esc(x.kind)}<br>${esc(x.echo)}</div>`).join("")}</div>
+        <div class="box"><h4>Skills you'll need</h4>${j.skills.map(k=>`<span class="skill">${esc(k)}</span>`).join("")}</div>
+        <div class="box"><h4>Confidence · ${c}%</h4><div class="meter"><i style="width:${c}%"></i></div><p style="font-size:14px;margin:10px 0 0;color:#4a5170">Based on ${j.signals.length} independent signals and ${j.scifi.length} sci-fi echoes.</p></div>
+        <div class="box fshare"><h4>Share this job</h4><div class="sharebar" style="margin:0"><button class="btn solid" id="fShare">Copy LinkedIn post</button><span class="toast" id="fToast"></span></div><div id="fFb"></div></div>
+      </aside>
+    </div>
+  </div>`;
+  f.hidden=false;f.scrollTop=0;document.body.style.overflow="hidden";
+  try{history.replaceState(null,"","#"+id)}catch(e){}
+  $("#fClose").onclick=closeFeature;$("#fPrev").onclick=()=>openFeature(prev.id);$("#fNext").onclick=()=>openFeature(next.id);
+  $("#fShare").onclick=()=>copy(`New job on the horizon: ${j.title} (expected ${yr==="2036+"?"after 2036":"around "+yr})\n\n${j.trigger}\n\n${j.what}\n\nA day on the job: ${j.day}\n\nWhy: ${j.signals.slice(0,3).map(x=>x.who).join("; ")}\nSci-fi saw it first: ${j.scifi.map(x=>x.title+" ("+x.year+")").join(", ")}\n\nWould you take this job?${jobUrl(j.id)}\n#FutureOfWork #FutureJobRadar`,"#fToast","#fFb");
+  $("#fClose").focus();
+}
+function closeFeature(){$("#feature").hidden=true;document.body.style.overflow="";S.open=null;try{history.replaceState(null,"",location.pathname+location.search)}catch(e){}if(lastFocus&&lastFocus.focus)lastFocus.focus()}
+addEventListener("keydown",e=>{if(S.open&&e.key==="Escape")closeFeature();if(S.open&&e.key==="ArrowRight")$("#fNext")?.click();if(S.open&&e.key==="ArrowLeft")$("#fPrev")?.click()});
+
+function copy(txt,toastSel,fbSel){
+  const ok=()=>{$(toastSel).textContent="Copied. Paste it into LinkedIn."};
+  const fail=()=>{$(fbSel).innerHTML=`<textarea class="fb" readonly aria-label="Post text">${esc(txt)}</textarea>`;const t=$(fbSel+" textarea");t.focus();t.select();$(toastSel).textContent="Select and copy the text"};
+  try{navigator.clipboard.writeText(txt).then(ok,fail)}catch(e){fail()}
+}
+
+/* ---------- boot ---------- */
+async function boot(){
+  size();addEventListener("resize",size);buildSliders();sync(true);requestAnimationFrame(draw);
+  try{const r=await fetch("jobs.json",{cache:"no-store"});if(!r.ok)throw 0;const d=await r.json();S.jobs=d.jobs;S.meta=d.meta;S.scans=d.scans||[]}
+  catch(e){$("#csTitle").textContent="The radar could not load. Reload the page.";return}
+  layout();renderCover();S.prof=(S.meta.professions||[])[0]?.id||null;renderProf();renderFilters();renderRail();renderDisp();update();
+  const h=location.hash.slice(1);if(byId(h))openFeature(h);
+}
+boot();
+})();
+</script>
