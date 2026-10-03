@@ -225,6 +225,29 @@ aside.side{display:flex;flex-direction:column;gap:20px}
 .sign a:hover{color:#7a5a00}
 .byline{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);margin-top:18px}
 .byline a{color:var(--paper);text-decoration:none;border-bottom:1px solid var(--gold)}
+.sign .links{display:flex;gap:18px;flex-wrap:wrap}
+/* newsletter + speaking */
+.signup .wrap{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:clamp(20px,4vw,48px);align-items:stretch}
+@media (max-width:900px){.signup .wrap{grid-template-columns:minmax(0,1fr)}}
+.nl{border:2px solid var(--gold);padding:clamp(22px,3vw,36px);background:var(--gold2)}
+.nl h2{font-size:clamp(38px,5vw,68px);margin:10px 0 12px}
+.nl h2 em{font-style:normal;color:var(--gold)}
+.nl p{margin:0 0 18px;color:var(--paper);max-width:52ch}
+.nlform{display:flex;gap:10px;flex-wrap:wrap}
+.nlform input[type=email]{flex:1 1 240px;min-width:0;background:var(--bg);color:var(--paper);border:1px solid var(--rule2);padding:12px 14px;font:15px var(--f-mono)}
+.nlform input[type=email]:focus{border-color:var(--gold);outline:none}
+.nlform .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.consent{display:flex;gap:10px;align-items:flex-start;margin-top:14px;font-size:14.5px;color:var(--mute);line-height:1.45}
+.consent input{margin-top:4px;accent-color:var(--gold);flex:none}
+.consent a{color:var(--paper)}
+.nlmsg{font-family:var(--f-mono);font-size:13px;color:var(--gold);margin-top:12px;min-height:1em}
+.speak{border:1px solid var(--rule2);padding:clamp(22px,3vw,32px);display:flex;flex-direction:column;gap:12px}
+.speak h3{font-size:clamp(30px,3.4vw,44px)}
+.speak p{margin:0;color:var(--mute);font-size:17px}
+.speak ul{margin:0;padding:0;list-style:none;font-family:var(--f-mono);font-size:12.5px;letter-spacing:.06em;color:var(--paper);line-height:2}
+.speak ul li::before{content:"→ ";color:var(--gold)}
+.speak .btn{align-self:flex-start;text-decoration:none;margin-top:auto}
+footer a{color:var(--mute)}
 .loading{font-family:var(--f-mono);font-size:12px;color:var(--mute);letter-spacing:.1em}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 </style>
@@ -232,7 +255,7 @@ aside.side{display:flex;flex-direction:column;gap:20px}
 <header class="mast">
   <div class="wrap">
     <div class="logo">Future Job <span>Radar</span></div>
-    <nav aria-label="Sections"><a href="#yours">Your job</a><a href="#radar-sec">The radar</a><a href="#index">All jobs</a><a href="#dispatches">Dispatches</a><a href="#why">Why</a></nav>
+    <nav aria-label="Sections"><a href="#yours">Your job</a><a href="#radar-sec">The radar</a><a href="#index">All jobs</a><a href="#dispatches">Dispatches</a><a href="#why">Why</a><a href="#subscribe">Subscribe</a></nav>
     <div class="issue" id="issue">Issue —</div>
   </div>
 </header>
@@ -360,7 +383,7 @@ aside.side{display:flex;flex-direction:column;gap:20px}
       <div class="sign">
         <b>Marco Schmitt</b>
         <span>I produce live events around the world for brands like Porsche, BMW and FIFA. Building experiences for the future made me curious about the jobs it will need. Researched with AI, curated by a human.</span>
-        <a href="https://www.eventm.com" target="_blank" rel="noopener">eventm.com ↗</a>
+        <div class="links"><a href="https://www.eventm.com" target="_blank" rel="noopener">eventm.com ↗</a><a href="%%LINKEDIN%%" target="_blank" rel="noopener">Follow on LinkedIn ↗</a></div>
       </div>
     </div>
   </div>
@@ -377,7 +400,33 @@ aside.side{display:flex;flex-direction:column;gap:20px}
   </div>
 </section>
 
-<footer><div class="wrap"><span>Future Job Radar · Made with optimism by Marco Schmitt · <a href="https://www.eventm.com" target="_blank" rel="noopener" style="color:var(--mute)">eventm.com</a> · Not career advice, just a guy from the internet.</span><span id="foot">—</span></div></footer>
+<section class="band signup" id="subscribe">
+  <div class="wrap">
+    <div class="nl">
+      <div class="kicker">The weekly radar · free</div>
+      <h2>Get the future <em>every Monday.</em></h2>
+      <p>New jobs, jobs that moved closer, and the science fiction that saw them coming. One short email a week. No doom.</p>
+      <form class="nlform" id="nlForm" data-action="%%NL_ACTION%%" novalidate>
+        <input type="email" name="EMAIL" id="nlEmail" placeholder="you@example.com" autocomplete="email" aria-label="Email address" required>
+        <div class="hp" aria-hidden="true"><input type="text" name="email_address_check" tabindex="-1" autocomplete="off" value=""></div>
+        <input type="hidden" name="locale" value="en">
+        <input type="hidden" name="OPT_IN" value="1">
+        <button class="btn solid" type="submit">Subscribe</button>
+      </form>
+      <label class="consent"><input type="checkbox" id="nlOk" required><span>Yes, send me the weekly Future Job Radar and occasional news about Marco's talks, workshops and projects. You'll get a confirmation email first. Unsubscribe anytime with one click. <a href="privacy/">Privacy</a></span></label>
+      <div class="nlmsg" id="nlMsg" role="status" aria-live="polite"></div>
+    </div>
+    <aside class="speak">
+      <div class="kicker">Talks &amp; workshops</div>
+      <h3>Bring the radar to your stage.</h3>
+      <p>A keynote or workshop for teams who want to look at the future of work with curiosity instead of fear. Live radar, your industry, your people's jobs of tomorrow.</p>
+      <ul><li>Keynote · 30–45 min</li><li>Team workshop · half day</li><li>English or German</li></ul>
+      <a class="btn" href="mailto:%%EMAIL%%?subject=Future%20Job%20Radar%20%E2%80%93%20talk%20or%20workshop">Ask Marco</a>
+    </aside>
+  </div>
+</section>
+
+<footer><div class="wrap"><span>Future Job Radar · Made with optimism by Marco Schmitt · <a href="https://www.eventm.com" target="_blank" rel="noopener">eventm.com</a> · <a href="%%LINKEDIN%%" target="_blank" rel="noopener">LinkedIn</a> · <a href="privacy/">Privacy &amp; imprint</a> · Not career advice, just a guy from the internet.</span><span id="foot">—</span></div></footer>
 
 <div class="feature" id="feature" role="dialog" aria-modal="true" aria-labelledby="fTitle" hidden></div>
 
@@ -556,5 +605,23 @@ async function boot(){
   const h=location.hash.slice(1);if(byId(h))openFeature(h);
 }
 boot();
+})();
+
+/* newsletter */
+(function(){
+  const $=q=>document.querySelector(q);
+  const f=$("#nlForm"),msg=$("#nlMsg"),ok=$("#nlOk"),action=f.dataset.action;
+  if(!action||action.startsWith("%%")){f.querySelector("button").disabled=true;f.querySelector("button").textContent="Opens soon";msg.textContent="The newsletter starts with the launch. Follow on LinkedIn until then.";return}
+  f.addEventListener("submit",async ev=>{
+    ev.preventDefault();
+    const em=$("#nlEmail").value.trim();
+    if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(em)){msg.textContent="Please enter a valid email address.";$("#nlEmail").focus();return}
+    if(!ok.checked){msg.textContent="Please tick the box so I'm allowed to email you.";ok.focus();return}
+    const btn=f.querySelector("button");btn.disabled=true;msg.textContent="Sending…";
+    try{await fetch(action+(action.includes("?")?"&":"?")+"isAjax=1",{method:"POST",body:new FormData(f),mode:"no-cors"});
+      msg.textContent="Almost done: check your inbox and confirm your subscription.";f.reset();ok.checked=false}
+    catch(e){msg.textContent="That didn't work. Please try again in a moment.";}
+    btn.disabled=false;
+  });
 })();
 </script>
