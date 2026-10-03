@@ -1,0 +1,9 @@
+docs/index.html
+docs/jobs/
+docs/og/
+docs/sitemap.xml
+docs/robots.txt
+docs/CNAME
+docs/.nojekyll
+scripts/fonts/
+__pycache__/
