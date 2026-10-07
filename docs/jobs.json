@@ -2,8 +2,8 @@
  "meta": {
   "name": "Future Job Radar",
   "version": 1,
-  "lastScan": "2026-10-03",
-  "scanNumber": 4,
+  "lastScan": "2026-10-07",
+  "scanNumber": 5,
   "horizonYears": [
    2,
    10
@@ -20,7 +20,8 @@
      "aging-in-place-designer",
      "human-connection-specialist",
      "exoskeleton-fitter",
-     "care-robot-matchmaker"
+     "care-robot-matchmaker",
+     "companion-handover-specialist"
     ]
    },
    {
@@ -111,7 +112,8 @@
      "harvest-token-broker",
      "farm-data-cooperative-manager",
      "robotic-pollination-keeper",
-     "atmospheric-water-farmer"
+     "atmospheric-water-farmer",
+     "wild-strip-ecologist"
     ]
    },
    {
@@ -133,7 +135,8 @@
      "machine-liability-adjuster",
      "ai-welfare-officer",
      "personal-data-trustee",
-     "robot-incident-investigator"
+     "robot-incident-investigator",
+     "orbital-dark-sky-mediator"
     ]
    },
    {
@@ -143,7 +146,8 @@
      "machine-liability-adjuster",
      "parametric-insurance-designer",
      "agent-reputation-underwriter",
-     "biological-age-auditor"
+     "biological-age-auditor",
+     "robot-skill-examiner"
     ]
    },
    {
@@ -177,7 +181,8 @@
      "fusion-plant-operator",
      "microgravity-manufacturing-engineer",
      "vpp-conductor",
-     "mine-to-compute-planner"
+     "mine-to-compute-planner",
+     "robot-skill-examiner"
     ]
    },
    {
@@ -213,7 +218,9 @@
      "organ-print-technician",
      "planetary-defence-analyst",
      "asteroid-prospector",
-     "neural-voice-designer"
+     "neural-voice-designer",
+     "orbital-dark-sky-mediator",
+     "wild-strip-ecologist"
     ]
    },
    {
@@ -225,7 +232,8 @@
      "digital-legacy-curator",
      "ai-welfare-officer",
      "care-robot-matchmaker",
-     "neural-voice-designer"
+     "neural-voice-designer",
+     "companion-handover-specialist"
     ]
    },
    {
@@ -237,7 +245,8 @@
      "carbon-removal-verifier",
      "critical-mineral-recycler",
      "heat-resilience-officer",
-     "compute-commons-steward"
+     "compute-commons-steward",
+     "data-heat-matchmaker"
     ]
    },
    {
@@ -251,7 +260,8 @@
      "holodeck-architect",
      "robotaxi-curb-marshal",
      "mine-to-compute-planner",
-     "compute-commons-steward"
+     "compute-commons-steward",
+     "data-heat-matchmaker"
     ]
    },
    {
@@ -266,7 +276,7 @@
     ]
    }
   ],
-  "cover": "robotaxi-curb-marshal"
+  "cover": "orbital-dark-sky-mediator"
  },
  "scans": [
   {
@@ -391,6 +401,21 @@
     "compute-commons-steward",
     "care-robot-matchmaker",
     "neural-voice-designer"
+   ],
+   "moved": []
+  },
+  {
+   "number": 5,
+   "date": "2026-10-07",
+   "headline": "A million data-centre satellites could redraw the night sky, and someone has to negotiate it",
+   "summary": "This week's signals: Google flew its first TPU to orbit, astronomers modelled sky rings from orbital data centres, Germany now requires data-centre heat reuse, and humanoid safety rules are still unfinished. The focus universes are The Three-Body Problem (a sky that becomes contested) and Severance (memory split across a boundary).",
+   "focus": "The Three-Body Problem and Severance, with Asimov, Dune, Kim Stanley Robinson and Silo as supporting universes",
+   "newJobs": [
+    "orbital-dark-sky-mediator",
+    "companion-handover-specialist",
+    "wild-strip-ecologist",
+    "robot-skill-examiner",
+    "data-heat-matchmaker"
    ],
    "moved": []
   }
@@ -5240,7 +5265,7 @@
     }
    ],
    "added": "2026-10-03",
-   "status": "new",
+   "status": "stable",
    "history": [
     {
      "date": "2026-10-03",
@@ -5306,7 +5331,7 @@
     }
    ],
    "added": "2026-10-03",
-   "status": "new",
+   "status": "stable",
    "history": [
     {
      "date": "2026-10-03",
@@ -5372,7 +5397,7 @@
     }
    ],
    "added": "2026-10-03",
-   "status": "new",
+   "status": "stable",
    "history": [
     {
      "date": "2026-10-03",
@@ -5438,7 +5463,7 @@
     }
    ],
    "added": "2026-10-03",
-   "status": "new",
+   "status": "stable",
    "history": [
     {
      "date": "2026-10-03",
@@ -5498,11 +5523,335 @@
     }
    ],
    "added": "2026-10-03",
-   "status": "new",
+   "status": "stable",
    "history": [
     {
      "date": "2026-10-03",
      "horizon": 6
+    }
+   ]
+  },
+  {
+   "id": "orbital-dark-sky-mediator",
+   "title": "Orbital Dark-Sky Mediator",
+   "sector": "space",
+   "horizon": 6,
+   "drivers": {
+    "ai": 0.3,
+    "robotics": 0.1,
+    "autonomy": 0.3,
+    "bio": 0.0,
+    "space": 1.0,
+    "energy": 0.4,
+    "quantum": 0.0,
+    "chain": 0.1
+   },
+   "trigger": "When thousands of sunlit data-centre satellites share the dawn-dusk orbit, observatories, operators and regulators need someone to agree on brightness and timing.",
+   "what": "Negotiates brightness limits, orbit slots and observing windows between satellite operators, observatories and dark-sky communities. Turns astronomers' sky models into contracts that operators can actually meet.",
+   "day": "She spends the morning running a sky-brightness simulation for a new constellation, then brokers a deal in which the operator tilts its panels during an observatory's survey week.",
+   "skills": [
+    "Orbital and sky modelling",
+    "Technical negotiation",
+    "Space-law basics"
+   ],
+   "signals": [
+    {
+     "type": "market",
+     "who": "SpaceX · Data Center Dynamics",
+     "claim": "SpaceX filed plans with the FCC for up to one million orbital data-centre satellites, aimed at powering AI models.",
+     "url": "https://www.datacenterdynamics.com/en/news/spacex-files-for-million-satellite-orbital-ai-data-center-megaconstellation/"
+    },
+    {
+     "type": "engineer",
+     "who": "Google, Planet Labs · TechCrunch",
+     "claim": "Google's prototype orbital compute satellite, carrying its first TPU in space and built by Planet Labs, launched on a SpaceX rocket on October 1, 2026.",
+     "url": "https://techcrunch.com/2026/10/01/google-thinks-spacexs-starship-has-to-launch-1600-times-before-space-data-centers-get-off-the-ground/"
+    },
+    {
+     "type": "scientist",
+     "who": "Boley et al. · arXiv preprint",
+     "claim": "Modelling of orbital data-centre rings finds that brightness mitigation or hard limits on satellite numbers will be essential to avoid more visible satellites than visible stars at certain times.",
+     "url": "https://arxiv.org/pdf/2608.02757"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "The Three-Body Problem",
+     "year": 2008,
+     "kind": "book",
+     "echo": "In Liu Cixin's novel the night sky itself becomes a contested, manipulated stage, and scientists are the first to notice."
+    }
+   ],
+   "added": "2026-10-07",
+   "status": "new",
+   "history": [
+    {
+     "date": "2026-10-07",
+     "horizon": 6
+    }
+   ]
+  },
+  {
+   "id": "companion-handover-specialist",
+   "title": "Companion Robot Handover Specialist",
+   "sector": "care",
+   "horizon": 4,
+   "drivers": {
+    "ai": 0.8,
+    "robotics": 0.8,
+    "autonomy": 0.3,
+    "bio": 0.1,
+    "space": 0.0,
+    "energy": 0.0,
+    "quantum": 0.0,
+    "chain": 0.0
+   },
+   "trigger": "When an older person has talked to the same home robot for years, a software update, repair or replacement can feel like losing a friend.",
+   "what": "Plans and guides the moment a companion robot's memory, voice or body changes, so the person keeps continuity and dignity. Works with families, nurses and manufacturers on what carries over and what is retired.",
+   "day": "He visits a widow whose robot is getting a new model, helps her choose which shared memories it keeps, and stays for the first conversation after the swap.",
+   "skills": [
+    "Gentle communication",
+    "Dementia-aware care",
+    "Robot memory settings"
+   ],
+   "signals": [
+    {
+     "type": "scientist",
+     "who": "Frontiers in Psychiatry case series · listed on ScienceDirect",
+     "claim": "An 18-month home case series of a conversational companion robot with older people with cognitive impairment suggests sustained engagement; larger studies are still needed.",
+     "url": "https://www.sciencedirect.com/science/article/abs/pii/S0160791X24002379"
+    },
+    {
+     "type": "market",
+     "who": "1X Technologies · The Robot For That",
+     "claim": "1X's NEO, a walking robot designed for home use, is offered for $20,000 upfront or $499 a month, learning chores through human guidance.",
+     "url": "https://theresarobotforthat.com/blog/humanoid-robot-companies-2026-complete-guide/"
+    },
+    {
+     "type": "analyst",
+     "who": "PYMNTS",
+     "claim": "One in three Americans aged 50 to 80 report feeling lonely, and the caregiving workforce is not growing fast enough to meet demand.",
+     "url": "https://www.pymnts.com/news/artificial-intelligence/2026/ai-is-becoming-the-new-companion-for-aging-americans/"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Severance",
+     "year": 2022,
+     "kind": "series",
+     "echo": "A person's memory is split across a boundary that a company manages, much like a companion robot's memory across an update."
+    },
+    {
+     "title": "Klara and the Sun",
+     "year": 2021,
+     "kind": "book",
+     "echo": "An artificial friend's bond with a family raises the question of what happens to the companion afterwards."
+    }
+   ],
+   "added": "2026-10-07",
+   "status": "new",
+   "history": [
+    {
+     "date": "2026-10-07",
+     "horizon": 4
+    }
+   ]
+  },
+  {
+   "id": "wild-strip-ecologist",
+   "title": "Wild Strip Ecologist",
+   "sector": "food",
+   "horizon": 4,
+   "drivers": {
+    "ai": 0.7,
+    "robotics": 0.8,
+    "autonomy": 0.6,
+    "bio": 0.6,
+    "space": 0.0,
+    "energy": 0.1,
+    "quantum": 0.0,
+    "chain": 0.1
+   },
+   "trigger": "When weeding robots can tell every plant apart, farmers can choose which weeds to spare, not just which to kill.",
+   "what": "Writes the rules that tell farm robots which wild plants to keep for pollinators, soil and pest control. Turns an ecologist's field knowledge into target lists that the robots follow.",
+   "day": "She walks a field edge at dawn, flags three wildflower species that feed beneficial insects, and uploads a spare-list to the laser weeder before it starts.",
+   "skills": [
+    "Field ecology",
+    "Plant recognition data",
+    "Farm robot settings"
+   ],
+   "signals": [
+    {
+     "type": "engineer",
+     "who": "Carbon Robotics · RoboticsBiz",
+     "claim": "The LaserWeeder uses a large plant model trained on about 150 million labelled plant images to identify and destroy weeds with lasers, without herbicides.",
+     "url": "https://roboticsbiz.com/agricultural-robotics-in-2026-harvest-robots-soil-sensors-and-what-farmers-are-actually-buying/"
+    },
+    {
+     "type": "entrepreneur",
+     "who": "Future Farming via Top Farm Robots",
+     "claim": "A Danish organic farmer has run an autonomous AgXeed tractor with a Carbon Robotics LaserWeeder since April, syncing travel speed to weed density.",
+     "url": "https://www.topfarmrobots.com/"
+    },
+    {
+     "type": "market",
+     "who": "Ecorobotix · RoboticsBiz",
+     "claim": "Ecorobotix sold its 1,000th ARA precision sprayer in early 2026, which cuts chemical use by 77 percent compared with conventional boom spraying.",
+     "url": "https://roboticsbiz.com/agricultural-robotics-in-2026-harvest-robots-soil-sensors-and-what-farmers-are-actually-buying/"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Green Mars",
+     "year": 1994,
+     "kind": "book",
+     "echo": "Kim Stanley Robinson's settlers choose by hand which species build a living landscape."
+    },
+    {
+     "title": "Dune",
+     "year": 1965,
+     "kind": "book",
+     "echo": "The Imperial planetologist Kynes treats ecology as a long design project for a whole planet."
+    }
+   ],
+   "added": "2026-10-07",
+   "status": "new",
+   "history": [
+    {
+     "date": "2026-10-07",
+     "horizon": 4
+    }
+   ]
+  },
+  {
+   "id": "robot-skill-examiner",
+   "title": "Robot Skill Examiner",
+   "sector": "robotics",
+   "horizon": 3,
+   "drivers": {
+    "ai": 0.8,
+    "robotics": 1.0,
+    "autonomy": 0.5,
+    "bio": 0.0,
+    "space": 0.0,
+    "energy": 0.0,
+    "quantum": 0.0,
+    "chain": 0.0
+   },
+   "trigger": "When cheap humanoids can be bought for a few thousand dollars but no finished safety rulebook exists, each workplace needs someone to test a robot on its actual tasks.",
+   "what": "Runs a driving-test-style exam for a robot in its real workplace or home, covering falls, handovers and edge cases. Signs off which tasks it may do alone and which need a human nearby.",
+   "day": "He sets up a mock kitchen, has a new humanoid carry hot trays past a dummy toddler, and writes a pass for plating but not for the stove.",
+   "skills": [
+    "Safety testing",
+    "Risk assessment",
+    "Clear written verdicts"
+   ],
+   "signals": [
+    {
+     "type": "analyst",
+     "who": "Biped News",
+     "claim": "There is no single finished humanoid safety standard in 2026, so buyers must assemble a stack of industrial, collaborative and mobile-robot rules; ISO 25785-1 is still in draft.",
+     "url": "https://biped.news/article/humanoid-robot-safety-standards-2026"
+    },
+    {
+     "type": "engineer",
+     "who": "The Robot For That",
+     "claim": "Certification now covers applications, not just hardware: the vendor can certify the robot, but the owner must certify the application and document tasks, layout and human interaction.",
+     "url": "https://theresarobotforthat.com/blog/humanoid-robot-safety-standards-2026/"
+    },
+    {
+     "type": "market",
+     "who": "Tesla · The Cool Down, citing The Information",
+     "claim": "Tesla's Optimus V3 units coming off the line are still used mainly for internal testing, and must meet durability and reliability requirements before commercial rollout.",
+     "url": "https://www.thecooldown.com/green-tech/tesla-optimus-robot-production-challenges/"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "I, Robot",
+     "year": 1950,
+     "kind": "book",
+     "echo": "Asimov's robot stories centre on testing robots against rules and puzzling over what happens when behaviour goes off-script."
+    },
+    {
+     "title": "All Systems Red (The Murderbot Diaries)",
+     "year": 2017,
+     "kind": "book",
+     "echo": "A security robot that has hacked its own governor module shows why a paper certificate may not match behaviour on the job."
+    }
+   ],
+   "added": "2026-10-07",
+   "status": "new",
+   "history": [
+    {
+     "date": "2026-10-07",
+     "horizon": 3
+    }
+   ]
+  },
+  {
+   "id": "data-heat-matchmaker",
+   "title": "Data Heat Matchmaker",
+   "sector": "energy",
+   "horizon": 3,
+   "drivers": {
+    "ai": 0.6,
+    "robotics": 0.1,
+    "autonomy": 0.2,
+    "bio": 0.0,
+    "space": 0.0,
+    "energy": 1.0,
+    "quantum": 0.0,
+    "chain": 0.2
+   },
+   "trigger": "When new data centres must reuse a set share of their heat by law, every site needs a neighbour who wants that warmth.",
+   "what": "Pairs data-centre waste heat with homes, greenhouses, pools and factories, and designs the pipes, pumps and contracts. Works across operators, utilities and city planners.",
+   "day": "She maps a planned AI campus against a nearby housing estate and a tomato greenhouse, then drafts a heat-supply contract that holds through summer, when demand drops.",
+   "skills": [
+    "Thermal systems basics",
+    "Contract design",
+    "Local planning"
+   ],
+   "signals": [
+    {
+     "type": "strategist",
+     "who": "Germany's Energy Efficiency Act · Natural Refrigerants",
+     "claim": "Under Germany's act, new data centres must reach a 10 percent energy reuse factor from July 2026, rising to 15 percent in 2027 and 20 percent in 2028.",
+     "url": "https://naturalrefrigerants.com/news/german-stakeholders-data-center-waste-heat-district-heating/"
+    },
+    {
+     "type": "market",
+     "who": "Microsoft and Fortum · Aquatherm",
+     "claim": "Microsoft and Fortum plan to cover about 40 percent of district heating demand for 250,000 people in the Espoo area with data-centre waste heat, scheduled to go live by 2026.",
+     "url": "https://blog.aquatherm.de/en/using-waste-heat-from-data-centres-turning-digital-heat-into-community-warmth"
+    },
+    {
+     "type": "scientist",
+     "who": "Jing et al. · Energy journal",
+     "claim": "A study of a 60,000 square metre retrofit reports 69.6 percent waste heat utilisation and a 2.57-year payback, with viable transmission distance of 24.4 km for a 100 MW source.",
+     "url": "https://www.sciencedirect.com/science/article/abs/pii/S0360544226001787"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Silo",
+     "year": 2023,
+     "kind": "series",
+     "echo": "A sealed community lives off one deep power source, so every warm room is a matter of careful accounting."
+    },
+    {
+     "title": "Dune",
+     "year": 1965,
+     "kind": "book",
+     "echo": "The Fremen reclaim every drop of water, and a town venting its heat to the sky would look just as wasteful."
+    }
+   ],
+   "added": "2026-10-07",
+   "status": "new",
+   "history": [
+    {
+     "date": "2026-10-07",
+     "horizon": 3
     }
    ]
   }
