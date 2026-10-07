@@ -29,6 +29,8 @@ YOUR JOB THIS WEEK
 3. Invent 3 to 5 NEW jobs: creative, plausible within 2-10 years, not duplicates of existing ones, surprising second-order jobs rather than obvious ones. Each needs at least 2 real, sourced signals and at least 1 sci-fi reference. Favour sectors with fewer jobs.
 4. Move existing jobs only on clear new evidence, by at most 1 year (horizon stays 2-10). Zero moves is fine.
 
+LENGTH: Keep the final JSON compact: each claim max 30 words, 2-3 signals per job, linkedin_posts max 900 characters each, report_de max 150 words. Do not write long prose before the JSON.
+
 RULES: Never invent quotes or attribute claims to people who did not make them. Paraphrase accurately in one sentence and include the URL you actually found. Never put your own extrapolation into a signal's claim. Do not reproduce copyrighted text. Plain English, no emojis.
 
 OUTPUT: After researching, reply with ONE JSON object inside <result></result> tags and nothing after it:
@@ -77,15 +79,30 @@ def run_claude(state):
     tools = [{"type": "web_search_20250305", "name": "web_search", "max_uses": 20}]
     text = ""
     for _ in range(8):  # continue while the server pauses long tool turns
-        resp = client.messages.create(model=MODEL, max_tokens=16000, system=SYSTEM, tools=tools, messages=messages)
+        resp = client.messages.create(model=MODEL, max_tokens=20000, system=SYSTEM, tools=tools, messages=messages)
         text += "".join(b.text for b in resp.content if b.type == "text")
+        print("stop_reason:", resp.stop_reason, "| output tokens:", resp.usage.output_tokens)
         if resp.stop_reason != "pause_turn":
             break
         messages.append({"role": "assistant", "content": resp.content})
-    m = re.search(r"<result>\s*(\{.*\})\s*</result>", text, re.S)
-    if not m:
-        raise SystemExit("No <result> JSON in model output:\n" + text[-3000:])
-    return json.loads(m.group(1))
+    return parse_result(text)
+
+
+def parse_result(text):
+    """Pull the JSON out of <result>…</result>; tolerate a missing closing tag and inline citation markup."""
+    text = re.sub(r"</?cite[^>]*>", "", text)
+    i = text.rfind("<result>")
+    if i < 0:
+        raise SystemExit("No <result> in model output:\n" + text[-3000:])
+    body = text[i + len("<result>"):].split("</result>")[0].strip()
+    start = body.find("{")
+    end = body.rfind("}")
+    while end > start >= 0:
+        try:
+            return json.loads(body[start:end + 1])
+        except json.JSONDecodeError:
+            end = body.rfind("}", start, end)
+    raise SystemExit("Could not parse <result> JSON (output probably cut off):\n" + body[-3000:])
 
 
 def valid_signal(s):
