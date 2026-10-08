@@ -435,7 +435,8 @@ footer a{color:var(--mute)}
 const SECTORS=[
   {id:"ai",name:"AI & Agents",c:"#8f9bff"},{id:"finance",name:"Finance",c:"#e6ecff"},{id:"robotics",name:"Robotics",c:"#5ee6ff"},
   {id:"mobility",name:"Mobility",c:"#4dffb8"},{id:"built",name:"Built World",c:"#ffd166"},{id:"energy",name:"Energy & Climate",c:"#ff8a4d"},
-  {id:"food",name:"Food & Farming",c:"#b5e853"},{id:"space",name:"Space",c:"#c08bff"},{id:"health",name:"Health & Bio",c:"#ff6b7f"},{id:"care",name:"Care",c:"#ff9de2"}];
+  {id:"food",name:"Food & Farming",c:"#b5e853"},{id:"space",name:"Space",c:"#c08bff"},{id:"health",name:"Health & Bio",c:"#ff6b7f"},{id:"care",name:"Care",c:"#ff9de2"},
+  {id:"events",name:"Events & Exhibitions",c:"#ff4fd8"}];
 const SEC=Object.fromEntries(SECTORS.map((s,i)=>[s.id,{...s,i}]));
 const DRIVERS=[{id:"ai",name:"AI",c:"#8f9bff"},{id:"robotics",name:"Robotics",c:"#5ee6ff"},{id:"autonomy",name:"Autonomy",c:"#4dffb8"},{id:"bio",name:"Biotech",c:"#ff6b7f"},
   {id:"space",name:"Space",c:"#c08bff"},{id:"energy",name:"Energy",c:"#ff8a4d"},{id:"quantum",name:"Quantum",c:"#ffd166"},{id:"chain",name:"Blockchain",c:"#e6ecff"}];
@@ -603,6 +604,7 @@ async function boot(){
   catch(e){$("#csTitle").textContent="The radar could not load. Reload the page.";return}
   layout();renderCover();S.prof=(S.meta.professions||[])[0]?.id||null;renderProf();renderFilters();renderRail();renderDisp();update();
   const h=location.hash.slice(1);if(byId(h))openFeature(h);
+  else if(SEC[h]){S.filter=h;renderFilters();renderRail();setTimeout(()=>$("#index").scrollIntoView({behavior:"smooth"}),400)}
 }
 boot();
 })();
