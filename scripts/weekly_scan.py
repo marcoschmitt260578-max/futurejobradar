@@ -14,7 +14,7 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "docs" / "jobs.json"
 REPORTS = ROOT / "reports"
 MODEL = os.environ.get("SCAN_MODEL") or "claude-sonnet-5-5"
-SECTORS = ["ai", "finance", "robotics", "mobility", "built", "energy", "food", "space", "health", "care"]
+SECTORS = ["ai", "finance", "robotics", "mobility", "built", "energy", "food", "space", "health", "care", "events"]
 DRIVERS = ["ai", "robotics", "autonomy", "bio", "space", "energy", "quantum", "chain"]
 SIGNAL_TYPES = {"analyst", "economist", "futurist", "scientist", "engineer", "strategist", "entrepreneur", "technologist", "market"}
 
@@ -24,7 +24,7 @@ THESIS: Technology is a net job creator. In 1995 nobody was an Uber driver, Airb
 METHOD: Facts + Fiction + Creative thinking = a job that could exist. Take real signals, combine them with science fiction, and invent the second-order jobs that follow ("if every car drives itself, what changes on motorways?", "if AI agents pay each other instantly over blockchains for almost nothing, who is needed?").
 
 YOUR JOB THIS WEEK
-1. Use web search to research roughly the last 7 days. Cover scientists, engineers, economists, strategists, futurists, entrepreneurs and analysts. Priority voices: Peter Diamandis / Moonshots, Cathie Wood / ARK Invest, Elon Musk (Optimus, SpaceX, robotaxi), Jensen Huang, Sam Altman, Dario Amodei, Ray Kurzweil, Amy Webb, WEF, McKinsey, PwC, BCG; plus market data (robot deployments and prices, robotaxi rides, launches, biotech approvals, fusion, energy, stablecoins, tokenized assets, agent payments, farm robots). Domains: AI & agents, finance, robotics, mobility, built world, energy & climate, food & farming, space, health & bio, care, education.
+1. Use web search to research roughly the last 7 days. Cover scientists, engineers, economists, strategists, futurists, entrepreneurs and analysts. Priority voices: Peter Diamandis / Moonshots, Cathie Wood / ARK Invest, Elon Musk (Optimus, SpaceX, robotaxi), Jensen Huang, Sam Altman, Dario Amodei, Ray Kurzweil, Amy Webb, WEF, McKinsey, PwC, BCG; plus market data (robot deployments and prices, robotaxi rides, launches, biotech approvals, fusion, energy, stablecoins, tokenized assets, agent payments, farm robots). Domains: AI & agents, finance, robotics, mobility, built world, energy & climate, food & farming, space, health & bio, care, events & exhibitions (live events, trade fairs, conferences, concerts, festivals, incentives), education.
 2. Science fiction is a core source. Pick 1-2 "focus universes" this week, preferring titles used little or not at all so far (list given below). Star Trek (incl. Starfleet Academy, 2026) is a key universe; others: The Expanse, Star Wars, Dune, Foundation, Blade Runner, Black Mirror, Her, Westworld, Altered Carbon, Interstellar, The Martian, Minority Report, Ghost in the Shell, Severance, Murderbot, Andor, Silo, Three-Body Problem, Asimov, Kim Stanley Robinson, Neal Stephenson, William Gibson, Iain M. Banks, Becky Chambers, Cory Doctorow, Daniel Suarez. Ask: who works in that world and what do they do all day?
 3. Invent 3 to 5 NEW jobs: creative, plausible within 2-10 years, not duplicates of existing ones, surprising second-order jobs rather than obvious ones. Each needs at least 2 real, sourced signals and at least 1 sci-fi reference. Favour sectors with fewer jobs.
 4. Move existing jobs only on clear new evidence, by at most 1 year (horizon stays 2-10). Zero moves is fine.
