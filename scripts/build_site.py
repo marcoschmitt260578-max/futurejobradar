@@ -21,7 +21,7 @@ SECTOR = {
     "ai": ("AI & Agents", "#8f9bff"), "finance": ("Finance", "#e6ecff"), "robotics": ("Robotics", "#5ee6ff"),
     "mobility": ("Mobility", "#4dffb8"), "built": ("Built World", "#ffd166"), "energy": ("Energy & Climate", "#ff8a4d"),
     "food": ("Food & Farming", "#b5e853"), "space": ("Space", "#c08bff"), "health": ("Health & Bio", "#ff6b7f"),
-    "care": ("Care", "#ff9de2"),
+    "care": ("Care", "#ff9de2"), "events": ("Events & Exhibitions", "#ff4fd8"),
 }
 BG, PAPER, GOLD, MUTE = "#0d1226", "#f3eee3", "#f2c14e", "#a9afc6"
 BASE_YEAR = 2026
@@ -261,6 +261,33 @@ def main():
 <p><em>{e(j['trigger'])}</em></p>
 <p>{e(j['what'])}</p>
 <p><a style="color:#f2c14e" href="../../#{j['id']}">Read the full story on the Future Job Radar</a></p>
+</body>
+</html>
+""")
+
+    # one share page per sector, e.g. /events/ (opens the radar filtered to that sector)
+    for sid, (sname, scol) in SECTOR.items():
+        sjobs = [j for j in jobs if j["sector"] == sid]
+        if not sjobs:
+            continue
+        og_image(DOCS / "og" / f"sector-{sid}.png", "Future Job Radar", sname,
+                 f"{len(sjobs)} jobs that don't exist yet. Part fact, part fiction, all imagination.", "", scol)
+        url = f"{SITE}/{sid}/"
+        urls.append(url)
+        sd = DOCS / sid
+        if sd.exists():
+            shutil.rmtree(sd)
+        sd.mkdir()
+        title = f"{sname}: {len(sjobs)} jobs that don't exist yet · Future Job Radar"
+        (sd / "index.html").write_text(
+            head(title, "Future jobs in " + sname + ": " + ", ".join(j["title"] for j in sjobs[:6]) + " and more.", url, f"{SITE}/og/sector-{sid}.png")
+            + f"""<meta http-equiv="refresh" content="0; url=../#{sid}">
+<script>location.replace('../#{sid}')</script>
+</head>
+<body style="font-family:Georgia,serif;color:#f3eee3;padding:40px 16px;max-width:640px;margin:0 auto">
+<h1>{e(sname)}</h1>
+<ul>{''.join(f"<li>{e(j['title'])}</li>" for j in sjobs)}</ul>
+<p><a style="color:#f2c14e" href="../#{sid}">Open the Future Job Radar</a></p>
 </body>
 </html>
 """)
