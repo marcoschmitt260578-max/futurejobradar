@@ -47,6 +47,9 @@ jobs:
           SENDER_EMAIL: ${{ vars.SENDER_EMAIL }}
         run: python scripts/newsletter.py
 
+      - name: Apply curated seeds (one-off additions like new sectors)
+        run: python scripts/apply_seed.py
+
       - name: Build site
         env:
           SITE_URL: ${{ vars.SITE_URL || 'https://futurejobradar.com' }}
