@@ -2,8 +2,8 @@
  "meta": {
   "name": "Future Job Radar",
   "version": 1,
-  "lastScan": "2026-10-07",
-  "scanNumber": 5,
+  "lastScan": "2026-10-08",
+  "scanNumber": 6,
   "horizonYears": [
    2,
    10
@@ -45,7 +45,8 @@
      "cabin-experience-designer",
      "mobile-room-entrepreneur",
      "drone-airspace-controller",
-     "robotaxi-curb-marshal"
+     "robotaxi-curb-marshal",
+     "arrival-choreographer"
     ]
    },
    {
@@ -57,7 +58,9 @@
      "robot-fleet-foreman",
      "debris-recovery-pilot",
      "machine-economy-accountant",
-     "robotaxi-curb-marshal"
+     "robotaxi-curb-marshal",
+     "arrival-choreographer",
+     "crowd-twin-operator"
     ]
    },
    {
@@ -68,18 +71,39 @@
      "field-mission-learning-designer",
      "household-robot-trainer",
      "commercial-astronaut-trainer",
-     "kobayashi-maru-designer"
+     "kobayashi-maru-designer",
+     "every-language-room-designer",
+     "interactive-story-game-master"
     ]
    },
    {
     "id": "events",
     "label": "Event manager",
     "jobs": [
-     "drone-show-choreographer",
      "avatar-show-producer",
      "holodeck-architect",
      "programmable-money-designer",
-     "orbital-hospitality-host"
+     "orbital-hospitality-host",
+     "guest-agent-liaison",
+     "arrival-choreographer",
+     "telepresence-host",
+     "every-language-room-designer",
+     "speaker-twin-director",
+     "digital-persona-rights-manager",
+     "multisensory-director",
+     "personal-show-layer-designer",
+     "interactive-story-game-master",
+     "human-made-live-certifier",
+     "robot-crew-chief",
+     "rehearsal-twin-director",
+     "crowd-twin-operator",
+     "festival-power-conductor",
+     "robot-hospitality-lead",
+     "synthetic-audience-tester",
+     "emotion-data-steward",
+     "event-memory-curator",
+     "orbital-incentive-producer",
+     "robot-sports-event-producer"
     ]
    },
    {
@@ -90,7 +114,11 @@
      "cabin-experience-designer",
      "mobile-room-entrepreneur",
      "robot-behaviour-designer",
-     "replicator-recipe-designer"
+     "replicator-recipe-designer",
+     "guest-agent-liaison",
+     "telepresence-host",
+     "robot-hospitality-lead",
+     "orbital-incentive-producer"
     ]
    },
    {
@@ -100,7 +128,8 @@
      "replicator-recipe-designer",
      "precision-nutrition-chef",
      "bioreactor-rancher",
-     "space-agronomist"
+     "space-agronomist",
+     "robot-hospitality-lead"
     ]
    },
    {
@@ -136,7 +165,8 @@
      "ai-welfare-officer",
      "personal-data-trustee",
      "robot-incident-investigator",
-     "orbital-dark-sky-mediator"
+     "orbital-dark-sky-mediator",
+     "digital-persona-rights-manager"
     ]
    },
    {
@@ -158,7 +188,16 @@
      "micropayment-pricing-designer",
      "deepfake-forensics-investigator",
      "avatar-show-producer",
-     "society-simulation-analyst"
+     "society-simulation-analyst",
+     "every-language-room-designer",
+     "speaker-twin-director",
+     "multisensory-director",
+     "personal-show-layer-designer",
+     "interactive-story-game-master",
+     "human-made-live-certifier",
+     "synthetic-audience-tester",
+     "event-memory-curator",
+     "robot-sports-event-producer"
     ]
    },
    {
@@ -169,7 +208,8 @@
      "model-behaviour-auditor",
      "post-quantum-migrator",
      "rogue-agent-investigator",
-     "holodeck-architect"
+     "holodeck-architect",
+     "personal-show-layer-designer"
     ]
    },
    {
@@ -182,7 +222,9 @@
      "microgravity-manufacturing-engineer",
      "vpp-conductor",
      "mine-to-compute-planner",
-     "robot-skill-examiner"
+     "robot-skill-examiner",
+     "robot-crew-chief",
+     "festival-power-conductor"
     ]
    },
    {
@@ -194,7 +236,8 @@
      "lunar-construction-supervisor",
      "exoskeleton-fitter",
      "highway-repurposing-planner",
-     "mine-to-compute-planner"
+     "mine-to-compute-planner",
+     "robot-crew-chief"
     ]
    },
    {
@@ -206,7 +249,8 @@
      "kobayashi-maru-designer",
      "robot-fleet-foreman",
      "society-simulation-analyst",
-     "compute-commons-steward"
+     "compute-commons-steward",
+     "speaker-twin-director"
     ]
    },
    {
@@ -220,7 +264,8 @@
      "asteroid-prospector",
      "neural-voice-designer",
      "orbital-dark-sky-mediator",
-     "wild-strip-ecologist"
+     "wild-strip-ecologist",
+     "emotion-data-steward"
     ]
    },
    {
@@ -233,7 +278,8 @@
      "ai-welfare-officer",
      "care-robot-matchmaker",
      "neural-voice-designer",
-     "companion-handover-specialist"
+     "companion-handover-specialist",
+     "emotion-data-steward"
     ]
    },
    {
@@ -246,7 +292,8 @@
      "critical-mineral-recycler",
      "heat-resilience-officer",
      "compute-commons-steward",
-     "data-heat-matchmaker"
+     "data-heat-matchmaker",
+     "festival-power-conductor"
     ]
    },
    {
@@ -261,7 +308,8 @@
      "robotaxi-curb-marshal",
      "mine-to-compute-planner",
      "compute-commons-steward",
-     "data-heat-matchmaker"
+     "data-heat-matchmaker",
+     "rehearsal-twin-director"
     ]
    },
    {
@@ -276,7 +324,7 @@
     ]
    }
   ],
-  "cover": "orbital-dark-sky-mediator"
+  "cover": "speaker-twin-director"
  },
  "scans": [
   {
@@ -416,6 +464,36 @@
     "wild-strip-ecologist",
     "robot-skill-examiner",
     "data-heat-matchmaker"
+   ],
+   "moved": []
+  },
+  {
+   "number": 6,
+   "date": "2026-10-08",
+   "headline": "Special edition: a new sector for events and exhibitions",
+   "summary": "Twenty jobs that live events, trade fairs, conferences and festivals will need as AI agents, humanoid robots, smart glasses and digital twins arrive, from the Speaker Twin Director to the Robot Crew Chief.",
+   "focus": "Her, Westworld, Black Mirror, Star Trek: The Next Generation",
+   "newJobs": [
+    "guest-agent-liaison",
+    "arrival-choreographer",
+    "telepresence-host",
+    "every-language-room-designer",
+    "speaker-twin-director",
+    "digital-persona-rights-manager",
+    "multisensory-director",
+    "personal-show-layer-designer",
+    "interactive-story-game-master",
+    "human-made-live-certifier",
+    "robot-crew-chief",
+    "rehearsal-twin-director",
+    "crowd-twin-operator",
+    "festival-power-conductor",
+    "robot-hospitality-lead",
+    "synthetic-audience-tester",
+    "emotion-data-steward",
+    "event-memory-curator",
+    "orbital-incentive-producer",
+    "robot-sports-event-producer"
    ],
    "moved": []
   }
@@ -3099,7 +3177,7 @@
   {
    "id": "holodeck-architect",
    "title": "Holodeck Architect",
-   "sector": "ai",
+   "sector": "events",
    "horizon": 3,
    "drivers": {
     "ai": 0.8,
@@ -4016,61 +4094,9 @@
    ]
   },
   {
-   "id": "drone-show-choreographer",
-   "title": "Drone Show Choreographer",
-   "sector": "robotics",
-   "horizon": 2,
-   "drivers": {
-    "ai": 0,
-    "robotics": 0.6,
-    "autonomy": 0.4,
-    "bio": 0,
-    "space": 0,
-    "energy": 0,
-    "quantum": 0,
-    "chain": 0
-   },
-   "trigger": "When thousands of drones can fly in sync, the sky becomes a stage.",
-   "what": "Designs and runs light shows and aerial storytelling with drone swarms for events, brands and cities.",
-   "day": "Animates 3,000 drones into a car silhouette over a stadium, then lands them in four minutes.",
-   "skills": [
-    "Motion design",
-    "Drone operations",
-    "Event production"
-   ],
-   "signals": [
-    {
-     "type": "market",
-     "who": "Drone light shows",
-     "claim": "Shows with thousands of synchronised drones now replace fireworks at major events."
-    },
-    {
-     "type": "strategist",
-     "who": "China · Low-altitude economy",
-     "claim": "Beijing named drones and eVTOL air taxis a strategic growth industry in 2024."
-    }
-   ],
-   "scifi": [
-    {
-     "title": "Ender's Game",
-     "year": 2013,
-     "kind": "film",
-     "echo": "Huge fleets are coordinated as one moving formation."
-    }
-   ],
-   "added": "2026-10-03",
-   "status": "stable",
-   "history": [
-    {
-     "date": "2026-10-03",
-     "horizon": 2
-    }
-   ]
-  },
-  {
    "id": "avatar-show-producer",
    "title": "Avatar Show Producer",
-   "sector": "ai",
+   "sector": "events",
    "horizon": 3,
    "drivers": {
     "ai": 0.8,
@@ -5852,6 +5878,1084 @@
     {
      "date": "2026-10-07",
      "horizon": 3
+    }
+   ]
+  },
+  {
+   "id": "guest-agent-liaison",
+   "title": "Guest Agent Liaison",
+   "sector": "events",
+   "horizon": 3,
+   "drivers": {
+    "ai": 1,
+    "robotics": 0,
+    "autonomy": 0,
+    "bio": 0,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0.2
+   },
+   "trigger": "When every guest arrives with an AI agent that books meetings, meals and shuttles, 3,000 agents have to agree with the event's own.",
+   "what": "Runs the event's side of all agent-to-agent negotiation: meeting slots, dietary needs, seat requests, transfers. Steps in when two agents deadlock or a VIP's agent asks for the impossible.",
+   "day": "He watches a dashboard of 412 agent requests for the CEO dinner, resolves a clash between two assistants fighting over the same table, and approves a last-minute vegan menu.",
+   "skills": [
+    "Guest services",
+    "Agent tooling",
+    "Diplomacy"
+   ],
+   "signals": [
+    {
+     "claim": "OpenAI's Operator agent can research and reserve travel, events and restaurant tables for users after confirming with them.",
+     "type": "technologist",
+     "url": "https://skift.com/2025/01/23/chatgpt-can-now-search-for-and-book-travel-on-its-own/",
+     "who": "OpenAI · Skift"
+    },
+    {
+     "claim": "Indian startup BluePill raised $6 million to build simulated AI consumers that brands use to test products and ads.",
+     "type": "entrepreneur",
+     "url": "https://www.theweek.in/wire-updates/business/2025/12/15/dcm85-biz-startup-funding.html",
+     "who": "BluePill · The Week"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Her",
+     "year": 2013,
+     "kind": "film",
+     "echo": "Samantha handles Theodore's life admin; at an event, every guest brings their own Samantha."
+    }
+   ],
+   "added": "2026-10-08",
+   "status": "new",
+   "history": [
+    {
+     "date": "2026-10-08",
+     "horizon": 3
+    }
+   ]
+  },
+  {
+   "id": "arrival-choreographer",
+   "title": "Arrival Choreographer",
+   "sector": "events",
+   "horizon": 4,
+   "drivers": {
+    "ai": 0.5,
+    "robotics": 0,
+    "autonomy": 1,
+    "bio": 0,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When 800 gala guests arrive in 300 robotaxis at the same entrance, arrivals become a show to be timed to the minute.",
+   "what": "Plans and runs guest arrival and departure for autonomous fleets: sequence, drop-off bays, VIP priority, red-carpet timing. Works with venues, fleets and security in real time.",
+   "day": "She slots the minister's car between two fleets, holds a wave of robotaxis two blocks away so the red carpet stays clear, then reverses the whole plan at midnight.",
+   "skills": [
+    "Guest logistics",
+    "Fleet dispatch",
+    "Show calling"
+   ],
+   "signals": [
+    {
+     "claim": "Waymo reported 500,000 paid robotaxi rides per week across 10 US cities in March 2026.",
+     "type": "market",
+     "url": "https://techcrunch.com/2026/03/27/waymo-skyrocketing-ridership-in-one-chart/",
+     "who": "Waymo · TechCrunch"
+    },
+    {
+     "claim": "Researchers tested an AI platform that estimates crowd density from drone footage, including a live trial at Old Trafford.",
+     "type": "scientist",
+     "url": "https://www.lse.ac.uk/research/research-for-the-world/ai-and-tech/using-ai-to-improve-event-safety",
+     "who": "LSE and Greater Manchester Police · LSE"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "The Fifth Element",
+     "year": 1997,
+     "kind": "film",
+     "echo": "Taxis stack in the sky over New York; someone still has to decide who lands at the door first."
+    }
+   ],
+   "added": "2026-10-08",
+   "status": "new",
+   "history": [
+    {
+     "date": "2026-10-08",
+     "horizon": 4
+    }
+   ]
+  },
+  {
+   "id": "telepresence-host",
+   "title": "Telepresence Host",
+   "sector": "events",
+   "horizon": 2,
+   "drivers": {
+    "ai": 0.6,
+    "robotics": 0.6,
+    "autonomy": 0,
+    "bio": 0,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When a third of the guests attend as holograms, avatars or telepresence robots, someone has to make them feel just as present as everyone else.",
+   "what": "Looks after remote guests on the floor: introductions, networking, stage Q&A, coffee-break small talk. Makes sure the robot in the corner doesn't become the loneliest guest in the room.",
+   "day": "He walks a telepresence robot from Singapore over to the speaker it wanted to meet, then brings a holographic panelist into the live Q&A on time.",
+   "skills": [
+    "Hosting",
+    "AV tech",
+    "Networking"
+   ],
+   "signals": [
+    {
+     "claim": "Proto's holographic device shows remote people as 3D figures on event stages, where they can talk with attendees in real time.",
+     "type": "market",
+     "url": "https://www.hotelmanagement.net/tech/proto-inc-develops-interactive-holographic-platform",
+     "who": "Proto · Hotel Management"
+    },
+    {
+     "claim": "Klarna's CEO presented Q1 2025 results through an AI avatar, and Zoom's CEO used an AI version of himself for parts of an earnings call.",
+     "type": "entrepreneur",
+     "url": "https://getcoai.com/news/klarna-and-zoom-showcase-ai-avatars-for-earnings-reports-and-investor-updates",
+     "who": "Klarna and Zoom · CO/AI"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Surrogates",
+     "year": 2009,
+     "kind": "film",
+     "echo": "People live through robot stand-ins; events will need hosts who welcome both."
+    }
+   ],
+   "added": "2026-10-08",
+   "status": "new",
+   "history": [
+    {
+     "date": "2026-10-08",
+     "horizon": 2
+    }
+   ]
+  },
+  {
+   "id": "every-language-room-designer",
+   "title": "Every-Language Room Designer",
+   "sector": "events",
+   "horizon": 2,
+   "drivers": {
+    "ai": 1,
+    "robotics": 0,
+    "autonomy": 0,
+    "bio": 0,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When every guest hears the keynote live in their own language, a speech has to work in 12 languages at once.",
+   "what": "Designs rooms, scripts and pacing for live AI translation: pauses, jokes that travel, captions on glasses, quiet zones. Tests a show in every language before it goes live.",
+   "day": "She rewrites a CEO's opening joke so it lands in Japanese and Portuguese, then adds a two-second pause before every punchline for the translators to catch up.",
+   "skills": [
+    "Script editing",
+    "Language tech",
+    "Audience research"
+   ],
+   "signals": [
+    {
+     "claim": "Apple launched AirPods Pro 3 with live in-ear AI translation in September 2025.",
+     "type": "technologist",
+     "url": "https://slator.com/apples-live-ai-translation-airpods-are-now-here/",
+     "who": "Apple · Slator"
+    },
+    {
+     "claim": "Meta's Ray-Ban Display glasses, with a small screen in the lens, went on sale in September 2025 for $799.",
+     "type": "technologist",
+     "url": "https://www.outlookbusiness.com/artificial-intelligence/meta-unveils-ray-ban-display-first-consumer-smart-glasses-with-built-in-screen",
+     "who": "Meta · Outlook Business"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "The Hitchhiker's Guide to the Galaxy",
+     "year": 1979,
+     "kind": "book",
+     "echo": "The Babel fish translates anything instantly; what's left is making sure the meaning survives."
+    }
+   ],
+   "added": "2026-10-08",
+   "status": "new",
+   "history": [
+    {
+     "date": "2026-10-08",
+     "horizon": 2
+    }
+   ]
+  },
+  {
+   "id": "speaker-twin-director",
+   "title": "Speaker Twin Director",
+   "sector": "events",
+   "horizon": 3,
+   "drivers": {
+    "ai": 1,
+    "robotics": 0,
+    "autonomy": 0,
+    "bio": 0,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When a CEO can give the same keynote in Tokyo, Dubai and Munich at once, two of them as AI twins, someone has to keep the twins honest.",
+   "what": "Produces AI twins of speakers: voice, gestures, approved content, live answers. Sets the rules for what a twin may say and pulls the plug when it drifts.",
+   "day": "He reviews the CEO twin's answers to 40 likely questions, blocks three it should never answer, and watches the Dubai session from Munich with a hand on the kill switch.",
+   "skills": [
+    "Executive communications",
+    "AI production",
+    "Judgement"
+   ],
+   "signals": [
+    {
+     "claim": "Klarna's CEO presented Q1 2025 results through an AI avatar, and Zoom's CEO used an AI version of himself for parts of an earnings call.",
+     "type": "entrepreneur",
+     "url": "https://getcoai.com/news/klarna-and-zoom-showcase-ai-avatars-for-earnings-reports-and-investor-updates",
+     "who": "Klarna and Zoom · CO/AI"
+    },
+    {
+     "claim": "ABBA Voyage, a concert of digital ABBA avatars in a 3,000-seat London arena, turned over about $129 million in 2023 and drew about 1.1 million visitors.",
+     "type": "market",
+     "url": "https://www.musicbusinessworldwide.com/abba-voyage-generated-129m-in-2023-as-virtual-concert-series-attracts-1-1m-visitors/",
+     "who": "ABBA Voyage · Music Business Worldwide"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Black Mirror",
+     "year": 2011,
+     "kind": "series",
+     "echo": "Digital copies of people keep turning up in Black Mirror; this job makes sure the copy behaves."
+    }
+   ],
+   "added": "2026-10-08",
+   "status": "new",
+   "history": [
+    {
+     "date": "2026-10-08",
+     "horizon": 3
+    }
+   ]
+  },
+  {
+   "id": "digital-persona-rights-manager",
+   "title": "Digital Persona Rights Manager",
+   "sector": "events",
+   "horizon": 4,
+   "drivers": {
+    "ai": 0.9,
+    "robotics": 0,
+    "autonomy": 0,
+    "bio": 0,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0.3
+   },
+   "trigger": "When legends and late artists return to the stage as avatars, every appearance needs consent from estates, studios and fans.",
+   "what": "Clears and licenses digital likenesses for shows and brand events: who may appear, saying what, for how long, in which countries. Tracks every use and the royalties it owes.",
+   "day": "She negotiates a five-minute avatar cameo with an artist's estate, adds a clause banning political content, and logs the licence so the show can prove consent in every market.",
+   "skills": [
+    "Rights and licensing",
+    "Entertainment law",
+    "Negotiation"
+   ],
+   "signals": [
+    {
+     "claim": "California's AB 1836 bans AI replicas of deceased performers without consent from the performer's family or estate.",
+     "type": "strategist",
+     "url": "https://a16.asmdc.org/press-releases/20240916-governor-newsom-signs-ab-1836-protect-deceased-performers-ai-exploitation",
+     "who": "California AB 1836 · California State Assembly"
+    },
+    {
+     "claim": "ABBA Voyage, a concert of digital ABBA avatars in a 3,000-seat London arena, turned over about $129 million in 2023 and drew about 1.1 million visitors.",
+     "type": "market",
+     "url": "https://www.musicbusinessworldwide.com/abba-voyage-generated-129m-in-2023-as-virtual-concert-series-attracts-1-1m-visitors/",
+     "who": "ABBA Voyage · Music Business Worldwide"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "The Congress",
+     "year": 2013,
+     "kind": "film",
+     "echo": "An actress sells her digital likeness to a studio; the fine print is the whole story."
+    }
+   ],
+   "added": "2026-10-08",
+   "status": "new",
+   "history": [
+    {
+     "date": "2026-10-08",
+     "horizon": 4
+    }
+   ]
+  },
+  {
+   "id": "multisensory-director",
+   "title": "Multisensory Director",
+   "sector": "events",
+   "horizon": 3,
+   "drivers": {
+    "ai": 0.5,
+    "robotics": 0.3,
+    "autonomy": 0,
+    "bio": 0,
+    "space": 0,
+    "energy": 0.1,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When shows can be felt, smelled and touched, scent, wind, heat and vibration need a director like light and sound have.",
+   "what": "Designs and calls the sensory track of a show: haptics in seats, scent cues, temperature and air. Makes sure the citrus hits on the beat, not three seconds late.",
+   "day": "He times a sea-breeze scent to the moment a product reveal opens on screen, then tones down seat vibration for a row of guests who opted out.",
+   "skills": [
+    "Show design",
+    "Sensory tech",
+    "Timing"
+   ],
+   "signals": [
+    {
+     "claim": "Sphere's show adds haptic seats, wind machines and scent machines to its giant wraparound screen.",
+     "type": "technologist",
+     "url": "https://theasc.com/article/postcard-from-earth-at-msg-sphere/",
+     "who": "Sphere Las Vegas · American Cinematographer"
+    },
+    {
+     "claim": "US visits to immersive experience venues were estimated at 30 to 35 million in 2025, with revenue growing 20 to 25 percent a year.",
+     "type": "analyst",
+     "url": "https://whitehutchinson.com/printer-friendly/news/lenews/2025/december/article102.shtml",
+     "who": "White Hutchinson Leisure & Learning Group"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Brave New World",
+     "year": 1932,
+     "kind": "book",
+     "echo": "Huxley's 'feelies' added touch and smell to cinema; Sphere is the first step."
+    }
+   ],
+   "added": "2026-10-08",
+   "status": "new",
+   "history": [
+    {
+     "date": "2026-10-08",
+     "horizon": 3
+    }
+   ]
+  },
+  {
+   "id": "personal-show-layer-designer",
+   "title": "Personal Show Layer Designer",
+   "sector": "events",
+   "horizon": 4,
+   "drivers": {
+    "ai": 0.9,
+    "robotics": 0.1,
+    "autonomy": 0,
+    "bio": 0,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When guests watch through smart glasses, every guest can see a different version of the same show.",
+   "what": "Designs the invisible second stage: personal captions, speaker bios, translations, live data and effects in each guest's glasses. Decides what everyone sees and what only some do.",
+   "day": "She builds three layers for one keynote, for investors, engineers and press, and makes sure the investor layer never shows the slide legal hasn't cleared.",
+   "skills": [
+    "AR design",
+    "Content strategy",
+    "Audience segmentation"
+   ],
+   "signals": [
+    {
+     "claim": "Meta's Ray-Ban Display glasses, with a small screen in the lens, went on sale in September 2025 for $799.",
+     "type": "technologist",
+     "url": "https://www.outlookbusiness.com/artificial-intelligence/meta-unveils-ray-ban-display-first-consumer-smart-glasses-with-built-in-screen",
+     "who": "Meta · Outlook Business"
+    },
+    {
+     "claim": "Apple launched AirPods Pro 3 with live in-ear AI translation in September 2025.",
+     "type": "technologist",
+     "url": "https://slator.com/apples-live-ai-translation-airpods-are-now-here/",
+     "who": "Apple · Slator"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Minority Report",
+     "year": 2002,
+     "kind": "film",
+     "echo": "Ads speak to John Anderton by name; events will personalise far more politely."
+    }
+   ],
+   "added": "2026-10-08",
+   "status": "new",
+   "history": [
+    {
+     "date": "2026-10-08",
+     "horizon": 4
+    }
+   ]
+  },
+  {
+   "id": "interactive-story-game-master",
+   "title": "Interactive Story Game Master",
+   "sector": "events",
+   "horizon": 3,
+   "drivers": {
+    "ai": 1,
+    "robotics": 0,
+    "autonomy": 0,
+    "bio": 0,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When AI can rewrite a show while it runs, the audience can decide how the evening goes.",
+   "what": "Leads live, branching experiences: the audience votes, plays or acts, and the story adapts. Keeps the plot on track like a game master, with AI writing the variations.",
+   "day": "He watches 600 guests split on a choice, lets the AI draft two endings in seconds, and picks the one that still lands on the product reveal at 21:40.",
+   "skills": [
+    "Storytelling",
+    "Improvisation",
+    "Live direction"
+   ],
+   "signals": [
+    {
+     "claim": "US visits to immersive experience venues were estimated at 30 to 35 million in 2025, with revenue growing 20 to 25 percent a year.",
+     "type": "analyst",
+     "url": "https://whitehutchinson.com/printer-friendly/news/lenews/2025/december/article102.shtml",
+     "who": "White Hutchinson Leisure & Learning Group"
+    },
+    {
+     "claim": "ABBA Voyage, a concert of digital ABBA avatars in a 3,000-seat London arena, turned over about $129 million in 2023 and drew about 1.1 million visitors.",
+     "type": "market",
+     "url": "https://www.musicbusinessworldwide.com/abba-voyage-generated-129m-in-2023-as-virtual-concert-series-attracts-1-1m-visitors/",
+     "who": "ABBA Voyage · Music Business Worldwide"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Westworld",
+     "year": 2016,
+     "kind": "series",
+     "echo": "Guests shape their own story in the park; the narrative team never sleeps."
+    }
+   ],
+   "added": "2026-10-08",
+   "status": "new",
+   "history": [
+    {
+     "date": "2026-10-08",
+     "horizon": 3
+    }
+   ]
+  },
+  {
+   "id": "human-made-live-certifier",
+   "title": "Human-Made Live Certifier",
+   "sector": "events",
+   "horizon": 4,
+   "drivers": {
+    "ai": 0.8,
+    "robotics": 0,
+    "autonomy": 0,
+    "bio": 0,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0.4
+   },
+   "trigger": "When almost anything on a stage could be AI-generated, 'really live, really human' becomes a premium label.",
+   "what": "Audits and certifies performances, speeches and content as human-made and live: checks the setup, the audio chain and the backstage. Issues the seal promoters print on tickets.",
+   "day": "She sits in a sound check, verifies the vocals aren't processed by a voice model, and signs off the 'Human Live' seal for tonight's tour stop.",
+   "skills": [
+    "Audio engineering",
+    "Audit",
+    "Integrity"
+   ],
+   "signals": [
+    {
+     "claim": "Deezer reported in April 2026 that 44% of new uploads to its platform were detected as AI-generated.",
+     "type": "market",
+     "url": "https://www.techradar.com/audio/audio-streaming/deezer-says-nearly-half-of-all-new-music-uploaded-to-its-site-is-ai-generated-and-its-calling-on-spotify-and-other-streaming-giants-to-do-more-about-it",
+     "who": "Deezer · TechRadar"
+    },
+    {
+     "claim": "California's AB 1836 bans AI replicas of deceased performers without consent from the performer's family or estate.",
+     "type": "strategist",
+     "url": "https://a16.asmdc.org/press-releases/20240916-governor-newsom-signs-ab-1836-protect-deceased-performers-ai-exploitation",
+     "who": "California AB 1836 · California State Assembly"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Blade Runner",
+     "year": 1982,
+     "kind": "film",
+     "echo": "The Voight-Kampff test tells human from replicant; this is the friendlier version for concerts."
+    }
+   ],
+   "added": "2026-10-08",
+   "status": "new",
+   "history": [
+    {
+     "date": "2026-10-08",
+     "horizon": 4
+    }
+   ]
+  },
+  {
+   "id": "robot-crew-chief",
+   "title": "Robot Crew Chief",
+   "sector": "events",
+   "horizon": 4,
+   "drivers": {
+    "ai": 0.4,
+    "robotics": 1,
+    "autonomy": 0,
+    "bio": 0,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When humanoid robots load in stages overnight, the crew chief leads machines as well as people.",
+   "what": "Plans and runs robot crews for build-up and dismantling: task lists, safety zones, battery swaps, handovers to human riggers. Steps in when a robot can't handle an odd-shaped case.",
+   "day": "He splits the overnight build between 12 humanoids and four riggers, clears a robot stuck behind a truss, and has the stage ready for the 7 a.m. rehearsal.",
+   "skills": [
+    "Stage production",
+    "Robot operations",
+    "Safety"
+   ],
+   "signals": [
+    {
+     "claim": "GXO is deploying Agility's Digit humanoid robots in a warehouse under a multi-year robots-as-a-service agreement.",
+     "type": "market",
+     "url": "https://www.dcvelocity.com/articles/61175-gxo-deploys-humanoid-robots-in-spanx-warehouse",
+     "who": "GXO and Agility Robotics · DC Velocity"
+    },
+    {
+     "claim": "Beijing hosted the World Humanoid Robot Games in August 2025, with 19 events from football to dance at its Olympic venues.",
+     "type": "market",
+     "url": "https://english.beijing.gov.cn/latest/news/202505/t20250509_4085788.html",
+     "who": "World Humanoid Robot Games · Beijing Municipal Government"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Star Wars",
+     "year": 1977,
+     "kind": "film",
+     "echo": "Droids do the heavy lifting in every hangar; someone still runs the shift."
+    }
+   ],
+   "added": "2026-10-08",
+   "status": "new",
+   "history": [
+    {
+     "date": "2026-10-08",
+     "horizon": 4
+    }
+   ]
+  },
+  {
+   "id": "rehearsal-twin-director",
+   "title": "Rehearsal Twin Director",
+   "sector": "events",
+   "horizon": 2,
+   "drivers": {
+    "ai": 0.9,
+    "robotics": 0.1,
+    "autonomy": 0,
+    "bio": 0,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When every venue has a live digital twin, a whole event can be rehearsed before a single truck is loaded.",
+   "what": "Runs full rehearsals in a digital twin: light, sound, stage moves, guest flow with simulated crowds. Clients do their site visit in a headset and sign off before build.",
+   "day": "She runs the opening sequence in the twin, spots that the LED wall blocks the fire exit sightline, and moves it before anyone has drilled a hole.",
+   "skills": [
+    "3D tools",
+    "Show calling",
+    "Spatial planning"
+   ],
+   "signals": [
+    {
+     "claim": "ExCeL London gives organisers a lifelike digital twin of the venue to plan events and cut down on site visits.",
+     "type": "market",
+     "url": "https://www.excel.london/news/excel-partners-with-oneplan-to-become-first-uk-venue-to-offer-3d-venue-mapping",
+     "who": "ExCeL London and OnePlan · ExCeL London"
+    },
+    {
+     "claim": "Indian startup BluePill raised $6 million to build simulated AI consumers that brands use to test products and ads.",
+     "type": "entrepreneur",
+     "url": "https://www.theweek.in/wire-updates/business/2025/12/15/dcm85-biz-startup-funding.html",
+     "who": "BluePill · The Week"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Star Trek: The Next Generation",
+     "year": 1987,
+     "kind": "series",
+     "echo": "The holodeck lets the crew rehearse anything; event teams get the same trick."
+    }
+   ],
+   "added": "2026-10-08",
+   "status": "new",
+   "history": [
+    {
+     "date": "2026-10-08",
+     "horizon": 2
+    }
+   ]
+  },
+  {
+   "id": "crowd-twin-operator",
+   "title": "Crowd Twin Operator",
+   "sector": "events",
+   "horizon": 3,
+   "drivers": {
+    "ai": 1,
+    "robotics": 0,
+    "autonomy": 0.3,
+    "bio": 0,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When a live model of the crowd can predict a crush ten minutes before it happens, someone steers it gently away.",
+   "what": "Watches a real-time model of crowd density at festivals, stadiums and fairs. Steers flows with lights, screens, gates and announcements before queues turn into danger.",
+   "day": "She sees pressure building at the main-stage exit, opens a side gate, flips the screens to the second bar, and the jam dissolves before anyone notices.",
+   "skills": [
+    "Crowd safety",
+    "Data analysis",
+    "Calm under pressure"
+   ],
+   "signals": [
+    {
+     "claim": "Researchers tested an AI platform that estimates crowd density from drone footage, including a live trial at Old Trafford.",
+     "type": "scientist",
+     "url": "https://www.lse.ac.uk/research/research-for-the-world/ai-and-tech/using-ai-to-improve-event-safety",
+     "who": "LSE and Greater Manchester Police · LSE"
+    },
+    {
+     "claim": "ExCeL London gives organisers a lifelike digital twin of the venue to plan events and cut down on site visits.",
+     "type": "market",
+     "url": "https://www.excel.london/news/excel-partners-with-oneplan-to-become-first-uk-venue-to-offer-3d-venue-mapping",
+     "who": "ExCeL London and OnePlan · ExCeL London"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Foundation",
+     "year": 1951,
+     "kind": "book",
+     "echo": "Psychohistory predicts crowds of billions; festivals need it for 80,000."
+    }
+   ],
+   "added": "2026-10-08",
+   "status": "new",
+   "history": [
+    {
+     "date": "2026-10-08",
+     "horizon": 3
+    }
+   ]
+  },
+  {
+   "id": "festival-power-conductor",
+   "title": "Festival Power Conductor",
+   "sector": "events",
+   "horizon": 3,
+   "drivers": {
+    "ai": 0.4,
+    "robotics": 0,
+    "autonomy": 0,
+    "bio": 0,
+    "space": 0,
+    "energy": 1,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When festivals run on batteries, solar and parked EVs instead of diesel, power has to be conducted minute by minute.",
+   "what": "Plans and runs an event's microgrid: battery fleets, solar, borrowed EV batteries and grid links. Balances headliner peaks against food trucks and phone chargers.",
+   "day": "He shifts power from charging stations to the main stage for the headliner's light show, then pays 40 campers' EVs for the energy they lent overnight.",
+   "skills": [
+    "Power systems",
+    "Event production",
+    "Forecasting"
+   ],
+   "signals": [
+    {
+     "claim": "Arcadia's Dragonfly stage at Glastonbury 2024 ran on batteries during show hours.",
+     "type": "market",
+     "url": "https://faroutmagazine.co.uk/glastonbury-arcadia-battery-powered/",
+     "who": "Glastonbury Festival · Far Out Magazine"
+    },
+    {
+     "claim": "Home batteries are already pooled into virtual power plants that sell power back to the grid.",
+     "type": "market",
+     "who": "Virtual power plants"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Dune",
+     "year": 1965,
+     "kind": "book",
+     "echo": "On Arrakis every drop of water is budgeted; festivals will budget every kilowatt the same way."
+    }
+   ],
+   "added": "2026-10-08",
+   "status": "new",
+   "history": [
+    {
+     "date": "2026-10-08",
+     "horizon": 3
+    }
+   ]
+  },
+  {
+   "id": "robot-hospitality-lead",
+   "title": "Robot Hospitality Lead",
+   "sector": "events",
+   "horizon": 4,
+   "drivers": {
+    "ai": 0.4,
+    "robotics": 1,
+    "autonomy": 0,
+    "bio": 0,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When robots serve, clear and refill at banquets, someone has to make the service still feel warm.",
+   "what": "Designs service with mixed human and robot teams: who greets, who serves, where robots wait. Trains staff to add the human moments machines can't.",
+   "day": "She sends robots to clear 400 plates while her waiters stay at the tables talking to guests, and pulls one robot that keeps bumping the dance floor.",
+   "skills": [
+    "Hospitality",
+    "Service design",
+    "Robot operations"
+   ],
+   "signals": [
+    {
+     "claim": "Pudu's service robots had reached more than 600 cities in over 60 countries by the end of 2022, with about 53,000 units shipped that year.",
+     "type": "market",
+     "url": "https://hospitalitytech.com/pudu-robotics-deploys-solution-600-cities",
+     "who": "Pudu Robotics · Hospitality Technology"
+    },
+    {
+     "claim": "GXO is deploying Agility's Digit humanoid robots in a warehouse under a multi-year robots-as-a-service agreement.",
+     "type": "market",
+     "url": "https://www.dcvelocity.com/articles/61175-gxo-deploys-humanoid-robots-in-spanx-warehouse",
+     "who": "GXO and Agility Robotics · DC Velocity"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "The Jetsons",
+     "year": 1962,
+     "kind": "series",
+     "echo": "Rosie the robot maid served dinner in 1962; banquets are catching up."
+    }
+   ],
+   "added": "2026-10-08",
+   "status": "new",
+   "history": [
+    {
+     "date": "2026-10-08",
+     "horizon": 4
+    }
+   ]
+  },
+  {
+   "id": "synthetic-audience-tester",
+   "title": "Synthetic Audience Tester",
+   "sector": "events",
+   "horizon": 2,
+   "drivers": {
+    "ai": 1,
+    "robotics": 0,
+    "autonomy": 0,
+    "bio": 0,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When 10,000 simulated guests can try an event concept before it is booked, ideas get tested before money is spent.",
+   "what": "Runs event concepts past AI-simulated audiences: agenda, venue, speakers, price. Reads where real people would get bored, lost or excited, and knows when not to trust the simulation.",
+   "day": "He tests three agendas on 10,000 synthetic sales reps, finds energy dies after lunch in all of them, and moves the big reveal to 14:00.",
+   "skills": [
+    "Audience research",
+    "AI simulation",
+    "Critical thinking"
+   ],
+   "signals": [
+    {
+     "claim": "Indian startup BluePill raised $6 million to build simulated AI consumers that brands use to test products and ads.",
+     "type": "entrepreneur",
+     "url": "https://www.theweek.in/wire-updates/business/2025/12/15/dcm85-biz-startup-funding.html",
+     "who": "BluePill · The Week"
+    },
+    {
+     "claim": "Attendees of an MPI congress session wore monitors that tracked heart rate and heart rate variability in real time as the session changed.",
+     "type": "analyst",
+     "url": "https://america.imexevents.com/news/what-your-attendees-heart-patterns-can-tell-you-about-your-event-design",
+     "who": "MPI World Education Congress · IMEX"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Black Mirror: Hang the DJ",
+     "year": 2017,
+     "kind": "series",
+     "echo": "Simulated versions of people test a match a thousand times; events can test a concept the same way."
+    }
+   ],
+   "added": "2026-10-08",
+   "status": "new",
+   "history": [
+    {
+     "date": "2026-10-08",
+     "horizon": 2
+    }
+   ]
+  },
+  {
+   "id": "emotion-data-steward",
+   "title": "Emotion Data Steward",
+   "sector": "events",
+   "horizon": 4,
+   "drivers": {
+    "ai": 0.8,
+    "robotics": 0,
+    "autonomy": 0,
+    "bio": 0.4,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When opt-in wearables show the moment a room lights up or switches off, that data needs someone to use it and protect it.",
+   "what": "Collects anonymous heart-rate and engagement data from willing guests, turns it into feedback for speakers and shows, and makes sure nobody's data is misused.",
+   "day": "She shows a speaker the exact minute the room's heart rate dropped, deletes the raw data as promised, and refuses a sponsor's request for individual profiles.",
+   "skills": [
+    "Data ethics",
+    "Analytics",
+    "Event design"
+   ],
+   "signals": [
+    {
+     "claim": "Attendees of an MPI congress session wore monitors that tracked heart rate and heart rate variability in real time as the session changed.",
+     "type": "analyst",
+     "url": "https://america.imexevents.com/news/what-your-attendees-heart-patterns-can-tell-you-about-your-event-design",
+     "who": "MPI World Education Congress · IMEX"
+    },
+    {
+     "claim": "Researchers tested an AI platform that estimates crowd density from drone footage, including a live trial at Old Trafford.",
+     "type": "scientist",
+     "url": "https://www.lse.ac.uk/research/research-for-the-world/ai-and-tech/using-ai-to-improve-event-safety",
+     "who": "LSE and Greater Manchester Police · LSE"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Strange Days",
+     "year": 1995,
+     "kind": "film",
+     "echo": "Recorded feelings become a black market; this job keeps them anonymous and consented."
+    }
+   ],
+   "added": "2026-10-08",
+   "status": "new",
+   "history": [
+    {
+     "date": "2026-10-08",
+     "horizon": 4
+    }
+   ]
+  },
+  {
+   "id": "event-memory-curator",
+   "title": "Event Memory Curator",
+   "sector": "events",
+   "horizon": 3,
+   "drivers": {
+    "ai": 1,
+    "robotics": 0,
+    "autonomy": 0,
+    "bio": 0,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When AI can cut a personal film of the evening for every guest overnight, memories become a product.",
+   "what": "Designs and approves personal recap films and photo stories: style, music, who appears and who opted out. Guests get their own film at breakfast.",
+   "day": "He sets the look for 1,200 personal films, removes every clip of guests who opted out, and checks the CEO's film twice before it goes out at 7 a.m.",
+   "skills": [
+    "Video storytelling",
+    "AI editing tools",
+    "Privacy"
+   ],
+   "signals": [
+    {
+     "claim": "IBM added generative AI narration to Wimbledon's highlight videos in 2023.",
+     "type": "technologist",
+     "url": "https://uk.newsroom.ibm.com/2023-06-21-IBM-Brings-Generative-AI-Commentary-and-AI-Draw-Analysis-to-the-Wimbledon-Digital-Experience",
+     "who": "IBM at Wimbledon · IBM Newsroom"
+    },
+    {
+     "claim": "Meta's Ray-Ban Display glasses, with a small screen in the lens, went on sale in September 2025 for $799.",
+     "type": "technologist",
+     "url": "https://www.outlookbusiness.com/artificial-intelligence/meta-unveils-ray-ban-display-first-consumer-smart-glasses-with-built-in-screen",
+     "who": "Meta · Outlook Business"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Black Mirror: The Entire History of You",
+     "year": 2011,
+     "kind": "series",
+     "echo": "Everyone can replay their memories; curated memories are kinder."
+    }
+   ],
+   "added": "2026-10-08",
+   "status": "new",
+   "history": [
+    {
+     "date": "2026-10-08",
+     "horizon": 3
+    }
+   ]
+  },
+  {
+   "id": "orbital-incentive-producer",
+   "title": "Orbital Incentive Producer",
+   "sector": "events",
+   "horizon": 7,
+   "drivers": {
+    "ai": 0,
+    "robotics": 0.2,
+    "autonomy": 0,
+    "bio": 0,
+    "space": 1,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When the top sales team flies to orbit instead of Mauritius, incentive trips need producers who plan without gravity.",
+   "what": "Produces incentive trips and brand events in suborbital flights, zero-g aircraft and orbital stations: training, safety, catering, filming and the party afterwards.",
+   "day": "She briefs 12 award winners for their zero-g flight, plans a champagne toast that works upside down, and books the film crew for the landing.",
+   "skills": [
+    "Incentive travel",
+    "Risk management",
+    "Space operations"
+   ],
+   "signals": [
+    {
+     "claim": "Blue Origin flew its 15th New Shepard space tourism mission in October 2025.",
+     "type": "market",
+     "url": "https://aiaa.org/2025/10/09/blue-origin-performs-its-15th-space-tourism-launch/",
+     "who": "Blue Origin · AIAA"
+    },
+    {
+     "claim": "Starship could push launch costs below $100 per kilogram.",
+     "type": "analyst",
+     "url": "https://www.itiger.com/hant/news/1156793142",
+     "who": "ARK Invest · Big Ideas 2026"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "2001: A Space Odyssey",
+     "year": 1968,
+     "kind": "film",
+     "echo": "Pan Am flies passengers to the station in comfort; incentive travel follows."
+    }
+   ],
+   "added": "2026-10-08",
+   "status": "new",
+   "history": [
+    {
+     "date": "2026-10-08",
+     "horizon": 7
+    }
+   ]
+  },
+  {
+   "id": "robot-sports-event-producer",
+   "title": "Robot Sports Event Producer",
+   "sector": "events",
+   "horizon": 4,
+   "drivers": {
+    "ai": 0.5,
+    "robotics": 1,
+    "autonomy": 0,
+    "bio": 0,
+    "space": 0,
+    "energy": 0,
+    "quantum": 0,
+    "chain": 0
+   },
+   "trigger": "When robot leagues fill arenas, someone has to turn machine contests into shows with stars and rivalries.",
+   "what": "Produces robot sport events: formats, arenas, broadcast, half-time shows, fan zones. Builds stories around teams and machines so fans have someone to cheer for.",
+   "day": "He builds a pre-match film around two rival robot teams, plans a half-time drone show, and has a backup match ready in case a robot breaks down.",
+   "skills": [
+    "Sports production",
+    "Broadcast",
+    "Storytelling"
+   ],
+   "signals": [
+    {
+     "claim": "Beijing hosted the World Humanoid Robot Games in August 2025, with 19 events from football to dance at its Olympic venues.",
+     "type": "market",
+     "url": "https://english.beijing.gov.cn/latest/news/202505/t20250509_4085788.html",
+     "who": "World Humanoid Robot Games · Beijing Municipal Government"
+    },
+    {
+     "claim": "Humanoids competed in running, boxing and football in front of paying crowds.",
+     "type": "market",
+     "who": "World Humanoid Robot Games · Beijing 2025"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Real Steel",
+     "year": 2011,
+     "kind": "film",
+     "echo": "Robot boxing fills arenas; the producers made it a sport."
+    }
+   ],
+   "added": "2026-10-08",
+   "status": "new",
+   "history": [
+    {
+     "date": "2026-10-08",
+     "horizon": 4
     }
    ]
   }
