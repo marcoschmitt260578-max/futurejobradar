@@ -2,8 +2,8 @@
  "meta": {
   "name": "Future Job Radar",
   "version": 1,
-  "lastScan": "2026-10-08",
-  "scanNumber": 6,
+  "lastScan": "2026-10-12",
+  "scanNumber": 7,
   "horizonYears": [
    2,
    10
@@ -21,7 +21,8 @@
      "human-connection-specialist",
      "exoskeleton-fitter",
      "care-robot-matchmaker",
-     "companion-handover-specialist"
+     "companion-handover-specialist",
+     "pre-fall-responder"
     ]
    },
    {
@@ -46,7 +47,8 @@
      "mobile-room-entrepreneur",
      "drone-airspace-controller",
      "robotaxi-curb-marshal",
-     "arrival-choreographer"
+     "arrival-choreographer",
+     "empty-cab-inspector"
     ]
    },
    {
@@ -60,7 +62,8 @@
      "machine-economy-accountant",
      "robotaxi-curb-marshal",
      "arrival-choreographer",
-     "crowd-twin-operator"
+     "crowd-twin-operator",
+     "empty-cab-inspector"
     ]
    },
    {
@@ -73,7 +76,8 @@
      "commercial-astronaut-trainer",
      "kobayashi-maru-designer",
      "every-language-room-designer",
-     "interactive-story-game-master"
+     "interactive-story-game-master",
+     "master-trade-recorder"
     ]
    },
    {
@@ -153,7 +157,8 @@
      "machine-economy-accountant",
      "tokenization-architect",
      "programmable-money-designer",
-     "agent-reputation-underwriter"
+     "agent-reputation-underwriter",
+     "pre-owned-robot-appraiser"
     ]
    },
    {
@@ -224,7 +229,10 @@
      "mine-to-compute-planner",
      "robot-skill-examiner",
      "robot-crew-chief",
-     "festival-power-conductor"
+     "festival-power-conductor",
+     "master-trade-recorder",
+     "empty-cab-inspector",
+     "pre-owned-robot-appraiser"
     ]
    },
    {
@@ -237,7 +245,8 @@
      "exoskeleton-fitter",
      "highway-repurposing-planner",
      "mine-to-compute-planner",
-     "robot-crew-chief"
+     "robot-crew-chief",
+     "master-trade-recorder"
     ]
    },
    {
@@ -279,7 +288,8 @@
      "care-robot-matchmaker",
      "neural-voice-designer",
      "companion-handover-specialist",
-     "emotion-data-steward"
+     "emotion-data-steward",
+     "pre-fall-responder"
     ]
    },
    {
@@ -324,7 +334,7 @@
     ]
    }
   ],
-  "cover": "speaker-twin-director"
+  "cover": "master-trade-recorder"
  },
  "scans": [
   {
@@ -496,6 +506,26 @@
     "robot-sports-event-producer"
    ],
    "moved": []
+  },
+  {
+   "number": 7,
+   "date": "2026-10-12",
+   "headline": "Empty truck cabs, retiring tradespeople, lease-priced robots and fall-sensing homes each open a new job",
+   "summary": "This week driverless trucks lost their safety drivers in Texas and Ohio, stablecoin agent payments got new reports from Coinbase and Cloudflare, and a construction labour crunch met on-site robots. The focus universes are Murderbot (contract-bound machines doing risk work) and Andor (a salvage town whose craft lives in people's hands).",
+   "focus": "Murderbot (Martha Wells' Murderbot Diaries and the Apple TV+ series), Andor (Star Wars), with Altered Carbon and Real Steel as side echoes",
+   "newJobs": [
+    "master-trade-recorder",
+    "empty-cab-inspector",
+    "pre-fall-responder",
+    "pre-owned-robot-appraiser"
+   ],
+   "moved": [
+    {
+     "id": "autonomous-corridor-conductor",
+     "from": 5,
+     "to": 4
+    }
+   ]
   }
  ],
  "jobs": [
@@ -871,7 +901,7 @@
    "id": "autonomous-corridor-conductor",
    "title": "Autonomous Corridor Conductor",
    "sector": "mobility",
-   "horizon": 5,
+   "horizon": 4,
    "drivers": {
     "ai": 0.2,
     "robotics": 0,
@@ -907,6 +937,12 @@
      "who": "ARK Invest · Big Ideas 2026",
      "claim": "Robotaxi cost per mile could fall to about $0.25 by 2035, against about $2.80 for a human-driven ride.",
      "url": "https://www.itiger.com/hant/news/1156793142"
+    },
+    {
+     "type": "market",
+     "who": "WFIN / Fox Technology News · Kodiak safety case",
+     "claim": "Kodiak said 96% of the evidence for its long-haul safety case was complete at the end of September, up from 93%, and expects driverless launch by the end of 2026.",
+     "url": "https://wfin.com/fox-technology-news/ikea-turns-to-driverless-semis-with-nobody-in-the-cab"
     }
    ],
    "scifi": [
@@ -923,6 +959,10 @@
     {
      "date": "2026-10-03",
      "horizon": 5
+    },
+    {
+     "date": "2026-10-12",
+     "horizon": 4
     }
    ]
   },
@@ -5609,7 +5649,7 @@
     }
    ],
    "added": "2026-10-07",
-   "status": "new",
+   "status": "stable",
    "history": [
     {
      "date": "2026-10-07",
@@ -5675,7 +5715,7 @@
     }
    ],
    "added": "2026-10-07",
-   "status": "new",
+   "status": "stable",
    "history": [
     {
      "date": "2026-10-07",
@@ -5741,7 +5781,7 @@
     }
    ],
    "added": "2026-10-07",
-   "status": "new",
+   "status": "stable",
    "history": [
     {
      "date": "2026-10-07",
@@ -5807,7 +5847,7 @@
     }
    ],
    "added": "2026-10-07",
-   "status": "new",
+   "status": "stable",
    "history": [
     {
      "date": "2026-10-07",
@@ -5873,7 +5913,7 @@
     }
    ],
    "added": "2026-10-07",
-   "status": "new",
+   "status": "stable",
    "history": [
     {
      "date": "2026-10-07",
@@ -5927,7 +5967,7 @@
     }
    ],
    "added": "2026-10-08",
-   "status": "new",
+   "status": "stable",
    "history": [
     {
      "date": "2026-10-08",
@@ -5981,7 +6021,7 @@
     }
    ],
    "added": "2026-10-08",
-   "status": "new",
+   "status": "stable",
    "history": [
     {
      "date": "2026-10-08",
@@ -6035,7 +6075,7 @@
     }
    ],
    "added": "2026-10-08",
-   "status": "new",
+   "status": "stable",
    "history": [
     {
      "date": "2026-10-08",
@@ -6089,7 +6129,7 @@
     }
    ],
    "added": "2026-10-08",
-   "status": "new",
+   "status": "stable",
    "history": [
     {
      "date": "2026-10-08",
@@ -6143,7 +6183,7 @@
     }
    ],
    "added": "2026-10-08",
-   "status": "new",
+   "status": "stable",
    "history": [
     {
      "date": "2026-10-08",
@@ -6197,7 +6237,7 @@
     }
    ],
    "added": "2026-10-08",
-   "status": "new",
+   "status": "stable",
    "history": [
     {
      "date": "2026-10-08",
@@ -6251,7 +6291,7 @@
     }
    ],
    "added": "2026-10-08",
-   "status": "new",
+   "status": "stable",
    "history": [
     {
      "date": "2026-10-08",
@@ -6305,7 +6345,7 @@
     }
    ],
    "added": "2026-10-08",
-   "status": "new",
+   "status": "stable",
    "history": [
     {
      "date": "2026-10-08",
@@ -6359,7 +6399,7 @@
     }
    ],
    "added": "2026-10-08",
-   "status": "new",
+   "status": "stable",
    "history": [
     {
      "date": "2026-10-08",
@@ -6413,7 +6453,7 @@
     }
    ],
    "added": "2026-10-08",
-   "status": "new",
+   "status": "stable",
    "history": [
     {
      "date": "2026-10-08",
@@ -6467,7 +6507,7 @@
     }
    ],
    "added": "2026-10-08",
-   "status": "new",
+   "status": "stable",
    "history": [
     {
      "date": "2026-10-08",
@@ -6521,7 +6561,7 @@
     }
    ],
    "added": "2026-10-08",
-   "status": "new",
+   "status": "stable",
    "history": [
     {
      "date": "2026-10-08",
@@ -6575,7 +6615,7 @@
     }
    ],
    "added": "2026-10-08",
-   "status": "new",
+   "status": "stable",
    "history": [
     {
      "date": "2026-10-08",
@@ -6628,7 +6668,7 @@
     }
    ],
    "added": "2026-10-08",
-   "status": "new",
+   "status": "stable",
    "history": [
     {
      "date": "2026-10-08",
@@ -6682,7 +6722,7 @@
     }
    ],
    "added": "2026-10-08",
-   "status": "new",
+   "status": "stable",
    "history": [
     {
      "date": "2026-10-08",
@@ -6736,7 +6776,7 @@
     }
    ],
    "added": "2026-10-08",
-   "status": "new",
+   "status": "stable",
    "history": [
     {
      "date": "2026-10-08",
@@ -6790,7 +6830,7 @@
     }
    ],
    "added": "2026-10-08",
-   "status": "new",
+   "status": "stable",
    "history": [
     {
      "date": "2026-10-08",
@@ -6844,7 +6884,7 @@
     }
    ],
    "added": "2026-10-08",
-   "status": "new",
+   "status": "stable",
    "history": [
     {
      "date": "2026-10-08",
@@ -6898,7 +6938,7 @@
     }
    ],
    "added": "2026-10-08",
-   "status": "new",
+   "status": "stable",
    "history": [
     {
      "date": "2026-10-08",
@@ -6951,10 +6991,262 @@
     }
    ],
    "added": "2026-10-08",
-   "status": "new",
+   "status": "stable",
    "history": [
     {
      "date": "2026-10-08",
+     "horizon": 4
+    }
+   ]
+  },
+  {
+   "id": "master-trade-recorder",
+   "title": "Master Trade Recorder",
+   "sector": "built",
+   "horizon": 3,
+   "drivers": {
+    "ai": 0.6,
+    "robotics": 0.8,
+    "autonomy": 0.2,
+    "bio": 0.0,
+    "space": 0.0,
+    "energy": 0.2,
+    "quantum": 0.0,
+    "chain": 0.0
+   },
+   "trigger": "When master electricians and welders retire faster than apprentices arrive, the robots that replace missing hands need teachers who capture how the work is really done.",
+   "what": "Follows veteran tradespeople on site with cameras and sensors, asks why they work the way they do, and turns that know-how into training data for robots and lessons for apprentices.",
+   "day": "Morning filming a veteran electrician pulling cable through a tight data hall, afternoon tagging the moments where she changes her grip, then running the clips past a robot trainee.",
+   "skills": [
+    "Interviewing craftspeople",
+    "Video and sensor capture",
+    "Teaching design"
+   ],
+   "signals": [
+    {
+     "type": "market",
+     "who": "WESA (public radio) · report on skilled-trade shortage",
+     "claim": "Immigration enforcement, aging journeymen and the data-center building boom together are depleting the supply of skilled trade workers in the US.",
+     "url": "https://wesanews.org/politics-government/2026-10-10/immigration-construction-workers-shortage"
+    },
+    {
+     "type": "analyst",
+     "who": "Allwork.Space · skilled trades report",
+     "claim": "The US needs 1.7 million new skilled trade workers each year through 2035, while training programs produce just over half that number.",
+     "url": "https://allwork.space/2026/10/america-is-running-short-of-workers-needed-to-build-its-next-wave-of-infrastructure"
+    },
+    {
+     "type": "market",
+     "who": "IBTimes · construction labour report",
+     "claim": "Robots that lay block, tie rebar and print layouts onto slabs already work on job sites, mostly on data centers; Skanska says its layout robot halves the task time.",
+     "url": "https://www.ibtimes.com/construction-needs-349000-new-workers-2026-data-center-boom-cant-wait-them-3807203"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Andor",
+     "year": 2022,
+     "kind": "series",
+     "echo": "Ferrix is a salvage town where skilled repair work lives in people's hands and is passed on community-style, the kind of craft someone would need to capture."
+    },
+    {
+     "title": "Foundation",
+     "year": 1951,
+     "kind": "book",
+     "echo": "Asimov's Encyclopedists race to preserve a civilisation's knowledge before it is lost, a grand version of recording a trade before it retires."
+    }
+   ],
+   "added": "2026-10-12",
+   "status": "new",
+   "history": [
+    {
+     "date": "2026-10-12",
+     "horizon": 3
+    }
+   ]
+  },
+  {
+   "id": "empty-cab-inspector",
+   "title": "Empty-Cab Inspector",
+   "sector": "mobility",
+   "horizon": 3,
+   "drivers": {
+    "ai": 0.4,
+    "robotics": 0.3,
+    "autonomy": 1.0,
+    "bio": 0.0,
+    "space": 0.0,
+    "energy": 0.1,
+    "quantum": 0.0,
+    "chain": 0.0
+   },
+   "trigger": "When trucks leave the yard with nobody in the cab, nobody does the driver's walk-around, so someone at the hub must clear each truck to roll.",
+   "what": "Inspects tyres, couplings, sensors and loads on driverless trucks at hubs and yards, and signs off the clear-to-roll record that the autonomy software and the insurer rely on.",
+   "day": "At dawn at a Dallas-area hub, checks a row of cabless trucks, finds a cracked sensor cover on one, swaps it, and releases the rest to the highway.",
+   "skills": [
+    "Vehicle inspection",
+    "Sensor knowledge",
+    "Safety documentation"
+   ],
+   "signals": [
+    {
+     "type": "market",
+     "who": "Robotics & Automation News · Kodiak and IKEA",
+     "claim": "Kodiak and IKEA Supply plan fully driverless freight in Texas later this year, first on a 219-mile stretch mostly along Interstate 45, with no human safety driver in the cab.",
+     "url": "https://roboticsandautomationnews.com/2026/10/06/kodiak-and-ikea-to-launch-driverless-freight-operations-in-texas/105581/"
+    },
+    {
+     "type": "market",
+     "who": "CleanTechnica · Einride",
+     "claim": "Einride announced on October 6 that two cabless, autonomous Level 4 electric trucks are hauling daily freight between warehouses in Marysville, Ohio, for EASE Logistics.",
+     "url": "https://cleantechnica.com/2026/10/10/electric-trucks-autonomous-einride-ease-logistics-us-megacharger"
+    },
+    {
+     "type": "market",
+     "who": "FreightWaves · autonomous trucking analysis",
+     "claim": "Atlas Energy Solutions ran 35 Kodiak-powered driverless trucks by the end of June, with more than 40,000 cumulative hours of paid driverless operations.",
+     "url": "https://www.freightwaves.com/news/the-autonomous-trucks-are-coming-for-the-lane-not-necessarily-for-your-business"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "All Systems Red (The Murderbot Diaries)",
+     "year": 2017,
+     "kind": "book",
+     "echo": "The security unit scans every site for risks before its clients step into it, the walk-around ritual a driverless truck no longer has a driver to perform."
+    }
+   ],
+   "added": "2026-10-12",
+   "status": "new",
+   "history": [
+    {
+     "date": "2026-10-12",
+     "horizon": 3
+    }
+   ]
+  },
+  {
+   "id": "pre-fall-responder",
+   "title": "Pre-Fall Responder",
+   "sector": "care",
+   "horizon": 4,
+   "drivers": {
+    "ai": 0.7,
+    "robotics": 0.3,
+    "autonomy": 0.1,
+    "bio": 0.2,
+    "space": 0.0,
+    "energy": 0.0,
+    "quantum": 0.0,
+    "chain": 0.0
+   },
+   "trigger": "When home sensors can tell that a fall is likely before it happens, someone has to be the human who arrives in time.",
+   "what": "Gets sent when radar or ambient sensors flag a pre-fall pattern. Visits the person, checks in kindly, adjusts the room or the routine, and calls a nurse if needed.",
+   "day": "A sensor flags unsteady night-time walking for a woman living alone, so the responder drops by at ten, moves a rug, chats over tea and books a physio visit.",
+   "skills": [
+    "Warm, calm communication",
+    "Basic care and mobility safety",
+    "Reading sensor alerts"
+   ],
+   "signals": [
+    {
+     "type": "market",
+     "who": "Korea Times · Seoul Welfare Foundation pilot",
+     "claim": "Yongsan Senior Nursing Home in Seoul will deploy noncontact radar sensors that monitor movement patterns to detect pre-fall behaviour, aiming for predictive rather than reactive safety.",
+     "url": "https://www.koreatimes.co.kr/southkorea/health/20260508/seoul-to-introduce-ai-robots-in-pilot-program-for-elderly-care"
+    },
+    {
+     "type": "scientist",
+     "who": "Not Quite Random · summary of a 2026 home-sensor study",
+     "claim": "A 2026 study followed 48 older adults with ambient home sensors; rules-based alerts escalated to community health workers and nurses, and clinical contacts led to 72 interventions.",
+     "url": "https://notquiterandom.com/category/eldercare/"
+    },
+    {
+     "type": "analyst",
+     "who": "CB Insights · citing Global Coalition on Aging",
+     "claim": "The cited report says OECD countries will face a shortage of 13.5 million care workers by 2040.",
+     "url": "https://www.cbinsights.com/investor/intuition-robotics"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Murderbot",
+     "year": 2025,
+     "kind": "series",
+     "echo": "The security unit watches its clients' camera feeds all day and moves to protect them before harm lands, much as a responder acts on a sensor alert."
+    }
+   ],
+   "added": "2026-10-12",
+   "status": "new",
+   "history": [
+    {
+     "date": "2026-10-12",
+     "horizon": 4
+    }
+   ]
+  },
+  {
+   "id": "pre-owned-robot-appraiser",
+   "title": "Pre-Owned Robot Appraiser",
+   "sector": "robotics",
+   "horizon": 4,
+   "drivers": {
+    "ai": 0.6,
+    "robotics": 1.0,
+    "autonomy": 0.2,
+    "bio": 0.0,
+    "space": 0.0,
+    "energy": 0.1,
+    "quantum": 0.0,
+    "chain": 0.2
+   },
+   "trigger": "When humanoids are leased by the month and come back after a few years, someone must judge what each returned robot is worth and what it can still do.",
+   "what": "Reads a returned robot's wear, repair history and learned skills, sets a fair resale or re-lease price, and matches it to a second life such as a school, a small workshop or a care home.",
+   "day": "Inspects a lease-return humanoid from a warehouse, runs its grip and balance tests, reads its fault log, and prices it for a bakery that wants an affordable helper.",
+   "skills": [
+    "Robot diagnostics",
+    "Asset valuation",
+    "Matching machines to jobs"
+   ],
+   "signals": [
+    {
+     "type": "market",
+     "who": "There's A Robot For That · humanoid company guide, Oct 2026",
+     "claim": "1X Technologies lists its NEO humanoid at $20,000 to buy or $499 a month.",
+     "url": "https://theresarobotforthat.com/blog/humanoid-robot-companies-2026-complete-guide/"
+    },
+    {
+     "type": "market",
+     "who": "There's A Robot For That · buyers guide, Oct 5 2026",
+     "claim": "Agility Robotics' Digit is listed at $8,500 a month as robots-as-a-service, about $100,000 a year, sourced to an investor deck exhibit.",
+     "url": "https://theresarobotforthat.com/blog/humanoid-robots-for-sale/"
+    },
+    {
+     "type": "market",
+     "who": "Inspire2Rise · report on Nvidia and Figure",
+     "claim": "Reports indicate Nvidia is planning to invest another $1 billion in humanoid robot startup Figure.",
+     "url": "https://inspire2rise.com/nvidia-1-bn-bet-ai-with-body.html"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Real Steel",
+     "year": 2011,
+     "kind": "film",
+     "echo": "Charlie finds and rebuilds a second-hand robot in a scrapyard, a crude version of judging a used machine's worth."
+    },
+    {
+     "title": "Altered Carbon",
+     "year": 2018,
+     "kind": "series",
+     "echo": "Bodies called sleeves are bought, rented and re-used, each carrying a history that sets its value."
+    }
+   ],
+   "added": "2026-10-12",
+   "status": "new",
+   "history": [
+    {
+     "date": "2026-10-12",
      "horizon": 4
     }
    ]
