@@ -2,8 +2,8 @@
  "meta": {
   "name": "Future Job Radar",
   "version": 1,
-  "lastScan": "2026-10-12",
-  "scanNumber": 7,
+  "lastScan": "2026-10-19",
+  "scanNumber": 8,
   "horizonYears": [
    2,
    10
@@ -22,7 +22,9 @@
      "exoskeleton-fitter",
      "care-robot-matchmaker",
      "companion-handover-specialist",
-     "pre-fall-responder"
+     "pre-fall-responder",
+     "memory-cue-designer",
+     "gene-therapy-decade-guide"
     ]
    },
    {
@@ -34,7 +36,8 @@
      "bci-rehab-trainer",
      "genome-counselor",
      "deep-space-crew-counselor",
-     "neural-voice-designer"
+     "neural-voice-designer",
+     "gene-therapy-decade-guide"
     ]
    },
    {
@@ -48,7 +51,8 @@
      "drone-airspace-controller",
      "robotaxi-curb-marshal",
      "arrival-choreographer",
-     "empty-cab-inspector"
+     "empty-cab-inspector",
+     "dwell-spot-broker"
     ]
    },
    {
@@ -63,7 +67,9 @@
      "robotaxi-curb-marshal",
      "arrival-choreographer",
      "crowd-twin-operator",
-     "empty-cab-inspector"
+     "empty-cab-inspector",
+     "robot-provenance-auditor",
+     "spoil-matchmaker"
     ]
    },
    {
@@ -171,7 +177,8 @@
      "personal-data-trustee",
      "robot-incident-investigator",
      "orbital-dark-sky-mediator",
-     "digital-persona-rights-manager"
+     "digital-persona-rights-manager",
+     "robot-provenance-auditor"
     ]
    },
    {
@@ -232,7 +239,8 @@
      "festival-power-conductor",
      "master-trade-recorder",
      "empty-cab-inspector",
-     "pre-owned-robot-appraiser"
+     "pre-owned-robot-appraiser",
+     "robot-provenance-auditor"
     ]
    },
    {
@@ -246,7 +254,8 @@
      "highway-repurposing-planner",
      "mine-to-compute-planner",
      "robot-crew-chief",
-     "master-trade-recorder"
+     "master-trade-recorder",
+     "spoil-matchmaker"
     ]
    },
    {
@@ -289,7 +298,9 @@
      "neural-voice-designer",
      "companion-handover-specialist",
      "emotion-data-steward",
-     "pre-fall-responder"
+     "pre-fall-responder",
+     "memory-cue-designer",
+     "gene-therapy-decade-guide"
     ]
    },
    {
@@ -319,7 +330,9 @@
      "mine-to-compute-planner",
      "compute-commons-steward",
      "data-heat-matchmaker",
-     "rehearsal-twin-director"
+     "rehearsal-twin-director",
+     "spoil-matchmaker",
+     "dwell-spot-broker"
     ]
    },
    {
@@ -334,7 +347,7 @@
     ]
    }
   ],
-  "cover": "master-trade-recorder"
+  "cover": "memory-cue-designer"
  },
  "scans": [
   {
@@ -526,6 +539,21 @@
      "to": 4
     }
    ]
+  },
+  {
+   "number": 8,
+   "date": "2026-10-19",
+   "headline": "Empty excavator cabs, robot import rules and gene therapy aftercare: this week's new jobs sit in the quiet corners",
+   "summary": "This week's signals: AI agents passed 138 million stablecoin micropayments, Waymo and Tesla robotaxis kept spreading across US cities, General Fusion hit 1 keV, and humanoids and care robots moved into pilots. Severance and Murderbot guide five new jobs in the sectors with the fewest entries: care, built world, robotics, health and mobility.",
+   "focus": "Severance and Murderbot (The Murderbot Diaries), with touches of Silo, Ghost in the Shell and Robot & Frank",
+   "newJobs": [
+    "memory-cue-designer",
+    "robot-provenance-auditor",
+    "spoil-matchmaker",
+    "gene-therapy-decade-guide",
+    "dwell-spot-broker"
+   ],
+   "moved": []
   }
  ],
  "jobs": [
@@ -7057,7 +7085,7 @@
     }
    ],
    "added": "2026-10-12",
-   "status": "new",
+   "status": "stable",
    "history": [
     {
      "date": "2026-10-12",
@@ -7117,7 +7145,7 @@
     }
    ],
    "added": "2026-10-12",
-   "status": "new",
+   "status": "stable",
    "history": [
     {
      "date": "2026-10-12",
@@ -7177,7 +7205,7 @@
     }
    ],
    "added": "2026-10-12",
-   "status": "new",
+   "status": "stable",
    "history": [
     {
      "date": "2026-10-12",
@@ -7243,10 +7271,334 @@
     }
    ],
    "added": "2026-10-12",
-   "status": "new",
+   "status": "stable",
    "history": [
     {
      "date": "2026-10-12",
+     "horizon": 4
+    }
+   ]
+  },
+  {
+   "id": "memory-cue-designer",
+   "title": "Memory Cue Designer",
+   "sector": "care",
+   "horizon": 4,
+   "drivers": {
+    "ai": 0.8,
+    "robotics": 0.6,
+    "autonomy": 0.2,
+    "bio": 0.2,
+    "space": 0.0,
+    "energy": 0.0,
+    "quantum": 0.0,
+    "chain": 0.0
+   },
+   "trigger": "When home robots and AI callers help people with early memory loss every day, someone must decide which words, photos, sounds and moments they use.",
+   "what": "Designs the daily set of prompts, objects and conversation styles that a care robot or AI companion uses with one person. Builds them from that person's life story with family and nurses, then tests and adjusts them.",
+   "day": "She spends the morning with a retired bus driver's daughter choosing the three songs and two photos the home robot offers when he gets restless at 4 p.m., then reviews last week's logs to see which cue calmed him.",
+   "skills": [
+    "Life-story interviewing",
+    "Dementia care basics",
+    "Conversation design"
+   ],
+   "signals": [
+    {
+     "type": "scientist",
+     "who": "Hello Robot and University of Illinois · NIH/NIA grant, Robotics & Automation News",
+     "claim": "Hello Robot received nearly $3 million in NIH funding to adapt its Stretch robot for older adults with mild cognitive impairment and early Alzheimer's; the three-year project began 22 September 2026.",
+     "url": "https://roboticsandautomationnews.com/2026/10/04/hello-robot-awarded-3-million-to-develop-stretch-robot-for-elder-care/105500/"
+    },
+    {
+     "type": "entrepreneur",
+     "who": "Kindable · Rama on Healthcare",
+     "claim": "Kindable launched Loved, an app where an AI care assistant named Claire phones seniors daily for natural conversation while giving family caregivers a view of how things are going.",
+     "url": "https://ramaonhealthcare.com/five-new-tech-enabled-offerings-for-older-adults-september-october-2026/"
+    },
+    {
+     "type": "market",
+     "who": "Andromeda Robotics · Helping Parents Age guide",
+     "claim": "Andromeda's companion robot Abi began a US rollout to assisted living facilities in early 2026, after deployments in 22 Australian aged care homes.",
+     "url": "https://www.helpingparentsage.com/humanoid-robots-and-aging-in-place-2026-guide"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Severance",
+     "year": 2022,
+     "kind": "series",
+     "echo": "The characters live on carefully managed scraps of who they are; a cue designer builds that kind of anchor kindly and with consent."
+    },
+    {
+     "title": "Robot & Frank",
+     "year": 2012,
+     "kind": "film",
+     "echo": "An older man with failing memory builds a daily routine with a home robot."
+    }
+   ],
+   "added": "2026-10-19",
+   "status": "new",
+   "history": [
+    {
+     "date": "2026-10-19",
+     "horizon": 4
+    }
+   ]
+  },
+  {
+   "id": "robot-provenance-auditor",
+   "title": "Robot Provenance Auditor",
+   "sector": "robotics",
+   "horizon": 3,
+   "drivers": {
+    "ai": 0.4,
+    "robotics": 1.0,
+    "autonomy": 0.3,
+    "bio": 0.0,
+    "space": 0.0,
+    "energy": 0.0,
+    "quantum": 0.0,
+    "chain": 0.3
+   },
+   "trigger": "When governments tie humanoid imports to where robots and their parts come from, every buyer needs proof of origin and software lineage.",
+   "what": "Checks and certifies where a robot was built, which parts and software it contains, and who can update it. Gives hospitals, factories and cities a clear robot family tree they can show to regulators and insurers.",
+   "day": "He opens a delivery of twelve humanoids, matches serial numbers to the parts list, flags a battery supplier that does not match the paperwork, and writes a plain-language summary for the hospital's board.",
+   "skills": [
+    "Supply chain forensics",
+    "Embedded software review",
+    "Trade compliance"
+   ],
+   "signals": [
+    {
+     "type": "analyst",
+     "who": "Mondaq legal briefing on FCC action",
+     "claim": "On 28 July 2026 the FCC added foreign-produced humanoids, quadrupeds and mobile robots to its Covered List, blocking new models from authorization; already-authorized devices are unaffected.",
+     "url": "https://www.mondaq.com/unitedstates/it-and-internet/1827318/fcc-adds-advanced-robotic-devices-to-the-covered-list"
+    },
+    {
+     "type": "analyst",
+     "who": "humanoidthreats.com, citing Sidley analysis",
+     "claim": "Under the FCC rule, foreign-produced is judged by a Buy American test: US manufacture plus US components above 65% of component cost, with allied-country parts not counting as domestic.",
+     "url": "https://www.humanoidthreats.com/fcc-robot-ban-covered-list-humanoid-robots/"
+    },
+    {
+     "type": "market",
+     "who": "HD Hyundai · Edaily",
+     "claim": "HD Hyundai Robotics plans to show its first in-house humanoid at FIX 2026 in Daegu on 21 to 24 October, aimed at dangerous shipyard tasks such as welding.",
+     "url": "https://en.edaily.co.kr/news/eda202610135562/"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "All Systems Red (The Murderbot Diaries)",
+     "year": 2017,
+     "kind": "book",
+     "echo": "A security robot's behaviour is set by a company-controlled governor module, so what is inside a robot and who controls it is the whole plot."
+    },
+    {
+     "title": "Ghost in the Shell",
+     "year": 1995,
+     "kind": "film",
+     "echo": "Hacked machine bodies make trust in a robot's origins a daily security question."
+    }
+   ],
+   "added": "2026-10-19",
+   "status": "new",
+   "history": [
+    {
+     "date": "2026-10-19",
+     "horizon": 3
+    }
+   ]
+  },
+  {
+   "id": "spoil-matchmaker",
+   "title": "Spoil Matchmaker",
+   "sector": "built",
+   "horizon": 4,
+   "drivers": {
+    "ai": 0.5,
+    "robotics": 0.8,
+    "autonomy": 0.8,
+    "bio": 0.0,
+    "space": 0.0,
+    "energy": 0.2,
+    "quantum": 0.0,
+    "chain": 0.1
+   },
+   "trigger": "When excavators dig around the clock without operators, the amount of excavated earth grows faster than people can plan where it goes.",
+   "what": "Matches freshly dug soil and rock to places that need fill, landscaping or construction material, and schedules the trucks and drop-offs. Turns an expensive disposal problem into a resource.",
+   "day": "At 6 a.m. she sees that last night's robot crew moved 8,000 cubic yards of clean clay, finds a levee repair 20 km away that needs it, and books the haulage before the trucks are idle.",
+   "skills": [
+    "Earthworks logistics",
+    "Soil testing basics",
+    "Marketplace negotiation"
+   ],
+   "signals": [
+    {
+     "type": "entrepreneur",
+     "who": "Bedrock Robotics · Construction Dive",
+     "claim": "Bedrock launched fully autonomous excavators on active US sites, including a 1.2 million cubic yard civil sitework project with Zachry Construction, with no operator in the cab.",
+     "url": "https://www.constructiondive.com/news/bedrock-robotics-fully-autonomous-excavators-jobsites/828267/"
+    },
+    {
+     "type": "market",
+     "who": "SoftBank and Gravis Robotics · Inc.",
+     "claim": "SoftBank is investing $200 million in Gravis, whose retrofit kits let excavators drive, dig trenches, load trucks and manage stockpiles autonomously; digging is about 70 percent of the work.",
+     "url": "https://www.inc.com/georgia-fearn/exclusive-softbank-is-investing-200-million-in-autonomous-construction-startup-gravis-robotics/91390995"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Silo",
+     "year": 2023,
+     "kind": "series",
+     "echo": "A whole society depends on digging and on knowing what to do with the earth that comes out."
+    },
+    {
+     "title": "Red Mars",
+     "year": 1992,
+     "kind": "book",
+     "echo": "Moving enormous amounts of ground is the daily work of building a new world."
+    }
+   ],
+   "added": "2026-10-19",
+   "status": "new",
+   "history": [
+    {
+     "date": "2026-10-19",
+     "horizon": 4
+    }
+   ]
+  },
+  {
+   "id": "gene-therapy-decade-guide",
+   "title": "Gene Therapy Decade Guide",
+   "sector": "health",
+   "horizon": 5,
+   "drivers": {
+    "ai": 0.5,
+    "robotics": 0.0,
+    "autonomy": 0.0,
+    "bio": 1.0,
+    "space": 0.0,
+    "energy": 0.0,
+    "quantum": 0.0,
+    "chain": 0.1
+   },
+   "trigger": "When one-time gene therapies reach patients with many years of required follow-up, someone must keep each person connected to their care for a decade or more.",
+   "what": "Stays with a patient from treatment day through years of check-ins, tests and moves between clinics. Keeps follow-up data complete, explains results kindly, and makes sure the patient is never lost between hospitals.",
+   "day": "He calls a 17-year-old treated as a toddler, books her annual blood draw near her new university, and sends the results to her new doctor with a plain-language note.",
+   "skills": [
+    "Patient communication",
+    "Clinical data basics",
+    "Care coordination"
+   ],
+   "signals": [
+    {
+     "type": "entrepreneur",
+     "who": "Ultragenyx · company press release",
+     "claim": "Ultragenyx's GENGLYCOS gene therapy (approved 19 August 2026) is available through a network of Qualified Treatment Centers and comes with a disease monitoring program following treated and control patients.",
+     "url": "https://ir.ultragenyx.com/news-releases/news-release-details/ultragenyx-announces-us-fda-approval-genglycostm-gene-therapy"
+    },
+    {
+     "type": "analyst",
+     "who": "BioPharma Dive",
+     "claim": "Ultragenyx plans to monitor patients alongside a control group for 10 years, although the FDA requires only two more years of data for full approval.",
+     "url": "https://www.biopharmadive.com/news/ultragenyx-fda-approve-genglycos-GSDIa-gene-therapy/828369/"
+    },
+    {
+     "type": "analyst",
+     "who": "IQVIA white paper on long-term follow-up",
+     "claim": "Regulators worldwide require gene therapy patients to be monitored for 5 to 15 years, with more than 3,000 cell and gene therapies in development globally.",
+     "url": "https://www.iqvia.com/-/media/iqvia/pdfs/library/white-papers/2026/iqvia-ltfu-cagt-white-paper-03-26-forweb.pdf"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Gattaca",
+     "year": 1997,
+     "kind": "film",
+     "echo": "Genetic status follows a person through life, so someone must manage that record with care."
+    },
+    {
+     "title": "Ghost in the Shell",
+     "year": 1995,
+     "kind": "film",
+     "echo": "Altered bodies need regular professional upkeep over the years."
+    }
+   ],
+   "added": "2026-10-19",
+   "status": "new",
+   "history": [
+    {
+     "date": "2026-10-19",
+     "horizon": 5
+    }
+   ]
+  },
+  {
+   "id": "dwell-spot-broker",
+   "title": "Dwell-Spot Broker",
+   "sector": "mobility",
+   "horizon": 4,
+   "drivers": {
+    "ai": 0.5,
+    "robotics": 0.2,
+    "autonomy": 1.0,
+    "bio": 0.0,
+    "space": 0.0,
+    "energy": 0.2,
+    "quantum": 0.0,
+    "chain": 0.2
+   },
+   "trigger": "When thousands of driverless cars wait between rides, they need legal, safe and cheap places to wait in every neighbourhood.",
+   "what": "Finds and rents places where idle robotaxis can wait, charge or clean up, such as shop car parks, church lots and quiet corners. Keeps neighbours happy and fleets free of parking fines.",
+   "day": "He walks a supermarket car park at 9 p.m., agrees that six robotaxis may wait in the back corner overnight, and checks with two residents that the humming charger is not a problem.",
+   "skills": [
+    "Local negotiation",
+    "Parking and zoning rules",
+    "Fleet data reading"
+   ],
+   "signals": [
+    {
+     "type": "analyst",
+     "who": "ARK Invest / Cathie Wood · Stocktwits",
+     "claim": "After an unsupervised Tesla robotaxi in Austin received a $75 parking ticket during her ride, Cathie Wood said ARK would add tickets as a line item in its Tesla model.",
+     "url": "https://stocktwits.com/news-articles/markets/equity/tsla-stock-cathie-wood-slaps-75-dollar-robotaxi-ticket-into-arks-bull-case/cZ0xMJMR7bP"
+    },
+    {
+     "type": "market",
+     "who": "robotaxireport.com, TxDMV registrations",
+     "claim": "Waymo runs about 4,000 vehicles handling 500,000 paid rides a week; Texas registrations stood at 1,175 on 8 October, with 5,100 Ojai vehicles planned for import.",
+     "url": "https://robotaxireport.com/data/how-many-robotaxis-are-on-the-road/"
+    },
+    {
+     "type": "market",
+     "who": "The Chargeport robotaxi tracker",
+     "claim": "Waymo offers public rides in 15 US metros, with Las Vegas opening to paying riders on 14 September 2026, two weeks after Denver, San Diego and Tampa.",
+     "url": "https://thechargeport.com/robotaxi-tracker"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Total Recall",
+     "year": 1990,
+     "kind": "film",
+     "echo": "Driverless Johnnycabs roam the city, but the film never asks where they rest."
+    },
+    {
+     "title": "Minority Report",
+     "year": 2002,
+     "kind": "film",
+     "echo": "Cars move on an automated grid, and every grid needs places to stop."
+    }
+   ],
+   "added": "2026-10-19",
+   "status": "new",
+   "history": [
+    {
+     "date": "2026-10-19",
      "horizon": 4
     }
    ]
