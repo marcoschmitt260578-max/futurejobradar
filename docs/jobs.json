@@ -2,8 +2,8 @@
  "meta": {
   "name": "Future Job Radar",
   "version": 1,
-  "lastScan": "2026-10-19",
-  "scanNumber": 8,
+  "lastScan": "2026-10-26",
+  "scanNumber": 9,
   "horizonYears": [
    2,
    10
@@ -152,7 +152,8 @@
      "farm-data-cooperative-manager",
      "robotic-pollination-keeper",
      "atmospheric-water-farmer",
-     "wild-strip-ecologist"
+     "wild-strip-ecologist",
+     "per-tree-orchardist"
     ]
    },
    {
@@ -178,7 +179,8 @@
      "robot-incident-investigator",
      "orbital-dark-sky-mediator",
      "digital-persona-rights-manager",
-     "robot-provenance-auditor"
+     "robot-provenance-auditor",
+     "compute-treaty-inspector"
     ]
    },
    {
@@ -240,7 +242,8 @@
      "master-trade-recorder",
      "empty-cab-inspector",
      "pre-owned-robot-appraiser",
-     "robot-provenance-auditor"
+     "robot-provenance-auditor",
+     "compute-treaty-inspector"
     ]
    },
    {
@@ -283,7 +286,8 @@
      "neural-voice-designer",
      "orbital-dark-sky-mediator",
      "wild-strip-ecologist",
-     "emotion-data-steward"
+     "emotion-data-steward",
+     "per-tree-orchardist"
     ]
    },
    {
@@ -300,7 +304,8 @@
      "emotion-data-steward",
      "pre-fall-responder",
      "memory-cue-designer",
-     "gene-therapy-decade-guide"
+     "gene-therapy-decade-guide",
+     "soil-memorial-steward"
     ]
    },
    {
@@ -314,7 +319,8 @@
      "heat-resilience-officer",
      "compute-commons-steward",
      "data-heat-matchmaker",
-     "festival-power-conductor"
+     "festival-power-conductor",
+     "brownfield-power-scout"
     ]
    },
    {
@@ -332,7 +338,9 @@
      "data-heat-matchmaker",
      "rehearsal-twin-director",
      "spoil-matchmaker",
-     "dwell-spot-broker"
+     "dwell-spot-broker",
+     "soil-memorial-steward",
+     "brownfield-power-scout"
     ]
    },
    {
@@ -347,7 +355,7 @@
     ]
    }
   ],
-  "cover": "memory-cue-designer"
+  "cover": "soil-memorial-steward"
  },
  "scans": [
   {
@@ -552,6 +560,20 @@
     "spoil-matchmaker",
     "gene-therapy-decade-guide",
     "dwell-spot-broker"
+   ],
+   "moved": []
+  },
+  {
+   "number": 9,
+   "date": "2026-10-26",
+   "headline": "Human composting spreads, robots learn individual trees, and coal plants become reactor sites",
+   "summary": "This week Tesla began Optimus production in Fremont, Australia's New South Wales legalised human composting, Amazon planned reactors on a former coal site, and Altman reportedly outlined governance scenarios including a global AI watchdog. The focus universes are Becky Chambers's gentle, work-centred space opera and the grimy salvage towns of Andor.",
+   "focus": "Becky Chambers (Wayfarers, Record of a Spaceborn Few) and Andor, with Neuromancer, Dune and Avatar as supporting echoes",
+   "newJobs": [
+    "soil-memorial-steward",
+    "brownfield-power-scout",
+    "per-tree-orchardist",
+    "compute-treaty-inspector"
    ],
    "moved": []
   }
@@ -7337,7 +7359,7 @@
     }
    ],
    "added": "2026-10-19",
-   "status": "new",
+   "status": "stable",
    "history": [
     {
      "date": "2026-10-19",
@@ -7403,7 +7425,7 @@
     }
    ],
    "added": "2026-10-19",
-   "status": "new",
+   "status": "stable",
    "history": [
     {
      "date": "2026-10-19",
@@ -7463,7 +7485,7 @@
     }
    ],
    "added": "2026-10-19",
-   "status": "new",
+   "status": "stable",
    "history": [
     {
      "date": "2026-10-19",
@@ -7529,7 +7551,7 @@
     }
    ],
    "added": "2026-10-19",
-   "status": "new",
+   "status": "stable",
    "history": [
     {
      "date": "2026-10-19",
@@ -7595,11 +7617,263 @@
     }
    ],
    "added": "2026-10-19",
-   "status": "new",
+   "status": "stable",
    "history": [
     {
      "date": "2026-10-19",
      "horizon": 4
+    }
+   ]
+  },
+  {
+   "id": "soil-memorial-steward",
+   "title": "Soil Memorial Steward",
+   "sector": "care",
+   "horizon": 4,
+   "drivers": {
+    "ai": 0.2,
+    "robotics": 0.0,
+    "autonomy": 0.0,
+    "bio": 0.5,
+    "space": 0.0,
+    "energy": 0.1,
+    "quantum": 0.0,
+    "chain": 0.0
+   },
+   "trigger": "When human composting is legal across more states and countries, families receive soil and need someone to help decide where it goes and look after it.",
+   "what": "Guides families on where the soil from natural organic reduction ends up: a memorial grove, a garden or a shared forest. Tracks soil quality, local rules and the growing memorial over many years.",
+   "day": "Check the soil batch from Tuesday's vessel, walk a family through three tree-planting spots, then review the grove's sensor map for the trees planted last spring.",
+   "skills": [
+    "Soil science basics",
+    "Grief-aware conversation",
+    "Land and permit rules"
+   ],
+   "signals": [
+    {
+     "type": "market",
+     "who": "New Atlas · news report",
+     "claim": "New South Wales becomes the first Australian state to legalise natural organic reduction, a process that turns human remains into soil.",
+     "url": "https://newatlas.com/outdoors/human-composting-new-burial/"
+    },
+    {
+     "type": "entrepreneur",
+     "who": "US Funerals Online · NOR guide",
+     "claim": "Earth Funeral opened a 37,000-square-foot facility in Elkridge, Maryland in 2026, designed to hold up to 126 vessels and described as the largest in the US.",
+     "url": "https://us-funerals.com/human-composting-as-a-new-death-care-alternative-a-guide-to-nor/"
+    },
+    {
+     "type": "market",
+     "who": "US Funerals Online · state tracker",
+     "claim": "California's human composting law does not take effect until January 1, 2027.",
+     "url": "https://us-funerals.com/where-is-human-composting-legal/"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Record of a Spaceborn Few",
+     "year": 2018,
+     "kind": "book",
+     "echo": "Becky Chambers shows a fleet community that returns its dead to the trees that feed it, and the people who tend that ritual."
+    },
+    {
+     "title": "Silo",
+     "year": 2023,
+     "kind": "series",
+     "echo": "A closed community recycles its dead into the farms that feed it, so someone must manage that cycle."
+    }
+   ],
+   "added": "2026-10-26",
+   "status": "new",
+   "history": [
+    {
+     "date": "2026-10-26",
+     "horizon": 4
+    }
+   ]
+  },
+  {
+   "id": "brownfield-power-scout",
+   "title": "Brownfield Power Scout",
+   "sector": "energy",
+   "horizon": 6,
+   "drivers": {
+    "ai": 0.2,
+    "robotics": 0.0,
+    "autonomy": 0.0,
+    "bio": 0.0,
+    "space": 0.0,
+    "energy": 0.9,
+    "quantum": 0.0,
+    "chain": 0.0
+   },
+   "trigger": "When data centres need reactors faster than new sites can be licensed, retired coal plants with grid links, water and a skilled workforce become prime real estate.",
+   "what": "Finds, assesses and matches retired coal and gas sites with small modular reactors and data-centre campuses. Works with the town to bring back local jobs, not just megawatts.",
+   "day": "Fly a drone over a retired coal plant, check substation capacity and cooling water, then meet the town council about which jobs return first.",
+   "skills": [
+    "Grid and permitting knowledge",
+    "Site assessment",
+    "Community negotiation"
+   ],
+   "signals": [
+    {
+     "type": "market",
+     "who": "Il Sole 24 Ore · Amazon report",
+     "claim": "Amazon plans small modular reactors on the site of a former coal power station in Indiana, with 960 megawatts of capacity operated by American Electric Power.",
+     "url": "https://en.ilsole24ore.com/art/amazon-is-investing-in-12-nuclear-reactors-to-power-its-data-centres-AJIfcOrB"
+    },
+    {
+     "type": "analyst",
+     "who": "Safeguard.sh · SMR data-centre review",
+     "claim": "As of 19 October 2026 none of the US designs in big-tech SMR deals is producing power; the earliest first-power targets cluster around 2030.",
+     "url": "https://safeguard.sh/resources/blog/small-modular-reactors-for-ai-data-centres-designs-sizes-timelines"
+    },
+    {
+     "type": "analyst",
+     "who": "ARK Invest trades · Motley Fool via AOL",
+     "claim": "Several ARK Invest ETFs bought shares in SMR developers X-Energy and Oklo this week, though neither has begun commercial reactor operations.",
+     "url": "https://www.aol.com/articles/cathie-wood-just-poured-millions-141200000.html"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Andor",
+     "year": 2022,
+     "kind": "series",
+     "echo": "Ferrix is a salvage town that lives off the leftovers of old industry, and its people know the value of old machinery."
+    }
+   ],
+   "added": "2026-10-26",
+   "status": "new",
+   "history": [
+    {
+     "date": "2026-10-26",
+     "horizon": 6
+    }
+   ]
+  },
+  {
+   "id": "per-tree-orchardist",
+   "title": "Per-Tree Orchardist",
+   "sector": "food",
+   "horizon": 4,
+   "drivers": {
+    "ai": 0.6,
+    "robotics": 0.7,
+    "autonomy": 0.5,
+    "bio": 0.3,
+    "space": 0.0,
+    "energy": 0.0,
+    "quantum": 0.0,
+    "chain": 0.0
+   },
+   "trigger": "When robots scan, spray and pollinate one tree at a time, each tree needs a keeper who holds its history and decides what it gets.",
+   "what": "Keeps a living record for every tree in an orchard and sets the rules for how scanning, weeding and pollination robots treat each one. Steps in by hand for old, rare or struggling trees.",
+   "day": "Read last night's robot scans, flag tree 4,112 as stressed, reschedule the pollination bots, and hand-prune the oldest trees the robots should not touch.",
+   "skills": [
+    "Orchard biology",
+    "Reading robot data",
+    "Craft pruning"
+   ],
+   "signals": [
+    {
+     "type": "market",
+     "who": "Top Farm Robots · Kilter AX-1 entry",
+     "claim": "Kilter's AX-1 weeding robot places herbicide micro-droplets at 6x6 mm resolution, and 66 units had been delivered by October 2026.",
+     "url": "https://www.topfarmrobots.com/"
+    },
+    {
+     "type": "entrepreneur",
+     "who": "GrowinAgri Daily · BloomX funding",
+     "claim": "BloomX raised $13 million for robotic pollination, and one operator can reportedly cover up to 3.5 hectares per day.",
+     "url": "https://growinagri.substack.com/p/daily-agri-updates-october-26-2026"
+    },
+    {
+     "type": "technologist",
+     "who": "Agricultural-robotics.com · news feed",
+     "claim": "Precision Agri Tech and Treelytics are turning drone images into per-tree decisions, per an October 17, 2026 item.",
+     "url": "https://www.agricultural-robotics.com/"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Avatar",
+     "year": 2009,
+     "kind": "film",
+     "echo": "The Na'vi know their forest as living individuals rather than as a crop, which is how an orchardist may come to see each tree."
+    }
+   ],
+   "added": "2026-10-26",
+   "status": "new",
+   "history": [
+    {
+     "date": "2026-10-26",
+     "horizon": 4
+    }
+   ]
+  },
+  {
+   "id": "compute-treaty-inspector",
+   "title": "Compute Treaty Inspector",
+   "sector": "ai",
+   "horizon": 6,
+   "drivers": {
+    "ai": 0.9,
+    "robotics": 0.0,
+    "autonomy": 0.2,
+    "bio": 0.0,
+    "space": 0.0,
+    "energy": 0.3,
+    "quantum": 0.0,
+    "chain": 0.3
+   },
+   "trigger": "When governments agree limits on the largest AI training runs, someone must visit the data centre and check what was really run.",
+   "what": "Travels to data centres to compare power draw, chip logs and declared training runs against agreed limits. Gives labs and governments a trusted record, much like nuclear inspectors do.",
+   "day": "Arrive at a data centre with a signed mandate, compare the power and chip logs with the declared training run, and file a report both sides can trust.",
+   "skills": [
+    "Data-centre forensics",
+    "Treaty and audit practice",
+    "Diplomatic calm"
+   ],
+   "signals": [
+    {
+     "type": "entrepreneur",
+     "who": "Latin Times · citing The Information",
+     "claim": "The Information reported on October 19, 2026 that Altman walked staff through three scenarios for how advanced AI could be governed or won, including a global watchdog.",
+     "url": "https://www.latintimes.com/sam-altmans-three-paths-ais-endgame-global-watchdog-terrible-gpu-takeover-600422"
+    },
+    {
+     "type": "futurist",
+     "who": "Moonshots with Peter Diamandis · episode list",
+     "claim": "A Moonshots episode dated September 20, 2026 was titled around frontier labs wanting to slow down and OpenAI delaying its 2026 IPO.",
+     "url": "https://www.diamandis.com/podcast"
+    },
+    {
+     "type": "analyst",
+     "who": "CoinDesk · BlackRock paper",
+     "claim": "BlackRock says tokenized claims on computing capacity could eventually be traded or used as collateral, but standardized contracts and liquid markets have yet to develop.",
+     "url": "https://www.coindesk.com/markets/2026/09/23/ai-agents-will-soon-buy-their-own-computing-power-and-data-using-stablecoins-according-to-blackrock"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Neuromancer",
+     "year": 1984,
+     "kind": "book",
+     "echo": "The Turing police exist to stop AIs from exceeding their limits, a role that needs people who can check machines."
+    },
+    {
+     "title": "Dune",
+     "year": 1965,
+     "kind": "book",
+     "echo": "The universe bans thinking machines after a great war, a reminder that societies write hard rules for AI and then need enforcers."
+    }
+   ],
+   "added": "2026-10-26",
+   "status": "new",
+   "history": [
+    {
+     "date": "2026-10-26",
+     "horizon": 6
     }
    ]
   }
