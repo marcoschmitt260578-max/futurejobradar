@@ -2,8 +2,8 @@
  "meta": {
   "name": "Future Job Radar",
   "version": 1,
-  "lastScan": "2026-10-26",
-  "scanNumber": 9,
+  "lastScan": "2026-11-02",
+  "scanNumber": 10,
   "horizonYears": [
    2,
    10
@@ -37,7 +37,8 @@
      "genome-counselor",
      "deep-space-crew-counselor",
      "neural-voice-designer",
-     "gene-therapy-decade-guide"
+     "gene-therapy-decade-guide",
+     "bespoke-cure-producer"
     ]
    },
    {
@@ -83,7 +84,8 @@
      "kobayashi-maru-designer",
      "every-language-room-designer",
      "interactive-story-game-master",
-     "master-trade-recorder"
+     "master-trade-recorder",
+     "farm-craft-archivist"
     ]
    },
    {
@@ -113,7 +115,8 @@
      "emotion-data-steward",
      "event-memory-curator",
      "orbital-incentive-producer",
-     "robot-sports-event-producer"
+     "robot-sports-event-producer",
+     "practice-home-set-dresser"
     ]
    },
    {
@@ -153,7 +156,8 @@
      "robotic-pollination-keeper",
      "atmospheric-water-farmer",
      "wild-strip-ecologist",
-     "per-tree-orchardist"
+     "per-tree-orchardist",
+     "farm-craft-archivist"
     ]
    },
    {
@@ -243,7 +247,9 @@
      "empty-cab-inspector",
      "pre-owned-robot-appraiser",
      "robot-provenance-auditor",
-     "compute-treaty-inspector"
+     "compute-treaty-inspector",
+     "practice-home-set-dresser",
+     "fusion-machine-fitter"
     ]
    },
    {
@@ -258,7 +264,8 @@
      "mine-to-compute-planner",
      "robot-crew-chief",
      "master-trade-recorder",
-     "spoil-matchmaker"
+     "spoil-matchmaker",
+     "fusion-machine-fitter"
     ]
    },
    {
@@ -271,7 +278,8 @@
      "robot-fleet-foreman",
      "society-simulation-analyst",
      "compute-commons-steward",
-     "speaker-twin-director"
+     "speaker-twin-director",
+     "bespoke-cure-producer"
     ]
    },
    {
@@ -287,7 +295,8 @@
      "orbital-dark-sky-mediator",
      "wild-strip-ecologist",
      "emotion-data-steward",
-     "per-tree-orchardist"
+     "per-tree-orchardist",
+     "bespoke-cure-producer"
     ]
    },
    {
@@ -320,7 +329,8 @@
      "compute-commons-steward",
      "data-heat-matchmaker",
      "festival-power-conductor",
-     "brownfield-power-scout"
+     "brownfield-power-scout",
+     "fusion-machine-fitter"
     ]
    },
    {
@@ -340,7 +350,8 @@
      "spoil-matchmaker",
      "dwell-spot-broker",
      "soil-memorial-steward",
-     "brownfield-power-scout"
+     "brownfield-power-scout",
+     "practice-home-set-dresser"
     ]
    },
    {
@@ -355,7 +366,7 @@
     ]
    }
   ],
-  "cover": "soil-memorial-steward"
+  "cover": "practice-home-set-dresser"
  },
  "scans": [
   {
@@ -574,6 +585,20 @@
     "brownfield-power-scout",
     "per-tree-orchardist",
     "compute-treaty-inspector"
+   ],
+   "moved": []
+  },
+  {
+   "number": 10,
+   "date": "2026-11-02",
+   "headline": "Optimus gets an academy, and someone has to build the classroom.",
+   "summary": "Tesla started early Optimus production and announced a planned 'Optimus Academy', while gene-editing rules, fusion milestones and farm robots all pointed to hands-on second-order jobs. The focus universes are Banks' Culture (custom drugs on demand) and Becky Chambers' warm, hands-on, repair-minded futures.",
+   "focus": "The Culture (Iain M. Banks) and Becky Chambers (Wayfarers, Monk & Robot)",
+   "newJobs": [
+    "practice-home-set-dresser",
+    "bespoke-cure-producer",
+    "fusion-machine-fitter",
+    "farm-craft-archivist"
    ],
    "moved": []
   }
@@ -7683,7 +7708,7 @@
     }
    ],
    "added": "2026-10-26",
-   "status": "new",
+   "status": "stable",
    "history": [
     {
      "date": "2026-10-26",
@@ -7743,7 +7768,7 @@
     }
    ],
    "added": "2026-10-26",
-   "status": "new",
+   "status": "stable",
    "history": [
     {
      "date": "2026-10-26",
@@ -7803,7 +7828,7 @@
     }
    ],
    "added": "2026-10-26",
-   "status": "new",
+   "status": "stable",
    "history": [
     {
      "date": "2026-10-26",
@@ -7869,11 +7894,275 @@
     }
    ],
    "added": "2026-10-26",
-   "status": "new",
+   "status": "stable",
    "history": [
     {
      "date": "2026-10-26",
      "horizon": 6
+    }
+   ]
+  },
+  {
+   "id": "practice-home-set-dresser",
+   "title": "Practice-Home Set Dresser",
+   "sector": "robotics",
+   "horizon": 4,
+   "drivers": {
+    "ai": 0.8,
+    "robotics": 1.0,
+    "autonomy": 0.4,
+    "bio": 0.0,
+    "space": 0.0,
+    "energy": 0.0,
+    "quantum": 0.0,
+    "chain": 0.0
+   },
+   "trigger": "When thousands of humanoids must learn chores by practising, someone has to build homes worth practising in.",
+   "what": "Designs and stages deliberately lived-in practice houses, kitchens and care rooms so robots meet the clutter, odd objects and surprises of real life. Works like a film set dresser, but the audience is a robot learning.",
+   "day": "Before dawn she restages forty kitchens with a wobbly chair, a sticky drawer and toys left on the stairs, then reads which mess tripped the robots.",
+   "skills": [
+    "Spatial storytelling",
+    "Reading robot failure logs",
+    "Everyday-object curation"
+   ],
+   "signals": [
+    {
+     "type": "entrepreneur",
+     "who": "Elon Musk, Tesla · Benzinga",
+     "claim": "Musk said Tesla may need roughly 10,000 to 20,000 Optimus robots practising tasks through self-play to generate training data, in a planned Optimus Academy.",
+     "url": "https://www.benzinga.com/trading-ideas/long-ideas/26/10/62555524/tesla-optimus-robot-training"
+    },
+    {
+     "type": "market",
+     "who": "MIT Technology Review",
+     "claim": "Gig workers filming chores to train humanoids say it is hard to produce enough variety of chore content inside their small homes.",
+     "url": "https://www.technologyreview.com/2026/04/01/1134863/humanoid-data-training-gig-economy-2026-breakthrough-technology/"
+    },
+    {
+     "type": "entrepreneur",
+     "who": "Figure AI · Forbes",
+     "claim": "Figure launched Index, a marketplace where workers film domestic chores, and plans to invest $1 billion over the next year in data and compute.",
+     "url": "https://www.forbes.com/sites/johnkoetsier/2026/08/26/figure-launches-gig-platform-to-get-humans-to-do-work-to-train-robots-will-spend-1-billion/"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Westworld",
+     "year": 2016,
+     "kind": "series",
+     "echo": "Whole worlds are built and dressed so that artificial beings can learn and perform inside them."
+    },
+    {
+     "title": "The Truman Show",
+     "year": 1998,
+     "kind": "film",
+     "echo": "A convincing town is staged in fine detail so one inhabitant believes it is real life."
+    }
+   ],
+   "added": "2026-11-02",
+   "status": "new",
+   "history": [
+    {
+     "date": "2026-11-02",
+     "horizon": 4
+    }
+   ]
+  },
+  {
+   "id": "bespoke-cure-producer",
+   "title": "Bespoke Cure Producer",
+   "sector": "health",
+   "horizon": 5,
+   "drivers": {
+    "ai": 0.5,
+    "robotics": 0.2,
+    "autonomy": 0.0,
+    "bio": 1.0,
+    "space": 0.0,
+    "energy": 0.0,
+    "quantum": 0.0,
+    "chain": 0.0
+   },
+   "trigger": "When one trial can cover many custom gene-editing therapies, each child's cure becomes a project with dozens of partners.",
+   "what": "Assembles and runs the temporary team behind a one-patient therapy: sequencing, editor design, nanoparticle manufacture, safety testing, hospital and funding. Think film producer, with a budget, a schedule and a child's deadline.",
+   "day": "She spends Tuesday chasing a vial of editor RNA stuck in customs while a toxicology lab and a hospital ethics board need matching dates.",
+   "skills": [
+    "Cross-lab project producing",
+    "Regulatory storytelling",
+    "Rare-disease family communication"
+   ],
+   "signals": [
+    {
+     "type": "analyst",
+     "who": "STAT News",
+     "claim": "A new FDA pathway aims to let one-time gene-editing cures be approved and paid for at scale; Baby KJ's therapy needed a six-month effort by dozens of scientists.",
+     "url": "https://www.statnews.com/2026/01/26/fda-makary-prasad-crispr-gene-editing-concerns-baby-kj/"
+    },
+    {
+     "type": "strategist",
+     "who": "FDA · Fierce Biotech",
+     "claim": "The FDA published draft guidance for an approval pathway for bespoke genome-editing and RNA therapies that target the root cause of a rare disease.",
+     "url": "https://www.fiercebiotech.com/biotech/fda-illuminates-new-approval-pathway-bespoke-gene-therapies"
+    },
+    {
+     "type": "scientist",
+     "who": "CHOP and Penn Medicine researchers · CHOP",
+     "claim": "The Baby KJ team plans a trial enrolling patients with any of seven urea cycle disorders caused by variants fixable with the same type of gene editor.",
+     "url": "https://www.chop.edu/news/researchers-behind-personalized-crispr-therapy-plan-launch-new-type-clinical-trial"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "The Culture series (Iain M. Banks)",
+     "year": 1987,
+     "kind": "book",
+     "echo": "Culture citizens can release custom drugs from internal glands on demand, so medicine is personal and immediate."
+    },
+    {
+     "title": "Gattaca",
+     "year": 1997,
+     "kind": "film",
+     "echo": "A society where genetic information shapes life, and many people work to manage it."
+    }
+   ],
+   "added": "2026-11-02",
+   "status": "new",
+   "history": [
+    {
+     "date": "2026-11-02",
+     "horizon": 5
+    }
+   ]
+  },
+  {
+   "id": "fusion-machine-fitter",
+   "title": "Fusion Machine Fitter",
+   "sector": "energy",
+   "horizon": 8,
+   "drivers": {
+    "ai": 0.3,
+    "robotics": 0.4,
+    "autonomy": 0.0,
+    "bio": 0.0,
+    "space": 0.0,
+    "energy": 1.0,
+    "quantum": 0.0,
+    "chain": 0.0
+   },
+   "trigger": "When fusion machines are built with conventional industrial metals and mechanics, the people needed first are welders, machinists and fitters.",
+   "what": "Assembles, aligns and maintains the heavy mechanical systems of pilot fusion plants: actuators, pistons, vacuum joints. A skilled trade job at the edge of physics.",
+   "day": "She aligns a ring of heavy actuators to a hair's width, signs off the weld map, then swaps a worn drive bank before the next shot.",
+   "skills": [
+    "Precision machining and welding",
+    "Vacuum and plasma-facing hardware basics",
+    "Digital twin maintenance logs"
+   ],
+   "signals": [
+    {
+     "type": "engineer",
+     "who": "General Fusion · Interesting Engineering",
+     "claim": "General Fusion reached 1.1 keV using mechanical compression that avoids rare, delicate materials, and expects a first grid pilot plant around 2035.",
+     "url": "https://interestingengineering.com/energy/nuclear-fusion-reactor-hits-world-first-1-kev-milestone"
+    },
+    {
+     "type": "market",
+     "who": "Fusion Industry Association news feed",
+     "claim": "A fusion energy developer plans to manufacture in the Tri-Cities area of Washington state and create hundreds of jobs.",
+     "url": "https://www.fusionindustryassociation.org/news/fusion-in-the-news/"
+    },
+    {
+     "type": "strategist",
+     "who": "ANS Nuclear Newswire",
+     "claim": "Germany launched its own fusion milestone programme in October 2026, alongside new US federal R&D award agreements for fusion companies.",
+     "url": "https://www.ans.org/news/topic-fusion/"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "The Long Way to a Small, Angry Planet",
+     "year": 2014,
+     "kind": "book",
+     "echo": "Ship techs Kizzy and Jenks keep the Wayfarer running with hands-on repairs, a trade at the centre of the story."
+    },
+    {
+     "title": "Leviathan Wakes (The Expanse)",
+     "year": 2011,
+     "kind": "book",
+     "echo": "Mechanic Amos Burton keeps a fusion-powered ship alive with practical, physical skill."
+    }
+   ],
+   "added": "2026-11-02",
+   "status": "new",
+   "history": [
+    {
+     "date": "2026-11-02",
+     "horizon": 8
+    }
+   ]
+  },
+  {
+   "id": "farm-craft-archivist",
+   "title": "Farm Craft Archivist",
+   "sector": "food",
+   "horizon": 4,
+   "drivers": {
+    "ai": 0.7,
+    "robotics": 0.8,
+    "autonomy": 0.8,
+    "bio": 0.1,
+    "space": 0.0,
+    "energy": 0.0,
+    "quantum": 0.0,
+    "chain": 0.0
+   },
+   "trigger": "When tractors and weeders run unattended on three shifts, the hand knowledge of veteran pickers and pruners must be captured and valued.",
+   "what": "Sits with experienced farmworkers and records how they judge ripeness, prune and spot trouble, then turns that craft into teachable skills for farm robots. The workers are credited and paid for what they know.",
+   "day": "She spends the morning with a 30-year strawberry picker, filming how her thumb tests a berry, then tags each clip with the signs a robot should learn.",
+   "skills": [
+    "Interviewing and field video",
+    "Skill annotation for robot learning",
+    "Farmworker data-rights basics"
+   ],
+   "signals": [
+    {
+     "type": "market",
+     "who": "Capital Press · FIRA USA coverage",
+     "claim": "At FIRA USA, a farmworker nonprofit co-founder described labour-saving robots as a little scary; the group seeks to integrate farmworker expertise into farm work.",
+     "url": "https://capitalpress.com/2026/10/27/trade-fair-showcases-agricultural-robots-and-other-magical-things"
+    },
+    {
+     "type": "market",
+     "who": "Global Agriculture · Aigen",
+     "claim": "Aigen launched a four-armed version of its solar-powered driverless weeding robot that pulls weeds without herbicide, on 15 October 2026.",
+     "url": "https://www.global-agriculture.com/tag/autonomous-farm-robotics/"
+    },
+    {
+     "type": "technologist",
+     "who": "Ashok Elluswamy, Tesla · daily.dev summary",
+     "claim": "Tesla's AI lead said Optimus robots will initially learn by watching humans before practising on their own.",
+     "url": "https://daily.dev/posts/musk-says-training-tesla-s-optimus-robots-is-like-raising-a-toddler-hy6efafkl"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "A Psalm for the Wild-Built",
+     "year": 2021,
+     "kind": "book",
+     "echo": "A robot walks among people to learn what human work and craft are actually like."
+    },
+    {
+     "title": "Interstellar",
+     "year": 2014,
+     "kind": "film",
+     "echo": "Farming runs with autonomous machines, and farmers still carry the knowledge of how the land behaves."
+    }
+   ],
+   "added": "2026-11-02",
+   "status": "new",
+   "history": [
+    {
+     "date": "2026-11-02",
+     "horizon": 4
     }
    ]
   }
