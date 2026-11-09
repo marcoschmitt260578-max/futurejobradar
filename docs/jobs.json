@@ -2,8 +2,8 @@
  "meta": {
   "name": "Future Job Radar",
   "version": 1,
-  "lastScan": "2026-11-02",
-  "scanNumber": 10,
+  "lastScan": "2026-11-09",
+  "scanNumber": 11,
   "horizonYears": [
    2,
    10
@@ -53,7 +53,8 @@
      "robotaxi-curb-marshal",
      "arrival-choreographer",
      "empty-cab-inspector",
-     "dwell-spot-broker"
+     "dwell-spot-broker",
+     "machine-road-language-designer"
     ]
    },
    {
@@ -70,7 +71,8 @@
      "crowd-twin-operator",
      "empty-cab-inspector",
      "robot-provenance-auditor",
-     "spoil-matchmaker"
+     "spoil-matchmaker",
+     "orbital-assembly-rigger"
     ]
    },
    {
@@ -131,7 +133,8 @@
      "guest-agent-liaison",
      "telepresence-host",
      "robot-hospitality-lead",
-     "orbital-incentive-producer"
+     "orbital-incentive-producer",
+     "rental-robot-reset-technician"
     ]
    },
    {
@@ -249,7 +252,11 @@
      "robot-provenance-auditor",
      "compute-treaty-inspector",
      "practice-home-set-dresser",
-     "fusion-machine-fitter"
+     "fusion-machine-fitter",
+     "rental-robot-reset-technician",
+     "machine-road-language-designer",
+     "orbital-assembly-rigger",
+     "plan-to-robot-translator"
     ]
    },
    {
@@ -265,7 +272,9 @@
      "robot-crew-chief",
      "master-trade-recorder",
      "spoil-matchmaker",
-     "fusion-machine-fitter"
+     "fusion-machine-fitter",
+     "orbital-assembly-rigger",
+     "plan-to-robot-translator"
     ]
    },
    {
@@ -351,7 +360,9 @@
      "dwell-spot-broker",
      "soil-memorial-steward",
      "brownfield-power-scout",
-     "practice-home-set-dresser"
+     "practice-home-set-dresser",
+     "machine-road-language-designer",
+     "plan-to-robot-translator"
     ]
    },
    {
@@ -366,7 +377,7 @@
     ]
    }
   ],
-  "cover": "practice-home-set-dresser"
+  "cover": "rental-robot-reset-technician"
  },
  "scans": [
   {
@@ -599,6 +610,20 @@
     "bespoke-cure-producer",
     "fusion-machine-fitter",
     "farm-craft-archivist"
+   ],
+   "moved": []
+  },
+  {
+   "number": 11,
+   "date": "2026-11-09",
+   "headline": "Musk says Optimus will probably be rented, not sold. Someone has to reset every robot that comes back.",
+   "summary": "Tesla's robotaxi service reached its eighth unsupervised city, Musk said Optimus will probably be rented, NHTSA proposed a cyan 'machine is driving' light, and robot excavators are working with empty cabs. The focus universes are Blade Runner and the Culture novels, and they point to jobs where humans prepare, reset and translate for machines.",
+   "focus": "Blade Runner (2049) and Iain M. Banks' Culture, with a nod to Westworld, 2001 and Planetes",
+   "newJobs": [
+    "rental-robot-reset-technician",
+    "machine-road-language-designer",
+    "orbital-assembly-rigger",
+    "plan-to-robot-translator"
    ],
    "moved": []
   }
@@ -7960,7 +7985,7 @@
     }
    ],
    "added": "2026-11-02",
-   "status": "new",
+   "status": "stable",
    "history": [
     {
      "date": "2026-11-02",
@@ -8026,7 +8051,7 @@
     }
    ],
    "added": "2026-11-02",
-   "status": "new",
+   "status": "stable",
    "history": [
     {
      "date": "2026-11-02",
@@ -8092,7 +8117,7 @@
     }
    ],
    "added": "2026-11-02",
-   "status": "new",
+   "status": "stable",
    "history": [
     {
      "date": "2026-11-02",
@@ -8158,10 +8183,268 @@
     }
    ],
    "added": "2026-11-02",
-   "status": "new",
+   "status": "stable",
    "history": [
     {
      "date": "2026-11-02",
+     "horizon": 4
+    }
+   ]
+  },
+  {
+   "id": "rental-robot-reset-technician",
+   "title": "Rental Robot Reset Technician",
+   "sector": "robotics",
+   "horizon": 4,
+   "drivers": {
+    "ai": 0.6,
+    "robotics": 1.0,
+    "autonomy": 0.3,
+    "bio": 0.0,
+    "space": 0.0,
+    "energy": 0.0,
+    "quantum": 0.0,
+    "chain": 0.0
+   },
+   "trigger": "When robots are rented by the month or the hour, every return must leave the machine safe, clean and free of the last customer's data.",
+   "what": "Between customers, resets a rented humanoid. Wipes home maps, voices and learned habits, tests joints and cameras, and certifies the unit for the next household or site.",
+   "day": "She scans a returned robot, finds a stranger's kitchen layout still in its memory, wipes it, runs a grip test and signs the unit off for a noon handover.",
+   "skills": [
+    "Robot diagnostics",
+    "Data privacy hygiene",
+    "Quality testing"
+   ],
+   "signals": [
+    {
+     "type": "entrepreneur",
+     "who": "Elon Musk · Not a Tesla App",
+     "claim": "At the Baron Investment Conference, Musk said Tesla will probably rent its Optimus humanoids to customers rather than sell them.",
+     "url": "https://notateslaapp.com/news/4959/musk-tesla-will-rent-optimus-robots-instead-of-selling-them"
+    },
+    {
+     "type": "market",
+     "who": "1X Technologies · RoboZaps price guide",
+     "claim": "1X lists its NEO home humanoid at $20,000 outright or $499 a month on subscription.",
+     "url": "https://blog.robozaps.com/b/humanoid-robot-price"
+    },
+    {
+     "type": "market",
+     "who": "Carbon Robotics · Archyde (citing Agweek)",
+     "claim": "Carbon Robotics sells a retrofit autonomy kit for $85,000 plus roughly $20 per hour of active use, billed through a mobile app.",
+     "url": "https://archyde.com/ag-tech-firms-deploy-autonomous-robots-to-combat-u-s-farm-labor-deficit"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Westworld",
+     "year": 2016,
+     "kind": "series",
+     "echo": "Park hosts have their memories wiped and are reset between guests, the same routine a rented robot would need."
+    },
+    {
+     "title": "Blade Runner 2049",
+     "year": 2017,
+     "kind": "film",
+     "echo": "Officer K is regularly retested against a baseline, like a returned robot checked against its factory state."
+    }
+   ],
+   "added": "2026-11-09",
+   "status": "new",
+   "history": [
+    {
+     "date": "2026-11-09",
+     "horizon": 4
+    }
+   ]
+  },
+  {
+   "id": "machine-road-language-designer",
+   "title": "Road Language Designer",
+   "sector": "mobility",
+   "horizon": 4,
+   "drivers": {
+    "ai": 0.4,
+    "robotics": 0.0,
+    "autonomy": 1.0,
+    "bio": 0.0,
+    "space": 0.0,
+    "energy": 0.0,
+    "quantum": 0.0,
+    "chain": 0.0
+   },
+   "trigger": "When driverless cars share every crossing with people, everyone needs a common way to read what the machine intends.",
+   "what": "Designs the lights, sounds and movement cues that driverless vehicles use to signal pedestrians, cyclists and human drivers. Tests them with real crowds and helps write the standards.",
+   "day": "She watches footage of a busy crossing, sees walkers hesitate at a sudden cyan flash, and rewrites the yield signal with a slower fade and a soft tone.",
+   "skills": [
+    "Human-factors testing",
+    "Light and sound design",
+    "Standards writing"
+   ],
+   "signals": [
+    {
+     "type": "technologist",
+     "who": "NHTSA · Electrek",
+     "claim": "NHTSA drafted a rule allowing optional steady cyan lamps that show when an automated system, not a person, is driving.",
+     "url": "https://electrek.co/2026/10/24/nhtsa-proposes-cyan-lights-for-robotaxis-following-mercedes-china/"
+    },
+    {
+     "type": "market",
+     "who": "Waymo · Electrek",
+     "claim": "Waymo says it now operates in 15 US metros and handles more than 500,000 paid rides per week.",
+     "url": "https://electrek.co/2026/10/27/waymo-expansion-250-square-miles-five-cities/"
+    },
+    {
+     "type": "market",
+     "who": "Tesla · Not a Tesla App",
+     "claim": "Tesla launched unsupervised Robotaxi rides in San Antonio on 9 November, its eighth unsupervised city, covering roughly 275 square miles.",
+     "url": "https://www.notateslaapp.com/news/4969/tesla-launches-largest-robotaxi-zone-yet-in-san-antonio"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "Blade Runner",
+     "year": 1982,
+     "kind": "film",
+     "echo": "Its dense, neon-lit streets mix humans and machine-driven vehicles, and everyone must read the signs at a glance."
+    },
+    {
+     "title": "Minority Report",
+     "year": 2002,
+     "kind": "film",
+     "echo": "Self-driving cars glide through a busy city, so people and vehicles need some shared understanding of movement."
+    }
+   ],
+   "added": "2026-11-09",
+   "status": "new",
+   "history": [
+    {
+     "date": "2026-11-09",
+     "horizon": 4
+    }
+   ]
+  },
+  {
+   "id": "orbital-assembly-rigger",
+   "title": "Orbital Assembly Rigger",
+   "sector": "space",
+   "horizon": 8,
+   "drivers": {
+    "ai": 0.3,
+    "robotics": 0.6,
+    "autonomy": 0.2,
+    "bio": 0.0,
+    "space": 1.0,
+    "energy": 0.4,
+    "quantum": 0.0,
+    "chain": 0.0
+   },
+   "trigger": "When data-centre satellites grow too big to launch in one piece, someone has to join them together in orbit.",
+   "what": "Directs robot arms and tethered crews that connect modules into large orbital structures. Checks every seam, cable and radiator panel before the structure goes live.",
+   "day": "He guides a robot arm to latch a radiator panel onto a half-built frame, reviews a tension reading from the joint and logs it for the insurer.",
+   "skills": [
+    "Robot-arm teleoperation",
+    "Structural inspection",
+    "Zero-gravity safety"
+   ],
+   "signals": [
+    {
+     "type": "analyst",
+     "who": "IAC 2026 takeaways · Space Ambition",
+     "claim": "At an in-orbit assembly session, data centres were singled out as the main catalyst because they need structures too big to launch whole.",
+     "url": "https://spaceambition.substack.com/p/iac-2026-takeaways-from-dream-to"
+    },
+    {
+     "type": "entrepreneur",
+     "who": "SpaceX · Latin Times",
+     "claim": "SpaceX asked the FCC on 30 January 2026 for permission to deploy up to one million solar-powered satellites acting as orbital data centres.",
+     "url": "https://www.latintimes.com/spacex-xai-merger-orbital-ai-data-centers-600805"
+    },
+    {
+     "type": "engineer",
+     "who": "Google data-centre energy chief · Yahoo Finance",
+     "claim": "Google's head of data-centre energy said space data centres could cost up to 100 times as much as ground-based ones.",
+     "url": "https://finance.yahoo.com/technology/ai/articles/just-moonshot-google-energy-head-011000563.html"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "2001: A Space Odyssey",
+     "year": 1968,
+     "kind": "film",
+     "echo": "A vast rotating wheel station in Earth orbit shows the kind of structure that crews would have to assemble."
+    },
+    {
+     "title": "Planetes",
+     "year": 2003,
+     "kind": "series",
+     "echo": "Ordinary workers do hands-on jobs in orbit, treating space as a workplace rather than an adventure."
+    }
+   ],
+   "added": "2026-11-09",
+   "status": "new",
+   "history": [
+    {
+     "date": "2026-11-09",
+     "horizon": 8
+    }
+   ]
+  },
+  {
+   "id": "plan-to-robot-translator",
+   "title": "Plan-to-Robot Translator",
+   "sector": "built",
+   "horizon": 4,
+   "drivers": {
+    "ai": 0.7,
+    "robotics": 0.8,
+    "autonomy": 0.5,
+    "bio": 0.0,
+    "space": 0.0,
+    "energy": 0.0,
+    "quantum": 0.0,
+    "chain": 0.0
+   },
+   "trigger": "When robots build from digital plans, every vague line on an architect's drawing becomes a stalled machine.",
+   "what": "Turns architects' drawings into unambiguous build plans that robot fleets can run. Settles open details with designers before work starts and re-plans when site conditions change.",
+   "day": "She spots a wall detail the drawings leave open, calls the architect, fixes the build sequence and releases the plan to the brick-laying robots before lunch.",
+   "skills": [
+    "Reading building drawings",
+    "Robot task planning",
+    "Precise written specs"
+   ],
+   "signals": [
+    {
+     "type": "entrepreneur",
+     "who": "Bedrock Robotics · Construction Dive",
+     "claim": "Bedrock Robotics says its retrofit excavators now dig without an operator on US sites once a site manager sets the initial plan.",
+     "url": "https://www.constructiondive.com/news/bedrock-robotics-fully-autonomous-excavators-jobsites/828267/"
+    },
+    {
+     "type": "engineer",
+     "who": "Monumental · IRH Magazine",
+     "claim": "Monumental's Atrium system converts architectural drawings into robot-executable plans, and its robots have built walls for over 100 homes in the Netherlands and UK.",
+     "url": "https://irhmagazine.com/robotics-on-construction-sites-how-automation-is-moving-from-the-factory-floor-to-the-job-site/"
+    },
+    {
+     "type": "market",
+     "who": "SoftBank and Gravis Robotics · Inc.",
+     "claim": "SoftBank is investing $200 million in Gravis Robotics, which aims to let contractors rent autonomous excavators much like conventional equipment.",
+     "url": "https://www.inc.com/georgia-fearn/exclusive-softbank-is-investing-200-million-in-autonomous-construction-startup-gravis-robotics/91390995"
+    }
+   ],
+   "scifi": [
+    {
+     "title": "The Culture series (Iain M. Banks)",
+     "year": 1987,
+     "kind": "book",
+     "echo": "Giant habitats called Orbitals are made through machine-led construction, so the human contribution is the design, not the labour."
+    }
+   ],
+   "added": "2026-11-09",
+   "status": "new",
+   "history": [
+    {
+     "date": "2026-11-09",
      "horizon": 4
     }
    ]
